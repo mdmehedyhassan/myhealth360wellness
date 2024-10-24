@@ -1,15 +1,60 @@
 import './App.css';
+import './css/global.css';
+import loadingImg from './img/loaing.svg';
+import Loadable from 'react-loadable';
+import { Route, Routes } from 'react-router-dom';
+
+
+import Header from './component/share/Header/Header';
+import Footer from './component/share/Footer/Footer';
+
+const Home = Loadable({
+  loader: () => import('./page/home/Home/Home'),
+  loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
+});
+const About = Loadable({
+  loader: () => import('./page/about/About/About'),
+  loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
+});
+const Service = Loadable({
+  loader: () => import('./page/service/Service/Service'),
+  loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
+});
+const Package = Loadable({
+  loader: () => import('./page/package/Package/Package'),
+  loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
+});
+const Contact = Loadable({
+  loader: () => import('./page/contact/Contact/Contact'),
+  loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
+});
+const NotFound = Loadable({
+  loader: () => import('./page/notFound/NotFound/NotFound'),
+  loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
+});
+const IVInfusionBar = Loadable({
+  loader: () => import('./services-page/iv-infusion-bar/IVInfusionBar/IVInfusionBar'),
+  loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
+});
+
 
 function App() {
   return (
-    <div>
-      <div className="text-center bg-blue-500 text-white p-4">
-        <h1 className="text-3xl font-bold">Hello, Tailwind CSS!</h1>
-        <button className="bg-slate-200">Hello world</button>
-        <button className="bg-slate-200">New Button</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis totam a numquam rem modi commodi, eius quisquam nobis eos voluptate! Tempora sit dolorum possimus aliquam, eum laudantium nesciunt suscipit molestiae!</p>
-      </div>
-    </div>
+    <>
+    <Header/>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/service" element={<Service />} />
+      <Route path="/package" element={<Package />} />
+      <Route path="/contact" element={<Contact />} />
+
+      <Route path="/services/iv-infusion-bar" element={<IVInfusionBar />} />
+
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+    <Footer/>
+    </>
   );
 }
 

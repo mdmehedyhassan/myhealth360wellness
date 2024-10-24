@@ -1,0 +1,10 @@
+.class-for-svg-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.class-for-svg-img img{
+    min-width: 300px;
+    max-width: 800px;
+    width: 40%;    
+}
