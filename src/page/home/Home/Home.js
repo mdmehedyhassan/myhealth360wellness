@@ -9,6 +9,7 @@ function Home() {
       <h1>This is Home page <FontAwesomeIcon icon={faUser}/> </h1>
       <div className='class-for-svg-img' >
       <img src={workingImg} alt=''/>
+      <p></p>
     </div>
     </div>
   )
