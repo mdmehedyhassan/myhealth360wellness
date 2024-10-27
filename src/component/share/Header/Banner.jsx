@@ -2,7 +2,6 @@ import React from 'react';
 import banner from '../../../img/banner.png'
 import { FaCalendarAlt } from "react-icons/fa";
 
-
 const Banner = () => {
     return (
         <div

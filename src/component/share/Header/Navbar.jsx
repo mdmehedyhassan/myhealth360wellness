@@ -4,7 +4,7 @@ import logo from '../../../img/logo.png'
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar absolute border-b-2 px-2 md:px-16">
+            <div className="navbar absolute px-2 md:px-16 border-b-2 border-b-gray-400">
                 <div className="navbar-start">
                     <div className="dropdown ">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -66,9 +66,6 @@ const Navbar = () => {
                         <li className='text-white font-normal text-base'><a>Contact</a></li>
                     </ul>
                 </div>
-                {/* <div className="navbar-end">
-                <a className="btn">Button</a>
-            </div> */}
             </div>
         </div>
     );
