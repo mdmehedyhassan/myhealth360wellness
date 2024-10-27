@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react'
 import BodyImg from "../../../media/images/Home/Body.png"
 import HairImg from "../../../media/images/Home/Hair.png"
@@ -12,17 +12,40 @@ const services = [
   { name: 'Injectables', image: InjectableImg },
 ]
 
-
 export default function FeaturedServicesCom() {
-  const [currentIndex, setCurrentIndex] = useState(0)
+
+  console.log("Reloaded")
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerSlide, setItemsPerSlide] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setItemsPerSlide(1);
+      } else if (window.innerWidth < 1024) {
+        setItemsPerSlide(2);
+      } else {
+        setItemsPerSlide(4);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length)
-  }
+    setCurrentIndex((prevIndex) => 
+      (prevIndex + itemsPerSlide >= services.length) ? 0 : prevIndex + 1
+    );
+  };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + services.length) % services.length)
-  }
+    setCurrentIndex((prevIndex) => 
+      (prevIndex === 0) ? Math.max(0, services.length - itemsPerSlide) : prevIndex - 1
+    );
+  };
 
   return (
     <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
@@ -35,33 +58,38 @@ export default function FeaturedServicesCom() {
           <div className="flex justify-between items-center">
             <button
               onClick={prevSlide}
-              className="absolute left-0 z-10 p-2 rounded-full bg-white shadow-md text-gray-800 hover:bg-gray-100"
+              className="z-10 p-2 rounded-full bg-white shadow-md text-gray-800 hover:bg-gray-100"
             >
               <ChevronLeft className="w-6 h-6"/>
             </button>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-12">
-              {services.map((service, index) => (
-                <div
-                  key={service.name}
-                  className={`relative rounded-lg overflow-hidden transition-opacity duration-500 ${
-                    index >= currentIndex && index < currentIndex + 4 ? 'opacity-100' : 'opacity-0 hidden lg:block'
-                  }`}
-                >
-                  <img src={service.image} alt={service.name} className="w-full h-64 object-cover" />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#13313380] p-4">
-                    <div className="flex justify-between items-center  w-full">
-                      <h3 className="text-xl font-semibold text-white">{service.name}</h3>
-                     <div className="w-7 h-7 bg-[#E5C466] rounded-full flex justify-center items-center">
-                     <ArrowRight className=" text-xs text-black " />
-                     </div>
+            <div className="overflow-hidden mx-4">
+              <div 
+                className="flex transition-transform duration-300 ease-in-out"
+                style={{ transform: `translateX(-${currentIndex * (100 / itemsPerSlide)}%)` }}
+              >
+                {services.map((service, index) => (
+                  <div
+                    key={index}
+                    className="flex-none w-full sm:w-1/2 lg:w-1/4 px-2"
+                  >
+                    <div className="relative rounded-lg overflow-hidden">
+                      <img src={service.image} alt={service.name} className="w-full h-64 object-cover" />
+                      <div className="absolute bottom-0 left-0 right-0 bg-[#13313380] p-4">
+                        <div className="flex justify-between items-center w-full">
+                          <h3 className="text-xl font-semibold text-white">{service.name}</h3>
+                          <div className="w-7 h-7 bg-[#E5C466] rounded-full flex justify-center items-center">
+                            <ArrowRight className="text-xs text-black" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
             <button
               onClick={nextSlide}
-              className="absolute right-36 z-10 p-2 rounded-full bg-white shadow-md text-gray-800 hover:bg-gray-100"
+              className="z-10 p-2 rounded-full bg-white shadow-md text-gray-800 hover:bg-gray-100"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
