@@ -5,8 +5,8 @@ const Package = () => {
   return (
     <div>
       <PackagesBanner></PackagesBanner>
-      <div className='bg-[#E9F0EC]'>
-        <div className='grid grid-cols-3 gap-[30px] pt-[135px] pb-[147px] max-w-7xl mx-auto'>
+      <div className='bg-[#E9F0EC] px-5 md:px-0'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-[30px] pt-[135px] pb-[147px] max-w-7xl mx-auto'>
 
           {/* Package-1 */}
           <div className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]">
