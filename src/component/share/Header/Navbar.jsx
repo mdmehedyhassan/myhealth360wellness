@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../../img/logo.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -24,8 +25,8 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
-                            <li className='text-white font-normal text-base'><a>Home</a></li>
-                            <li className='text-white font-normal text-base'><a>About</a></li>
+                            <li className='text-white font-normal text-base'><Link to="/">Home</Link></li>
+                            <li className='text-white font-normal text-base'><Link to="/about">About</Link></li>
                             <li className='text-white font-normal text-base'>
                                 <a>Our Services</a>
                                 <ul className="p-2">
@@ -36,9 +37,9 @@ const Navbar = () => {
                                     <li className='text-white font-normal text-base'><a>Service 5</a></li>
                                 </ul>
                             </li>
-                            <li className='text-white font-normal text-base'><a>Memberships</a></li>
-                            <li className='text-white font-normal text-base'><a>Packages</a></li>
-                            <li className='text-white font-normal text-base'><a>Contact</a></li>
+                            <li className='text-white font-normal text-base'><Link to="/memberships">Memberships</Link></li>
+                            <li className='text-white font-normal text-base'><Link to="/packages">Packages</Link></li>
+                            <li className='text-white font-normal text-base'><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost mb-3 mt-5 w-52 h-20">
@@ -47,8 +48,8 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 z-[1]">
-                        <li className='text-white font-normal text-base'><a>Home</a></li>
-                        <li className='text-white font-normal text-base'><a>About</a></li>
+                        <li className='text-white font-normal text-base'><Link to="/">Home</Link></li>
+                        <li className='text-white font-normal text-base'><Link to="/about">About</Link></li>
                         <li className='text-white font-normal text-base'>
                             <details>
                                 <summary>Our Services</summary>
@@ -61,9 +62,9 @@ const Navbar = () => {
                                 </ul>
                             </details>
                         </li>
-                        <li className='text-white font-normal text-base'><a>Memberships</a></li>
-                        <li className='text-white font-normal text-base'><a>Packages</a></li>
-                        <li className='text-white font-normal text-base'><a>Contact</a></li>
+                        <li className='text-white font-normal text-base'><Link to="/memberships">Memberships</Link></li>
+                        <li className='text-white font-normal text-base'><Link to="/packages">Packages</Link></li>
+                        <li className='text-white font-normal text-base'><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
             </div>
