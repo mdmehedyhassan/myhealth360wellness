@@ -168,10 +168,6 @@ const options = [
 ];
 
 const TreatmentCom = () => {
-  const date = new Date();
-  const getMinutes = date.getMinutes();
-  const getSeconds = date.getSeconds();
-  console.log("Reloaded At", getMinutes, getSeconds);
 
   const [selectedOption, setSelectedOption] = useState(options[0]);
 
