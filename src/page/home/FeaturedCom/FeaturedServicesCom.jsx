@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react'
-import BodyImg from "../../../media/images/Home/Body.png"
-import HairImg from "../../../media/images/Home/Hair.png"
-import FaceImg from "../../../media/images/Home/Face.png"
-import InjectableImg from "../../../media/images/Home/Injectables.png"
+import BodyImg from "../../../img/Home/Body.png"
+import HairImg from "../../../img/Home/Hair.png"
+import FaceImg from "../../../img/Home/Face.png"
+import InjectableImg from "../../../img/Home/Injectables.png"
 
 const services = [
   { name: 'Body', image: BodyImg },
@@ -14,8 +14,7 @@ const services = [
 
 export default function FeaturedServicesCom() {
 
-  console.log("Reloaded")
-  
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(4);
 
@@ -48,7 +47,7 @@ export default function FeaturedServicesCom() {
   };
 
   return (
-    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <p className="text-base font-semibold text-[#0B5E62]">Schedule a Consult</p>
@@ -58,7 +57,7 @@ export default function FeaturedServicesCom() {
           <div className="flex justify-between items-center">
             <button
               onClick={prevSlide}
-              className="z-10 p-2 rounded-full bg-white shadow-md text-gray-800 hover:bg-gray-100"
+              className="z-10 p-2 rounded-full  bg-[#0B5E62] shadow-md text-white"
             >
               <ChevronLeft className="w-6 h-6"/>
             </button>
@@ -89,7 +88,7 @@ export default function FeaturedServicesCom() {
             </div>
             <button
               onClick={nextSlide}
-              className="z-10 p-2 rounded-full bg-white shadow-md text-gray-800 hover:bg-gray-100"
+              className="z-10 p-2 rounded-full bg-[#0B5E62] shadow-md text-white"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
