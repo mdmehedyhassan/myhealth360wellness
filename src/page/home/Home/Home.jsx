@@ -1,15 +1,20 @@
 import React from 'react'
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import workingImg from '../../../img/working.svg';
 import FeaturedServicesCom from '../FeaturedCom/FeaturedServicesCom';
+import TreatmentCom from '../TreatmentCom/TreatmentCom';
 import Banner from '../../../component/share/Header/Banner';
+import AboutDoctorCom from '../AboutDoctorCom/AboutDoctorCom';
+import MembershipCom from '../MembershipCom/MembershipCom';
 
 function Home() {
+  
+
   return (
     <div>
-      <Banner></Banner>
-      <FeaturedServicesCom />
+    <Banner/>
+    <FeaturedServicesCom/>
+    <TreatmentCom/>
+    <AboutDoctorCom/>
+    <MembershipCom/>
     </div>
   )
 }
