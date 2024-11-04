@@ -9,10 +9,10 @@ const MembershipCom = () => {
         {/* Card 1 */}
         <div className="bg-white rounded-xl shadow-lg p-6 lg:p-10 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
           <div className="lg:w-1/2 lg:pr-10">
-            <h3 className="text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
+            <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
               Memberships
             </h3>
-            <h2 className="text-5xl leading-[120%] font-bold text-[#062223] mb-4">
+            <h2 className="text-[24px] lg:text-5xl leading-[120%] font-bold text-[#062223] mb-4">
               Medical Spa Membership
             </h2>
             <p className="text-gray-600 mb-6 text-sm leading-[160%]">
@@ -39,10 +39,10 @@ const MembershipCom = () => {
         {/* Card 2 */}
         <div className="bg-white rounded-xl shadow-lg p-6 lg:p-10 flex justify-between flex-col lg:flex-row items-center -mb-32">
           <div className="lg:w-1/2 lg:pr-10 order-2 lg:order-1">
-            <h3 className="text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
+            <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
               Memberships
             </h3>
-            <h2 className="text-5xl leading-[120%] font-bold text-[#062223] mb-4">
+            <h2 className="text-[24px] lg:text-5xl leading-[120%] font-bold text-[#062223] mb-4">
               Medical Gym and Rehab
             </h2>
             <p className="text-[#485657] mb-6 text-sm leading-[160%]">
