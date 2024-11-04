@@ -15,7 +15,7 @@ const services = [
 export default function FeaturedServicesCom() {
 
   console.log("Reloaded")
-  
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(4);
 
@@ -36,13 +36,13 @@ export default function FeaturedServicesCom() {
   }, []);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       (prevIndex + itemsPerSlide >= services.length) ? 0 : prevIndex + 1
     );
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       (prevIndex === 0) ? Math.max(0, services.length - itemsPerSlide) : prevIndex - 1
     );
   };
@@ -60,10 +60,10 @@ export default function FeaturedServicesCom() {
               onClick={prevSlide}
               className="z-10 p-2 rounded-full bg-white shadow-md text-gray-800 hover:bg-gray-100"
             >
-              <ChevronLeft className="w-6 h-6"/>
+              <ChevronLeft className="w-6 h-6" />
             </button>
             <div className="overflow-hidden mx-4">
-              <div 
+              <div
                 className="flex transition-transform duration-300 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * (100 / itemsPerSlide)}%)` }}
               >
