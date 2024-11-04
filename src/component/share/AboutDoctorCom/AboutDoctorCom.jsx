@@ -5,7 +5,7 @@ const AboutDoctorCom = () => {
   return (
     <div className="py-10 pb-16 lg:pb-32 mx-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
-        <div className="hidden lg:flex justify-center items-center ">
+        <div className="hidden lg:flex justify-center items-center  p-16 ">
           <img className="rounded-xl" src={aboutImg} alt="about-img" />
         </div>
         <div className="">
@@ -43,8 +43,7 @@ const AboutDoctorCom = () => {
             recently been appointed to the post of President of the Buffalo
             District of the New York American College of Physicians.
           </p>
-
-          <button className="text-[#0B5E62] text-lg font-bold py-4 px-16 bg-transparent border border-[#0B5E62] rounded-full hover:bg-teal-100">
+          <button className="text-[#0B5E62] text-sm lg:text-lg font-bold py-4 px-16 bg-transparent border border-[#0B5E62] rounded-full hover:bg-[#0B5E62] hover:text-white">
             Learn More
           </button>
         </div>
