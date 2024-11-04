@@ -3,15 +3,22 @@ import aboutImg from "../../../img/Home/aboutdoctor.svg";
 
 const AboutDoctorCom = () => {
   return (
-    <div className="py-10 pb-32 mx-5 flex justify-center items-center ">
-      <div className="grid grid-cols-2 items-center max-w-[1324px] max-h-[528px]">
-        <div className="flex justify-center items-center">
-          <img className="rounded-xl " src={aboutImg} alt="about-img" />
+    <div className="py-10 pb-16 lg:pb-32 mx-5 flex justify-center items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
+        <div className="hidden lg:flex justify-center items-center ">
+          <img className="rounded-xl" src={aboutImg} alt="about-img" />
         </div>
         <div className="">
-          <div className="flex justify-start items-end mb-5">
-            <h1 className="text-5xl text-[#062223]">About Doctor Andry </h1>
-            <h2 className="text-md text-[#758081]">MD,FACP, CPHIMS</h2>
+          <div className="flex my-5 flex-col">
+            <h1 className="text-3xl lg:text-5xl text-[#062223]">
+              About Doctor Andry 
+            </h1>
+            <h2 className=" text-sm lg:text-md my-3 text-[#758081]">
+              MD,FACP, CPHIMS
+            </h2>
+          </div>
+          <div className="flex justify-center items-center lg:hidden mb-4">
+            <img className="rounded-xl " src={aboutImg} alt="about-img" />
           </div>
           <p className="text-[#758081] text-sm mb-5 leading-[160%]">
             Meet and consult with our American Board of Internal Certified
