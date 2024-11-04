@@ -5,11 +5,11 @@ const Contact = () => {
   return (
     <div>
       <ContactBanner></ContactBanner>
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-[#E9F0EC] min-h-screen">
         <div className="hero-content flex-col lg:flex-row ">
           {/* Contact Information */}
           <div className="text-center lg:text-left w-1/2">
-            <h1 className="text-5xl font-bold">Login now!</h1>
+            <h1 className="text-5xl font-bold">Contact</h1>
             <p className="py-6">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
               quasi. In deleniti eaque aut repudiandae et a id nisi.
@@ -21,32 +21,32 @@ const Contact = () => {
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Full Name</span>
+                  <span className="label-text text-[#081319] text-lg font-semibold leading-[160%]">Full Name</span>
                 </label>
-                <input type="text" placeholder="Full Name" className="input input-bordered bg-white" required />
+                <input type="text" placeholder="" className="input input-bordered bg-white border-[#B6CCE2] border-[1px] rounded" required />
               </div>
 
               <div className='flex justify-between gap-5'>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Phone</span>
+                    <span className="label-text text-[#081319] text-lg font-semibold leading-[160%]">Phone</span>
                   </label>
-                  <input type="number" placeholder="email" className="input input-bordered bg-white w-[260px]" required />
+                  <input type="number" placeholder="" className="input input-bordered bg-white w-[260px] border-[#B6CCE2] border-[1px] rounded" required />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="label-text text-[#081319] text-lg font-semibold leading-[160%]">Email</span>
                   </label>
-                  <input type="email" placeholder="email" className="input input-bordered bg-white w-[260px]" required />
+                  <input type="email" placeholder="" className="input input-bordered bg-white w-[260px] border-[#B6CCE2] border-[1px] rounded" required />
                 </div>
               </div>
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Select a service</span>
+                  <span className="label-text text-[#081319] text-lg font-semibold leading-[160%]">Select a service</span>
                 </label>
-                <select className="select select-bordered w-full bg-white">
-                  <option disabled selected>Which service do you want?</option>
+                <select className="select select-bordered w-full bg-white border-[#B6CCE2] border-[1px] rounded">
+                  <option disabled selected>Choose Service</option>
                   <option>Service 1</option>
                   <option>Service 2</option>
                 </select>
@@ -54,13 +54,13 @@ const Contact = () => {
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Message</span>
+                  <span className="label-text text-[#081319] text-lg font-semibold leading-[160%]">Message</span>
                 </label>
-                <textarea className="textarea textarea-bordered bg-white" placeholder="Bio"></textarea>
+                <textarea className="textarea textarea-bordered bg-white border-[#B6CCE2] border-[1px] rounded" placeholder=""></textarea>
               </div>
 
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn btn-primary bg-[#0B5E62] rounded-[110px] text-white text-[15px] font-bold leading-[120%] hover:bg-[#154f52]">SUBMIT</button>
               </div>
             </form>
           </div>
