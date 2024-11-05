@@ -16,8 +16,8 @@ const About = Loadable({
   loader: () => import('./page/about/About/About'),
   loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
 });
-const Service = Loadable({
-  loader: () => import('./page/service/Service/Service'),
+const Services = Loadable({
+  loader: () => import('./page/services/Services/Services'),
   loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
 });
 const Package = Loadable({
@@ -45,7 +45,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/service" element={<Service />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/packages" element={<Package />} />
       <Route path="/contact" element={<Contact />} />
 

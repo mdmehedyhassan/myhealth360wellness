@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
-import BodyImg from "../../../img/Home/Body.png";
-import HairImg from "../../../img/Home/Hair.png";
-import FaceImg from "../../../img/Home/Face.png";
-import InjectableImg from "../../../img/Home/Injectables.png";
+import BodyImg from "../../../img/Shared/Body.png";
+import HairImg from "../../../img/Shared/Hair.png";
+import FaceImg from "../../../img/Shared/Face.png";
+import InjectableImg from "../../../img/Shared/Injectables.png";
 
 const services = [
   { name: "Body", image: BodyImg },
@@ -13,8 +13,6 @@ const services = [
 ];
 
 export default function FeaturedServicesCom() {
-  console.log("Reloaded");
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(4);
 
@@ -51,11 +49,11 @@ export default function FeaturedServicesCom() {
   return (
     <div className="py-16 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-8">
+        <div className="text-center mb-10">
           <p className="text-base font-semibold text-[#0B5E62]">
             Schedule a Consult
           </p>
-          <h2 className="mt-2 text-3xl font-bold text-[#062223] sm:text-4xl">
+          <h2 className="mt-2 text-3xl lg:text-5xl font-bold text-[#062223]">
             Our Featured Services
           </h2>
         </div>
