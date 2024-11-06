@@ -41,7 +41,7 @@ const Navbar = () => {
                 <a href="/">Our Services</a>
                 <ul className="p-2">
                   <li className="text-white font-normal text-base">
-                    <a href="/">Service 1</a>
+                    <a href="/services/iv-infusion-bar">Service 1</a>
                   </li>
                   <li className="text-white font-normal text-base">
                     <a href="/">Service 2</a>
@@ -88,7 +88,7 @@ const Navbar = () => {
                 <summary>Our Services</summary>
                 <ul className="p-2">
                   <li className="text-white font-normal text-base">
-                    <a href="/">Service 1</a>
+                    <a href="/services/iv-infusion-bar">Service 1</a>
                   </li>
                   <li className="text-white font-normal text-base">
                     <a href="/">Service 2</a>

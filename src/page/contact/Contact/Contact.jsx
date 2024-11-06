@@ -13,28 +13,28 @@ const Contact = () => {
         <div className="hero-content flex-col lg:flex-row gap-[89px]">
           {/* Contact Information */}
           <div className='flex flex-col gap-[30px]'>
-            <div className='flex items-center gap-[26px]  md:w-[453px] p-[17px] py-5 border-[#B6CCE2] border-[1px] rounded-[10px]'>
+            <div className='flex items-center gap-[26px] md:w-[453px] p-[17px] py-5 border-[#B6CCE2] border-[1px] rounded-[10px]'>
               <img className='w-[84px] h-[84px]' src={logo1} alt="" />
               <div>
                 <h3 className='text-2xl font-semibold leading-[120%] text-[#060F13] mb-[7px]'>Phone Number</h3>
                 <p className='text-[15px] font-normal leading-[150%] text-[#5E6669]'>+012 3456 7890</p>
               </div>
             </div>
-            <div className='flex items-center gap-[26px]  md:w-[453px] p-[17px] py-5 border-[#B6CCE2] border-[1px] rounded-[10px]'>
+            <div className='flex items-center gap-[26px] md:w-[453px] p-[17px] py-5 border-[#B6CCE2] border-[1px] rounded-[10px]'>
               <img className='w-[84px] h-[84px]' src={logo2} alt="" />
               <div>
                 <h3 className='text-2xl font-semibold leading-[120%] text-[#060F13] mb-[7px]'>Email Address</h3>
                 <p className='text-[15px] font-normal leading-[150%] text-[#5E6669]'>emailaddress@email.com</p>
               </div>
             </div>
-            <div className='flex items-center gap-[26px]  md:w-[453px] p-[17px] py-5 border-[#B6CCE2] border-[1px] rounded-[10px]'>
+            <div className='flex items-center gap-[26px] md:w-[453px] p-[17px] py-5 border-[#B6CCE2] border-[1px] rounded-[10px]'>
               <img className='w-[84px] h-[84px]' src={logo3} alt="" />
               <div>
                 <h3 className='text-2xl font-semibold leading-[120%] text-[#060F13] mb-[7px]'>Working Time</h3>
                 <p className='text-[15px] font-normal leading-[150%] text-[#5E6669]'>10AM  to 8PM</p>
               </div>
             </div>
-            <div className='flex items-center gap-[26px]  md:w-[453px] p-[17px] py-5 border-[#B6CCE2] border-[1px] rounded-[10px]'>
+            <div className='flex items-center gap-[26px] md:w-[453px] p-[17px] py-5 border-[#B6CCE2] border-[1px] rounded-[10px]'>
               <img className='w-[84px] h-[84px]' src={logo4} alt="" />
               <div>
                 <h3 className='text-2xl font-semibold leading-[120%] text-[#060F13] mb-[7px]'>Location</h3>
