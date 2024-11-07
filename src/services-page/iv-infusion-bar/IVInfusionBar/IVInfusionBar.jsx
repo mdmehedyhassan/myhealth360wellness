@@ -6,6 +6,7 @@ import WhyShouldCom from "../WhyShouldCom/WhyShouldCom";
 import CocktailBarCom from "../CocktailBarCom/CocktailBarCom";
 import TherapyBookCom from "../TherapyBookCom/TherapyBookCom";
 import Accordion from "../Accordion/Accordion";
+import Locations from "../Locations/Locations";
 
 function IVInfusionBar() {
   return (
@@ -16,6 +17,7 @@ function IVInfusionBar() {
       <CocktailBarCom />
       <TherapyBookCom />
       <Accordion />
+      <Locations />
       <TestimonialsCom />
     </div>
   );
