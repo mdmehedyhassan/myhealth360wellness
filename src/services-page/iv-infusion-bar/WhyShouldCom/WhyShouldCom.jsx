@@ -7,7 +7,7 @@ const WhyShouldCom = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
         <div className="order-last lg:order-first ">
           <div className="my-5 flex-col">
-            <h1 className="text-3xl lg:text-5xl text-[#062223]">
+            <h1 className="text-[28px] lg:text-5xl font-bold text-[#062223]">
               Why Should You Get It?
             </h1>
             <h2 className=" text-sm lg:text-md my-3 text-[#000]">
