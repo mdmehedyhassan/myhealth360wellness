@@ -7,7 +7,7 @@ const Health360Com = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] gap-10">
         {/* Text Section */}
         <div className="w-full">
-          <h2 className="text-3xl font-bold text-[#0B5E62] mb-4">
+          <h2 className="text-4xl font-bold text-[#062223] mb-4">
             Why Choose My Health 360?
           </h2>
           {/* Image Section */}

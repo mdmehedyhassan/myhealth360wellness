@@ -21,7 +21,7 @@ const OurValuesCom = () => {
         <div className="lg:w-full rounded-xl">
           <img src={TopMaskImg} alt="TopMaskImg" />
         </div>
-        <div className="flex flex-col justify-center items-center -mt-[32.5rem] lg:mt-0">
+        <div className="flex flex-col justify-center items-center -mt-[32.5rem] lg:mt-0 pb-14 md:pb-[109px]">
           <h1 className="text-[#fff] text-center font-bold text-3xl lg:text-5xl px-5 my-10">
             Our Values
           </h1>
@@ -37,7 +37,7 @@ const OurValuesCom = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-full rounded-xl -mt-[30.5rem] lg:mt-0 -z-10 lg:z-0">
+        <div className="lg:w-full rounded-xl -mt-[30.5rem] lg:mt-56 -z-10 lg:z-0">
           <img src={BottomMaskImg} alt="BottomMaskImg" />
         </div>
       </div>

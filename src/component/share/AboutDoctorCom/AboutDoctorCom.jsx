@@ -9,11 +9,11 @@ const AboutDoctorCom = () => {
           <img className="rounded-xl" src={aboutImg} alt="about-img" />
         </div>
         <div className="">
-          <div className="flex my-5 flex-col">
-            <h1 className="text-3xl lg:text-5xl text-[#062223]">
+          <div className="flex my-5 ">
+            <h1 className="text-3xl font-bold lg:text-5xl text-[#062223]">
               About Doctor Andry 
             </h1>
-            <h2 className=" text-sm lg:text-md my-3 text-[#758081]">
+            <h2 className=" text-sm lg:text-md mt-4 text-[#758081]">
               MD,FACP, CPHIMS
             </h2>
           </div>

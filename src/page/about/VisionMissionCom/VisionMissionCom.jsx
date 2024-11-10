@@ -4,7 +4,7 @@ import MissionImg from "../../../img/About/mission.png";
 
 function Card({ title, description, image, url }) {
   return (
-    <div className="w-[380px] lg:w-[643px] h-[172px] lg:h-[340px] rounded-xl border border-[#87afac]">
+    <div className="w-[325px] lg:w-[643px] h-[172px] lg:h-[340px] rounded-xl bg-[#D9E5DE] border border-[#87afac] ">
       <div className="w-full flex justify-between items-center p-2 lg:p-5">
         {/* Text Section */}
         <div className="">
