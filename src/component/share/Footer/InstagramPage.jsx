@@ -12,7 +12,7 @@ import instaImg7 from '../../../img/insta7.png'
 const InstagramPage = () => {
     return (
         <div className='bg-[#E9F0EC] pb-1'>
-            <h3 className='text-[#062223] text-5xl font-bold leading-[120%] text-center mb-10'>Our Instagram</h3>
+            <h3 className='text-[#062223] text-[28px] md:text-5xl font-bold leading-[120%] text-center mb-10'>Our Instagram</h3>
             <Marquee>
                 <img className='mr-1' src={instaImg1} alt="" />
                 <img className='mr-1' src={instaImg2} alt="" />
