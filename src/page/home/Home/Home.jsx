@@ -5,11 +5,13 @@ import Banner from "../../../component/share/Header/Banner";
 import TestimonialsCom from "../../../component/share/TestimonialsCom/TestimonialsCom";
 import MembershipCom from "../../../component/share/MembershipCom/MembershipCom";
 import AboutDoctorCom from "../../../component/share/AboutDoctorCom/AboutDoctorCom";
+import BannerBottom from "../BannerBottom/BannerBottom";
 
 function Home() {
   return (
     <div>
       <Banner />
+      <BannerBottom />
       <FeaturedServicesCom />
       <TreatmentCom />
       <AboutDoctorCom />
