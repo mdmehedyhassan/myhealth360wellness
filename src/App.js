@@ -45,12 +45,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services />} />
       <Route path="/packages" element={<Package />} />
       <Route path="/contact" element={<Contact />} />
-
       <Route path="/services/iv-infusion-bar" element={<IVInfusionBar />} />
-
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer/>
