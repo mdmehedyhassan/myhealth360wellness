@@ -8,7 +8,7 @@ const BannerBottom = () => {
             <div>
                 <p className=' md:max-w-[596px] text-white text-base font-medium leading-[160%]  md:border-r-2 md:border-[#95DDD947] pr-0 md:pr-20 mb-8 md:mb-0'>Lorem ipsum dolor sit amet consectetur. Nam nulla mattis viverra in purus ac aenean vitae duis. Volutpat mi nunc nunc facilisis. </p>
             </div>
-            <div className='flex gap-4 md:gap-10 mr-0 md:mr-10 ml-0 md:ml-28 mb-5 md:mb-0'>
+            <div className='flex gap-6 md:gap-10 mr-0 md:mr-10 ml-0 md:ml-28 mb-5 md:mb-0'>
                 {/* phone */}
                 <div className='flex gap-3 border-[1px] border-[#95DDD947] rounded-[10px] pt-2 md:pt-[10px] pb-2 md:pb-3 pl-2 md:pl-[11px] pr-2 md:pr-5'>
                     <img className='w-8 h-8 md:w-12 md:h-12' src={phone} alt="" />
