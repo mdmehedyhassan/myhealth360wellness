@@ -1,13 +1,19 @@
 import './App.css';
 import './css/global.css';
-import loadingImg from './img/loaing.svg';
+import loadingImg from './img/loading.gif';
 import Loadable from 'react-loadable';
 import { Route, Routes } from 'react-router-dom';
 
 
-import Header from './component/share/Header/Header';
-import Footer from './component/share/Footer/Footer';
 
+const Header = Loadable({
+  loader: () => import('./component/share/Header/Header'),
+  loading: () =>  <div className='class-for-svg-img'>Loading...</div>
+});
+const Footer = Loadable({
+  loader: () => import('./component/share/Footer/Footer'),
+  loading: () =>  <div className='class-for-svg-img'>Loading...</div>
+});
 const Home = Loadable({
   loader: () => import('./page/home/Home/Home'),
   loading: () =>  <div className='class-for-svg-img'><img src={loadingImg} alt=''/></div>
