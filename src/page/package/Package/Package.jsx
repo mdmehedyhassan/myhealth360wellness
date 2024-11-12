@@ -11,7 +11,7 @@ const Package = () => {
 
           {/* Package-1 */}
            <div 
-            className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
+            className="card bg-white transition ease-in-out duration-300 hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
             style={{ backgroundImage: `url(${backgroundImg})`, backgroundPosition: 'bottom right', backgroundSize: '250px 207px', backgroundRepeat: 'no-repeat' }}
           >
             <div className="card-body pt-[42px] pb-10 px-10">
@@ -28,7 +28,7 @@ const Package = () => {
           </div>
           {/* Package-2 */}
            <div 
-            className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
+            className="card bg-white transition ease-in-out duration-300 hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
             style={{ backgroundImage: `url(${backgroundImg})`, backgroundPosition: 'bottom right', backgroundSize: '250px 207px', backgroundRepeat: 'no-repeat' }}
           >
             <div className="card-body pt-[42px] pb-10 px-10">
@@ -45,7 +45,7 @@ const Package = () => {
           </div>
           {/* Package-3 */}
            <div 
-            className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
+            className="card bg-white transition ease-in-out duration-300 hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
             style={{ backgroundImage: `url(${backgroundImg})`, backgroundPosition: 'bottom right', backgroundSize: '250px 207px', backgroundRepeat: 'no-repeat' }}
           >
             <div className="card-body pt-[42px] pb-10 px-10">
@@ -62,7 +62,7 @@ const Package = () => {
           </div>
           {/* Package-4 */}
            <div 
-            className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
+            className="card bg-white transition ease-in-out duration-300 hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
             style={{ backgroundImage: `url(${backgroundImg})`, backgroundPosition: 'bottom right', backgroundSize: '250px 207px', backgroundRepeat: 'no-repeat' }}
           >
             <div className="card-body pt-[42px] pb-10 px-10">
@@ -79,7 +79,7 @@ const Package = () => {
           </div>
           {/* Package-5 */}
            <div 
-            className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
+            className="card bg-white transition ease-in-out duration-300 hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
             style={{ backgroundImage: `url(${backgroundImg})`, backgroundPosition: 'bottom right', backgroundSize: '250px 207px', backgroundRepeat: 'no-repeat' }}
           >
             <div className="card-body pt-[42px] pb-10 px-10">
@@ -96,7 +96,7 @@ const Package = () => {
           </div>
           {/* Package-6 */}
            <div 
-            className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
+            className="card bg-white transition ease-in-out duration-300 hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
             style={{ backgroundImage: `url(${backgroundImg})`, backgroundPosition: 'bottom right', backgroundSize: '250px 207px', backgroundRepeat: 'no-repeat' }}
           >
             <div className="card-body pt-[42px] pb-10 px-10">
@@ -113,7 +113,7 @@ const Package = () => {
           </div>
           {/* Package-7 */}
            <div 
-            className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
+            className="card bg-white transition ease-in-out duration-300 hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
             style={{ backgroundImage: `url(${backgroundImg})`, backgroundPosition: 'bottom right', backgroundSize: '250px 207px', backgroundRepeat: 'no-repeat' }}
           >
             <div className="card-body pt-[42px] pb-10 px-10">
@@ -130,7 +130,7 @@ const Package = () => {
           </div>
           {/* Package-8 */}
            <div 
-            className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
+            className="card bg-white transition ease-in-out duration-300 hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
             style={{ backgroundImage: `url(${backgroundImg})`, backgroundPosition: 'bottom right', backgroundSize: '250px 207px', backgroundRepeat: 'no-repeat' }}
           >
             <div className="card-body pt-[42px] pb-10 px-10">
@@ -147,7 +147,7 @@ const Package = () => {
           </div>
           {/* Package-9 */}
            <div 
-            className="card bg-white hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
+            className="card bg-white transition ease-in-out duration-300 hover:bg-[#0B5E62] group border-[#B6CCE2] rounded-[20px]"
             style={{ backgroundImage: `url(${backgroundImg})`, backgroundPosition: 'bottom right', backgroundSize: '250px 207px', backgroundRepeat: 'no-repeat' }}
           >
             <div className="card-body pt-[42px] pb-10 px-10">
