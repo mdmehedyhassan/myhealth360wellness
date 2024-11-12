@@ -26,7 +26,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow "
+              className="menu menu-sm dropdown-content bg-gray-900 rounded-box z-[1] mt-3 w-52 p-2 shadow "
             >
               <li className="text-white font-normal text-base">
                 <Link to="/">Home</Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
             <li className="text-white font-normal text-base">
               <details>
                 <summary>Our Services</summary>
-                <ul className="p-2">
+                <ul className="p-2 bg-gray-900">
                   <li className="text-white font-normal text-base">
                     <a href="/services/iv-infusion-bar">Service 1</a>
                   </li>

@@ -10,10 +10,10 @@ const TherapyCom = () => {
         </div>
         <div className="">
           <div className="my-5 flex-col">
-            <h1 className="text-3xl lg:text-5xl text-[#062223]">
+            <h1 className="text-[28px] lg:text-5xl font-bold text-[#062223]">
               What is IV Therapy?
             </h1>
-            <h2 className=" text-sm lg:text-md my-3 text-[#000]">
+            <h2 className=" text-sm md:text-lg my-3 text-[#000]">
               HAPPY. HEALTHY. HYDRATED.
             </h2>
           </div>

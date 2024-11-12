@@ -7,7 +7,7 @@ const MembershipCom = () => {
     <div className="px-5 lg:px-20 bg-[#D9E5DE] w-full rounded-xl  mt-32 mb-32">
       <div className="grid gap-10 lg:gap-20 max-w-7xl mx-auto">
         {/* Card 1 */}
-        <div className="bg-white rounded-xl shadow-lg p-6 lg:p-10 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
+        <div className="bg-white rounded-[21px] border-[1px] border-[#0B5E6266] p-6 lg:p-10 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
           <div className="lg:w-1/2 lg:pr-10">
             <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
               Memberships
@@ -37,7 +37,7 @@ const MembershipCom = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white rounded-xl shadow-lg p-6 lg:p-10 flex justify-between flex-col lg:flex-row items-center -mb-32">
+        <div className="bg-white rounded-[21px] border-[1px] border-[#0B5E6266] p-6 lg:p-10 flex justify-between flex-col lg:flex-row items-center -mb-32">
           <div className="lg:w-1/2 lg:pr-10 order-2 lg:order-1">
             <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
               Memberships

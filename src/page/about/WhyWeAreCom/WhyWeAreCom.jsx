@@ -15,7 +15,7 @@ const WhyWeAreCom = () => {
         </div>
         {/* Text Section */}
         <div className="w-full">
-          <h2 className="text-3xl font-bold text-[#0B5E62] mb-4">Who we are</h2>
+          <h2 className="text-3xl font-bold text-[#0B5E62] mb-4 ">Who we are</h2>
           {/* Image Section */}
           <div className="w-full lg:hidden">
             <img
@@ -24,7 +24,7 @@ const WhyWeAreCom = () => {
               className="rounded-lg object-cover w-full h-full"
             />
           </div>
-          <p className="text-[#333] mb-3 leading-relaxed">
+          <p className="text-[#333] mb-3 leading-relaxed mt-[30px] md:mt-0">
             We are are Medical Spa that offers wellness care customized to your
             personal goals as part of our larger vision for your health and
             happiness to enable your eu zen, “living your best.” We are nestled

@@ -59,13 +59,13 @@ const CocktailBarCom = () => {
 
   return (
     <div className="w-full px-5">
-      <div className="py-5 lg:py-10 pb-10 bg-[#D9E5DE] rounded-t-xl w-full ">
+      <div className="py-5 lg:py-20 pb-10 bg-[#D9E5DE] rounded-t-xl w-full ">
         <h1 className="text-[#062223] text-center font-bold text-3xl lg:text-5xl px-5 my-10">
-          What Concerns Would You Like To Address?
+        IV Cocktail Bar
         </h1>
         <div className="flex flex-col lg:flex-row justify-center items-center text-start ">
           <div className="flex">
-            <div className="lg:bg-[#fff] p-5 grid grid-cols-3 lg:grid-cols-1 lg:border-2 border-[#0b5e62] rounded-xl lg:gap-5 gap-x-2 gap-y-2 ">
+            <div className="lg:bg-[#fff] p-5 grid grid-cols-1 lg:grid-cols-1 lg:border-2 border-[#0b5e62] rounded-xl lg:gap-5 gap-x-2 gap-y-2 ">
               {options.map((option) => (
                 <button
                   key={option.title}

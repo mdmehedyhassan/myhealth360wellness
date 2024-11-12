@@ -9,7 +9,7 @@ const PackagesBanner = () => {
         backgroundImage: `url(${Banner})`,
       }}
     >
-      <div className="hero-content text-neutral-content text-center pt-32 md:pt-40">
+      <div className="hero-content text-neutral-content text-center pt-32 md:pt-40 max-w-3xl">
         <div className="max-w-[1002px] flex flex-col justify-center items-center">
           <h1 className="mb-9 text-4xl md:text-[64px] font-bold text-white leading-[120%]">
             Our Packages
