@@ -7,8 +7,8 @@ const MembershipCom = () => {
     <div className="px-5 lg:px-20 bg-[#D9E5DE] w-full rounded-xl  mt-32 mb-32">
       <div className="grid gap-10 lg:gap-20 max-w-7xl mx-auto">
         {/* Card 1 */}
-        <div className="bg-white rounded-[21px] border-[1px] border-[#0B5E6266] p-6 lg:p-10 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
-          <div className="lg:w-1/2 lg:pr-10">
+        <div className="bg-white rounded-[21px] border-[1px] border-[#0B5E6266] p-6 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
+          <div className="pl-5 lg:w-1/2 lg:pr-10">
             <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
               Memberships
             </h3>
@@ -23,7 +23,7 @@ const MembershipCom = () => {
               build muscle, lose fat, or recover from an injury or disability;
               our gym has everything you need to succeed.
             </p>
-            <button className="bg-[#0B5E62] text-white font-semibold py-5 px-16 rounded-full hover:bg-[#084a4e] transition-colors">
+            <button className="bg-[#0B5E62] text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full hover:bg-[#084a4e] transition-colors">
               Get It Now
             </button>
           </div>
@@ -35,9 +35,15 @@ const MembershipCom = () => {
             />
           </div>
         </div>
-
         {/* Card 2 */}
-        <div className="bg-white rounded-[21px] border-[1px] border-[#0B5E6266] p-6 lg:p-10 flex justify-between flex-col lg:flex-row items-center -mb-32">
+        <div className="bg-white rounded-[21px] border-[1px] border-[#0B5E6266] p-6 flex justify-between flex-col lg:flex-row-reverse items-center -mb-32 ml-0 ">
+          <div className="lg:w-1/2 order-1 lg:order-2 max-w-[456px]">
+            <img
+              src={medicalgymImg}
+              alt="Medical Gym and Rehab"
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
           <div className="lg:w-1/2 lg:pr-10 order-2 lg:order-1">
             <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
               Memberships
@@ -52,16 +58,9 @@ const MembershipCom = () => {
               advanced muscle toning and machine-assisted rehab devices
               available.
             </p>
-            <button className="bg-[#0B5E62] text-white font-semibold py-5 px-16 rounded-full hover:bg-[#084a4e] transition-colors">
+            <button className="bg-[#0B5E62] text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full hover:bg-[#084a4e] transition-colors">
               Get It Now
             </button>
-          </div>
-          <div className="lg:w-1/2 mt-5 lg:mt-0 order-1 lg:order-2 max-w-[456px]">
-            <img
-              src={medicalgymImg}
-              alt="Medical Gym and Rehab"
-              className="w-full h-full object-cover rounded-lg"
-            />
           </div>
         </div>
       </div>
