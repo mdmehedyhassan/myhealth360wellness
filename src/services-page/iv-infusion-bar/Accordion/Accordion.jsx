@@ -17,7 +17,7 @@ const Accordion = () => {
             </div>
             <div className="collapse collapse-plus bg-white border-[#0B5E62] border-[1px] rounded-[10px] p-7">
                 <input type="radio" name="my-accordion-3" defaultChecked />
-                <div className="collapse-title text-[19px] font-bold leading-[130%] text-[#0B5E62]">1. Is IV Infusion Therapy safe?</div>
+                <div className="collapse-title text-[19px] font-bold leading-[130%] text-[#0B5E62]">2. Is IV therapy covered by health insurance?</div>
                 <div className="collapse-content text-[#8A8A8A] text-[15px] font-normal leading-[150%]">
                     <p>All vitamins and nutrients used at NeuMed are FDA approved and go through high levels of testing. Every IV therapy treatment is administered by registered nurses and performed under a medical director</p>
                     <br />
