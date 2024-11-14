@@ -196,7 +196,7 @@ const TreatmentCom = () => {
         </h1>
         <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center text-start px-4 ">
           <div className="flex ">
-            <div className="lg:w-[220px] lg:bg-[#fff] p-5 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-[#0b5e62] rounded-xl lg:gap-[0.9rem] gap-x-2 gap-y-2 ">
+            <div className="lg:w-[220px] lg:bg-[#fff] p-7 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-[#0b5e62] rounded-xl gap-x-2 gap-y-6 ">
               {options.map((option) => (
                 <button
                   key={option.title}
@@ -217,36 +217,43 @@ const TreatmentCom = () => {
             </div>
           </div>
 
-          <div className="lg:w-[1027px] bg-[#fff] border-2 border-[#90b6b5] rounded-xl  p-5  ">
-            <h1 className="text-[#0B5E62] font-bold text-3xl mb-5 capitalize">
-              {selectedOption.title}
-            </h1>
-            <div className="flex flex-col-reverse lg:flex-row">
-              <div className="rounded-lg lg:pr-5 ">
-                {selectedOption.accordionData.map((item) => (
-                  <div
-                    key={item.id}
-                    className="mb-2 border-[#0B5E62] rounded-lg"
-                  >
-                    <div className="collapse collapse-arrow bg-[#D9E5DE]">
-                      <input
-                        type="radio"
-                        name="my-accordion-2"
-                        defaultChecked={item.title === "overall"}
-                      />
-                      <div className="text-black flex justify-start items-center collapse-title text-xl font-medium capitalize">
-                        <Dot /> {item.title} {selectedOption.title === "face"}
-                      </div>
-                      <div className="collapse-content text-start text-black">
-                        <p>{item.content}</p>
+          <div className="lg:w-[1027px] bg-[#fff] border-2 border-[#90b6b5] rounded-xl p-5 lg:p- ">
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-start items-center lg:flex-row">
+              <div className="lg:p-5 ">
+                <div className="mb-5 lg:mb-0 flex justify-center items-center lg:p-5 lg:hidden ">
+                  <img
+                    className="rounded-xl w-auto"
+                    src={selectedOption.img}
+                    alt={selectedOption.title}
+                  />
+                </div>
+                <h1 className="text-[#0B5E62] font-bold text-2xl lg:text-3xl mb-5 capitalize">
+                  {selectedOption.title}
+                </h1>
+                <div className="grid grid-cols-1 justify-start items-center gap-2">
+                  {selectedOption.accordionData.map((item) => (
+                    <div key={item.id} className="border-[#0B5E62] rounded-lg">
+                      <div className="collapse collapse-arrow bg-[#D9E5DE]">
+                        <input
+                          type="radio"
+                          name="my-accordion-2"
+                          defaultChecked={item.title === "overall"}
+                        />
+                        <div className="text-black flex justify-start items-center collapse-title text-xl font-medium capitalize">
+                          <Dot size={32} /> {item.title}
+                          {selectedOption.title === "face"}
+                        </div>
+                        <div className="collapse-content text-start text-black">
+                          <p>{item.content}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-              <div className="mb-5 lg:mb-0 md:flex justify-center items-center">
+              <div className="mb-5 lg:mb-0 lg:flex md:flex justify-center items-center lg:p-5 hidden ">
                 <img
-                  className="rounded-xl "
+                  className="rounded-xl w-auto"
                   src={selectedOption.img}
                   alt={selectedOption.title}
                 />
