@@ -18,8 +18,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 left-0 right-0 px-2 md:px-16 border-b-2 border-b-gray-400 ${isScrolled ? "bg-[#062223] z-50" : "bg-transparent"
-        } transition-colors duration-500 ease-in-out`}
+      className={`navbar fixed top-0 left-0 right-0 px-2 md:px-16 border-b-2 border-b-gray-400 ${
+        isScrolled ? "bg-[#062223] z-50" : "bg-transparent"
+      } transition-colors duration-500 ease-in-out`}
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -49,26 +50,27 @@ const Navbar = () => {
             <li className="text-white font-normal text-base">
               <Link to="/about">About</Link>
             </li>
-            <li className="text-white font-normal text-base">
-              <a href="/services">Our Services</a>
-              <ul className="p-2">
-                <li className="text-white font-normal text-base">
-                  <a href="/services/iv-infusion-bar">iv-infusion-bar</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 2</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 3</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 4</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 5</a>
-                </li>
-              </ul>
-            </li>
+            <a href="/services">
+              <li className="text-white font-normal text-base">
+                <ul className="p-2">
+                  <li className="text-white font-normal text-base">
+                    <a href="/services/iv-infusion-bar">iv-infusion-bar</a>
+                  </li>
+                  <li className="text-white font-normal text-base">
+                    <a href="/">Service 2</a>
+                  </li>
+                  <li className="text-white font-normal text-base">
+                    <a href="/">Service 3</a>
+                  </li>
+                  <li className="text-white font-normal text-base">
+                    <a href="/">Service 4</a>
+                  </li>
+                  <li className="text-white font-normal text-base">
+                    <a href="/">Service 5</a>
+                  </li>
+                </ul>
+              </li>
+            </a>
             <li className="text-white font-normal text-base">
               <Link to="/memberships">Memberships</Link>
             </li>
@@ -92,31 +94,30 @@ const Navbar = () => {
           <li className="text-white font-normal text-base">
             <Link to="/about">About</Link>
           </li>
-          <li className="text-white font-normal text-base">
-            <Link to="/services">Our Services</Link>
-          </li>
-          <li className="text-white font-normal text-base">
-            <details>
-              <summary>Our Services</summary>
-              <ul className="p-2 bg-gray-900">
-                <li className="text-white font-normal text-base">
-                  <a href="/services/iv-infusion-bar">Service 1</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 2</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 3</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 4</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 5</a>
-                </li>
-              </ul>
-            </details>
-          </li>
+          <a href="/services">
+            <li className="text-white font-normal text-base relative">
+              <details>
+                <summary>Our Services</summary>
+                <ul className="p-2 bg-gray-900 absolute w-full">
+                  <li className="text-white font-normal text-base">
+                    <a href="/services/iv-infusion-bar">iv-infusion-bar</a>
+                  </li>
+                  <li className="text-white font-normal text-base">
+                    <a href="/">Service 2</a>
+                  </li>
+                  <li className="text-white font-normal text-base">
+                    <a href="/">Service 3</a>
+                  </li>
+                  <li className="text-white font-normal text-base">
+                    <a href="/">Service 4</a>
+                  </li>
+                  <li className="text-white font-normal text-base">
+                    <a href="/">Service 5</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </a>
           <li className="text-white font-normal text-base">
             <Link to="/memberships">Memberships</Link>
           </li>

@@ -37,7 +37,7 @@ const OurValuesCom = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-full rounded-xl -mt-[30.5rem] lg:mt-56 -z-10 lg:z-0">
+        <div className="lg:w-full rounded-xl -mt-[30.5rem] lg:mt-56 -z-10 lg:z-0 lg:mr-0 flex justify-end items-end">
           <img src={BottomMaskImg} alt="BottomMaskImg" />
         </div>
       </div>

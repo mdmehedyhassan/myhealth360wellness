@@ -53,6 +53,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/packages" element={<Package />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/services/iv-infusion-bar" element={<IVInfusionBar />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

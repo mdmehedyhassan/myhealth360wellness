@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Img from "../../../img/IV-Infusion-Bar/cocktailbar.png";
-import { Dot } from "lucide-react";
 
 const options = [
   {
@@ -61,11 +60,11 @@ const CocktailBarCom = () => {
     <div className="w-full px-5">
       <div className="py-5 lg:py-20 pb-10 bg-[#D9E5DE] rounded-t-xl w-full ">
         <h1 className="text-[#062223] text-center font-bold text-3xl lg:text-5xl px-5 my-10">
-        IV Cocktail Bar
+          IV Cocktail Bar
         </h1>
         <div className="flex flex-col lg:flex-row justify-center items-center text-start ">
-          <div className="flex">
-            <div className="lg:bg-[#fff] p-5 grid grid-cols-1 lg:grid-cols-1 lg:border-2 border-[#0b5e62] rounded-xl lg:gap-5 gap-x-2 gap-y-2 ">
+          <div className="flex ">
+            <div className="lg:w-[220px] lg:bg-[#fff] p-5 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-[#0b5e62] rounded-xl lg:gap-[0.9rem] gap-x-2 gap-y-2 ">
               {options.map((option) => (
                 <button
                   key={option.title}
@@ -80,9 +79,9 @@ const CocktailBarCom = () => {
                 </button>
               ))}
             </div>
-            <div className="hidden md:block lg:block">
-              <div class="h-0 w-0 border-t-[25px] border-l-[35px] border-b-[25px] border-solid border-t-transparent border-b-transparent border-l-[#0B5E62] relative mt-8"></div>
-              <div class="h-0 w-0 border-t-[25px] border-l-[35px] border-b-[25px] border-solid border-t-transparent border-b-transparent border-l-[#fff] absolute -mt-[3.1rem] -ml-1"></div>
+            <div className="hidden md:hidden lg:block lg:mr-2">
+              <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-[#0B5E62] relative mt-8"></div>
+              <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-[#fff] absolute -mt-[2.5rem] -ml-1"></div>
             </div>
           </div>
 
