@@ -58,13 +58,13 @@ const CocktailBarCom = () => {
 
   return (
     <div className="w-full px-5">
-      <div className="py-5 lg:py-20 pb-10 bg-[#D9E5DE] rounded-t-xl w-full ">
+      <div className="py-5 lg:py-10 pb-16 lg:pb-[74px] bg-[#D9E5DE] rounded-t-xl w-full ">
         <h1 className="text-[#062223] text-center font-bold text-3xl lg:text-5xl px-5 my-10">
-          IV Cocktail Bar
+          What Concerns Would You Like To Address?
         </h1>
-        <div className="flex flex-col lg:flex-row justify-center items-center text-start ">
+        <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center text-start px-4 ">
           <div className="flex ">
-            <div className="lg:w-[220px] lg:bg-[#fff] p-5 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-[#0b5e62] rounded-xl lg:gap-[0.9rem] gap-x-2 gap-y-2 ">
+            <div className="lg:w-[250px] lg:bg-[#fff] p-5 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-[#0b5e62] rounded-xl gap-3 ">
               {options.map((option) => (
                 <button
                   key={option.title}
@@ -85,9 +85,16 @@ const CocktailBarCom = () => {
             </div>
           </div>
 
-          <div className="flex flex-col-reverse lg:flex-row bg-[#fff] border-2 border-[#90b6b5] rounded-xl  px-5 max-w-[1027px] mx-5">
-            <div className="flex flex-col justify-center items-start lg:w-[60%] rounded-lg px-5 py-6">
-              <h1 className="text-[#0B5E62] font-bold text-3xl pb-10 capitalize">
+          <div className="lg:w-[1027px] bg-[#fff] border-2 border-[#90b6b5] rounded-xl flex itmes-center p-5 lg:p-10">
+            <div className="flex flex-col justify-center items-start lg:w-[60%] ">
+              <div className="flex justify-center items-center mb-3 lg:hidden">
+                <img
+                  className="rounded-xl "
+                  src={selectedOption.img}
+                  alt={selectedOption.title}
+                />
+              </div>
+              <h1 className="text-[#0B5E62] font-bold text-2xl  lg:text-3xl  pb-[20px] capitalize ">
                 {selectedOption.title}
               </h1>
               <p>{selectedOption.content}</p>
@@ -97,7 +104,7 @@ const CocktailBarCom = () => {
                 </button>
               </a>
             </div>
-            <div className="flex justify-center items-center my-10 mr-5 ">
+            <div className="hidden lg:flex justify-center items-center ">
               <img
                 className="rounded-xl "
                 src={selectedOption.img}
