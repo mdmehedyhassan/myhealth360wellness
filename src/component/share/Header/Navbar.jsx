@@ -51,11 +51,16 @@ const Navbar = () => {
             <li className="text-white font-normal text-base">
               <Link to="/about">About</Link>
             </li>
-            <a href="/services">
-              <li className="text-white font-normal text-base">
-                <ul className="p-2">
+            <li className="text-white font-normal text-base relative">
+              <details
+                onClick={() => {
+                  navigate("/services");
+                }}
+              >
+                <summary>Our Services</summary>
+                <ul className="p-2 w-full rounded-lg">
                   <li className="text-white font-normal text-base">
-                    <a href="/services/iv-infusion-bar">iv-infusion-bar</a>
+                    <a href="/services/iv-infusion-bar">IV Infusion Bar</a>
                   </li>
                   <li className="text-white font-normal text-base">
                     <a href="/">Service 2</a>
@@ -70,8 +75,8 @@ const Navbar = () => {
                     <a href="/">Service 5</a>
                   </li>
                 </ul>
-              </li>
-            </a>
+              </details>
+            </li>
             <li className="text-white font-normal text-base">
               <Link to="/memberships">Memberships</Link>
             </li>
