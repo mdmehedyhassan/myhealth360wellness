@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../../img/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -94,30 +95,33 @@ const Navbar = () => {
           <li className="text-white font-normal text-base">
             <Link to="/about">About</Link>
           </li>
-          <a href="/services">
-            <li className="text-white font-normal text-base relative">
-              <details>
-                <summary>Our Services</summary>
-                <ul className="p-2 bg-gray-900 absolute w-full">
-                  <li className="text-white font-normal text-base">
-                    <a href="/services/iv-infusion-bar">iv-infusion-bar</a>
-                  </li>
-                  <li className="text-white font-normal text-base">
-                    <a href="/">Service 2</a>
-                  </li>
-                  <li className="text-white font-normal text-base">
-                    <a href="/">Service 3</a>
-                  </li>
-                  <li className="text-white font-normal text-base">
-                    <a href="/">Service 4</a>
-                  </li>
-                  <li className="text-white font-normal text-base">
-                    <a href="/">Service 5</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </a>
+          <li className="text-white font-normal text-base relative">
+            <details
+              onClick={() => {
+                navigate("/services");
+              }}
+            >
+              <summary>Our Services</summary>
+              <ul className="p-2 bg-gray-600 absolute w-full rounded-lg">
+                <li className="text-white font-normal text-base">
+                  <a href="/services/iv-infusion-bar">IV Infusion Bar</a>
+                </li>
+                <li className="text-white font-normal text-base">
+                  <a href="/">Service 2</a>
+                </li>
+                <li className="text-white font-normal text-base">
+                  <a href="/">Service 3</a>
+                </li>
+                <li className="text-white font-normal text-base">
+                  <a href="/">Service 4</a>
+                </li>
+                <li className="text-white font-normal text-base">
+                  <a href="/">Service 5</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+
           <li className="text-white font-normal text-base">
             <Link to="/memberships">Memberships</Link>
           </li>
