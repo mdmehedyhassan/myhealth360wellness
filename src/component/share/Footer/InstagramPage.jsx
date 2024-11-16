@@ -10,7 +10,7 @@ import instaImg7 from "../../../img/insta7.png";
 
 const InstagramPage = () => {
   return (
-    <div className="bg-[#E9F0EC] pb-1">
+    <div className="bg-[#E9F0EC] pb-1 -z-10">
       <h3 className="text-primary text-[28px] md:text-5xl font-bold leading-[120%] text-center mb-10">
         Our Instagram
       </h3>

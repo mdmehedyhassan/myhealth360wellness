@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import FeaturedServicesCom from "../FeaturedCom/FeaturedServicesCom";
 import TreatmentCom from "../TreatmentCom/TreatmentCom";
 import Banner from "../../../component/share/Header/Banner";
