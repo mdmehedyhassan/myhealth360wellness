@@ -10,17 +10,17 @@ const AboutDoctorCom = () => {
         </div>
         <div className="">
           <div className="flex my-5 ">
-            <h1 className="text-3xl font-bold lg:text-5xl text-[#062223]">
+            <h1 className="text-3xl font-bold lg:text-5xl text-textPrimary">
               About Doctor Andry 
             </h1>
-            <h2 className=" text-sm lg:text-md mt-4 text-[#758081]">
+            <h2 className=" text-sm lg:text-md mt-4 text-textSecondary">
               MD,FACP, CPHIMS
             </h2>
           </div>
           <div className="flex justify-center items-center lg:hidden mb-4">
             <img className="rounded-xl " src={aboutImg} alt="about-img" />
           </div>
-          <p className="text-[#758081] text-sm mb-5 leading-[160%]">
+          <p className="text-textSecondary text-sm mb-5 leading-[160%]">
             Meet and consult with our American Board of Internal Certified
             Internal Medicine specialist, Dr. Umbrine Fatima with more than 20
             years of experience in this field. Dr. Fatima received her medical
@@ -32,7 +32,7 @@ const AboutDoctorCom = () => {
             and holistic approaches to deliver personalized medicine best suited
             to your personal goals of health and wellness.
           </p>
-          <p className="text-[#758081] text-sm mb-5 leading-[160%]">
+          <p className="text-textSecondary text-sm mb-5 leading-[160%]">
             Dr. Fatima is also a clinical informaticist and a Certified
             Professional in Health Information Management and Systems with 20+
             years of experience in healthcare leadership, including HIPAA
@@ -43,7 +43,7 @@ const AboutDoctorCom = () => {
             recently been appointed to the post of President of the Buffalo
             District of the New York American College of Physicians.
           </p>
-          <button className="text-[#0B5E62] text-sm lg:text-lg font-bold py-4 px-16 bg-transparent border border-[#0B5E62] rounded-full hover:bg-[#0B5E62] hover:text-white">
+          <button className="text-primary text-sm lg:text-lg font-bold py-4 px-16 bg-transparent border border-primary rounded-full hover:bg-primary hover:text-white">
             Learn More
           </button>
         </div>

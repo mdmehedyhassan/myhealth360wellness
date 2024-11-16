@@ -196,14 +196,14 @@ const TreatmentCom = () => {
         </h1>
         <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center text-start px-4 ">
           <div className="flex ">
-            <div className="lg:w-[220px] lg:bg-[#fff] p-7 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-[#0b5e62] rounded-xl gap-x-2 gap-y-6 ">
+            <div className="lg:w-[220px] lg:bg-[#fff] p-7 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-primary rounded-xl gap-x-2 gap-y-6 ">
               {options.map((option) => (
                 <button
                   key={option.title}
                   className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full transition-colors duration-300 capitalize ${
                     selectedOption.title === option.title
-                      ? "bg-[#0B5E62] text-white"
-                      : "bg-white text-[#0B5E62] border border-[#A2C1C0]"
+                      ? "bg-primary text-white"
+                      : "bg-white text-primary border border-[#A2C1C0]"
                   }`}
                   onClick={() => setSelectedOption(option)}
                 >
@@ -212,12 +212,12 @@ const TreatmentCom = () => {
               ))}
             </div>
             <div className="hidden md:hidden lg:block lg:mr-2">
-              <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-[#0B5E62] relative mt-8"></div>
+              <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-primary relative mt-8"></div>
               <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-[#fff] absolute -mt-[2.5rem] -ml-1"></div>
             </div>
           </div>
 
-          <div className="lg:w-[1027px] bg-[#fff] border-2 border-[#90b6b5] rounded-xl p-5 lg:p- ">
+          <div className="lg:w-[1027px] bg-[#fff] border-2 border-primary  rounded-xl p-5 lg:p- ">
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-start items-center lg:flex-row">
               <div className="lg:p-5 ">
                 <div className="mb-5 lg:mb-0 flex justify-center items-center lg:p-5 lg:hidden ">
@@ -227,12 +227,12 @@ const TreatmentCom = () => {
                     alt={selectedOption.title}
                   />
                 </div>
-                <h1 className="text-[#0B5E62] font-bold text-2xl lg:text-3xl mb-5 capitalize">
+                <h1 className="text-primary font-bold text-2xl lg:text-3xl mb-5 capitalize">
                   {selectedOption.title}
                 </h1>
                 <div className="grid grid-cols-1 justify-start items-center gap-2">
                   {selectedOption.accordionData.map((item) => (
-                    <div key={item.id} className="border-[#0B5E62] rounded-lg">
+                    <div key={item.id} className="border-primary rounded-lg">
                       <div className="collapse collapse-arrow bg-[#D9E5DE]">
                         <input
                           type="radio"

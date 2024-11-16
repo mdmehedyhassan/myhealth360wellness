@@ -25,7 +25,7 @@ const OurValuesCom = () => {
           <h1 className="text-[#fff] text-center font-bold text-3xl lg:text-5xl px-5 my-10">
             Our Values
           </h1>
-          <div className="flex flex-col lg:flex-row justify-center items-center">
+          <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center">
             <div className="w-full">
               <IconCard image={CompassionImg} title="Compassion" />
             </div>

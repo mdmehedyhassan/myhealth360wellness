@@ -50,10 +50,10 @@ export default function FeaturedServicesCom() {
     <div className="py-30 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <p className="text-base font-semibold text-[#0B5E62]">
+          <p className="text-base font-semibold text-primary">
             Schedule a Consult
           </p>
-          <h2 className="mt-2 text-3xl lg:text-5xl font-bold text-[#062223]">
+          <h2 className="mt-2 text-3xl lg:text-5xl font-bold text-textSecondary">
             Our Featured Services
           </h2>
         </div>
@@ -61,7 +61,7 @@ export default function FeaturedServicesCom() {
           <div className="flex justify-between items-center">
             <button
               onClick={prevSlide}
-              className="z-10 p-2 rounded-full  bg-[#0B5E62] shadow-md text-white"
+              className="z-10 p-2 rounded-full  bg-primary shadow-md text-white"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
@@ -102,7 +102,7 @@ export default function FeaturedServicesCom() {
             </div>
             <button
               onClick={nextSlide}
-              className="z-10 p-2 rounded-full bg-[#0B5E62] shadow-md text-white"
+              className="z-10 p-2 rounded-full bg-primary shadow-md text-white"
             >
               <ChevronRight className="w-6 h-6" />
             </button>

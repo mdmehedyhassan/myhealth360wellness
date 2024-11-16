@@ -9,7 +9,7 @@ const MembershipCom = () => {
         {/* Card 1 */}
         <div className="bg-white rounded-[21px] border-[1px] border-[#0B5E6266] p-6 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
           <div className="pl-5 lg:w-1/2 lg:pr-10">
-            <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
+            <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-primary m-2">
               Memberships
             </h3>
             <h2 className="text-[24px] lg:text-5xl leading-[120%] font-bold text-[#062223] mb-4">
@@ -23,7 +23,7 @@ const MembershipCom = () => {
               build muscle, lose fat, or recover from an injury or disability;
               our gym has everything you need to succeed.
             </p>
-            <button className="bg-[#0B5E62] text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full hover:bg-[#084a4e] transition-colors">
+            <button className="bg-primary text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full hover:bg-primary hover:opacity-80 transition-colors">
               Get It Now
             </button>
           </div>
@@ -45,7 +45,7 @@ const MembershipCom = () => {
             />
           </div>
           <div className="lg:w-1/2 lg:pr-10 order-2 lg:order-1">
-            <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-[#0B5E62] m-2">
+            <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-primary m-2">
               Memberships
             </h3>
             <h2 className="text-[24px] lg:text-5xl leading-[120%] font-bold text-[#062223] mb-4">
@@ -58,7 +58,7 @@ const MembershipCom = () => {
               advanced muscle toning and machine-assisted rehab devices
               available.
             </p>
-            <button className="bg-[#0B5E62] text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full hover:bg-[#084a4e] transition-colors">
+            <button className="bg-primary text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full hover:bg-primary hover:opacity-80  transition-colors">
               Get It Now
             </button>
           </div>

@@ -16,11 +16,12 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  // [#062223]
 
   return (
     <div
       className={`navbar fixed top-0 left-0 right-0 px-2 md:px-16 border-b-2 border-b-gray-400 ${
-        isScrolled ? "bg-[#062223] z-50" : "bg-transparent"
+        isScrolled ? "bg-primary z-50" : "bg-transparent"
       } transition-colors duration-500 ease-in-out`}
     >
       <div className="navbar-start">
