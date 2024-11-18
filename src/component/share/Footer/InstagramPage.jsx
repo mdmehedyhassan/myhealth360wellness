@@ -14,7 +14,7 @@ const InstagramPage = () => {
       <h3 className="text-primary text-[28px] md:text-5xl font-bold leading-[120%] text-center mb-10">
         Our Instagram
       </h3>
-      <Marquee>
+      <Marquee style={{zIndex: 1}}>
         <img className="mr-1" src={instaImg1} alt="" />
         <img className="mr-1" src={instaImg2} alt="" />
         <img className="mr-1" src={instaImg3} alt="" />
