@@ -34,12 +34,12 @@ const testimonials = [
 
 const TestimonialsCom = () => {
   return (
-    <div className="bg-[#E7F0EC] py-16 sm:py-24 lg:py-32 px-5">
+    <div className="bg-bgPrimary py-16 sm:py-24 lg:py-32 px-5">
       <div className="mx-auto max-w-7xl">
         <h3 className="text-primary text-lg font-bold mb-2 text-center leading-[150%]">
           Testimonials
         </h3>
-        <h2 className="text-[#062223] text-3xl sm:text-4xl lg:text-5xl font-bold mb-14 lg:mb-28 text-center leading-[120%]">
+        <h2 className="text-textPrimary text-3xl sm:text-4xl lg:text-5xl font-bold mb-14 lg:mb-28 text-center leading-[120%]">
           What Our Loving Customers Say
         </h2>
 

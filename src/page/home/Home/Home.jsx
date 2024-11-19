@@ -9,7 +9,7 @@ import BannerBottom from "../BannerBottom/BannerBottom";
 
 function Home() {
   return (
-    <div>
+    <div className="bg-bgPrimary">
       <Banner />
       <BannerBottom />
       <FeaturedServicesCom />

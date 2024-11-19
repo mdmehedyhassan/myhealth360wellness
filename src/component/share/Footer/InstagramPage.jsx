@@ -10,11 +10,11 @@ import instaImg7 from "../../../img/insta7.png";
 
 const InstagramPage = () => {
   return (
-    <div className="bg-[#E9F0EC] pb-1 -z-10">
-      <h3 className="text-primary text-[28px] md:text-5xl font-bold leading-[120%] text-center mb-10">
+    <div className="bg-bgPrimary pb-1 -z-10">
+      <h3 className="text-textPrimary text-[28px] md:text-5xl font-bold leading-[120%] text-center mb-10">
         Our Instagram
       </h3>
-      <Marquee style={{zIndex: 1}}>
+      <Marquee style={{ zIndex: 1 }}>
         <img className="mr-1" src={instaImg1} alt="" />
         <img className="mr-1" src={instaImg2} alt="" />
         <img className="mr-1" src={instaImg3} alt="" />

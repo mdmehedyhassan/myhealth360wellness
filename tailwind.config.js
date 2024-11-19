@@ -11,13 +11,17 @@ module.exports = {
   theme: {
     extend: {
       colors:{
+        white:"var( --color-white)",
+        black:"var(--color-black)",        
         primary:"var(--color-primary)",
+        primaryAccent:"var(--color-primary-accent)",
         secondary:"var(--color-secondary)",
         bgPrimary:"var(--color-bg-primary)",
+        bgSecondary:"var(--color-bg-secondary)",
         textPrimary:"var(--color-text-primary)",
         textSecondary:"var(--color-text-secondary)",
-        textBase:"var(--color-text-base)",
-        borderPrimary:"var(--color-border)",
+        borderPrimary:"var(--color-border-primary)",
+        borderSecondary:"var(--color-border-secondary)",
       }
     },
   },

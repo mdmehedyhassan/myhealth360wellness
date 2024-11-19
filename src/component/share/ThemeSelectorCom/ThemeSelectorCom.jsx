@@ -2,7 +2,7 @@ import React from "react";
 
 function ThemeSelectorCom({ themes, setTheme }) {
   return (
-    <div style={{zIndex: 50}} className="bg-primary w-fit p-5 fixed top-[50%] left-0 -translate-x-20 hover:translate-x-0 rounded-r-xl transition-all ease-in-out duration-1000	">
+    <div className="bg-primary w-fit p-5 fixed top-[50%] left-0 -translate-x-16 hover:translate-x-0 rounded-r-xl transition-all ease-in-out duration-1000	z-50">
       {themes.map((t) => (
         <div
           key={t}

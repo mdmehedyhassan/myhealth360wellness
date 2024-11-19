@@ -17,29 +17,39 @@ code {
 
 @layer base {
   :root {
+    --color-white: #ffffff;
+    --color-black: #000000;
     --color-primary: #0b5e62;
+    --color-primary-accent: #010505;
     --color-secondary: #e5c466;
-    --color-border: #1d2939;
+    --color-bg-primary: #E9F0EC;
+    --color-bg-secondary: #D9E5DE;
     --color-text-primary: #062223;
-    --color-text-secondary: #062223;
-    --color-text-base: #fff;
-    --color-bg-primary: #fff;
+    --color-text-secondary: #485657;
+    --color-border-primary: #0B5E62;
+    --color-border-secondary: ;
   }
 }
 
 .theme-base {
   --color-primary: #0b5e62;
+  --color-primary-accent: #010505;
   --color-secondary: #e5c466;
+  --color-bg-primary: #E9F0EC;
+  --color-bg-secondary: #D9E5DE;
+  --color-text-primary: #062223;
+  --color-text-secondary: #485657;
+  --color-border-primary: #0B5E62;
+  --color-border-secondary: ;
 }
-.theme-black {
-  --color-primary: #000;
-  --color-secondary: #808080;
-}
-.theme-orange {
-  --color-primary: #f59402;
-  --color-secondary: #f594029f;
-}
-.theme-purple {
-  --color-primary: #df0bff;
-  --color-secondary: #a203f89f;
+.theme-pink {
+  --color-primary: #875dbb;
+  --color-primary-accent: #452a6d;
+  --color-secondary: #ec488b;
+  --color-bg-primary: #ece9f0;
+  --color-bg-secondary: #e4dbec;
+  --color-text-primary: #130227;
+  --color-text-secondary: #625c69;
+  --color-border-primary: #b5adbe;
+  --color-border-secondary: ;
 }

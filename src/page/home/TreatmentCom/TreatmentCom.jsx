@@ -190,20 +190,20 @@ const TreatmentCom = () => {
 
   return (
     <div className="w-full px-5">
-      <div className="py-5 lg:py-10 pb-16 lg:pb-32 bg-[#D9E5DE] rounded-xl w-full ">
-        <h1 className="text-[#062223] text-center font-bold text-3xl lg:text-5xl px-5 my-10">
+      <div className="py-5 lg:py-10 pb-16 lg:pb-32 bg-bgSecondary rounded-xl w-full ">
+        <h1 className="text-textPrimary text-center font-bold text-3xl lg:text-5xl px-5 my-10">
           What Concerns Would You Like To Address?
         </h1>
         <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center text-start px-4 ">
           <div className="flex ">
-            <div className="lg:w-[220px] lg:bg-[#fff] p-7 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-primary rounded-xl gap-x-2 gap-y-6 ">
+            <div className="lg:w-[220px] lg:bg-white p-7 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-borderPrimary rounded-xl gap-x-2 gap-y-6 ">
               {options.map((option) => (
                 <button
                   key={option.title}
                   className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full transition-colors duration-300 capitalize ${
                     selectedOption.title === option.title
                       ? "bg-primary text-white"
-                      : "bg-white text-primary border border-[#A2C1C0]"
+                      : "bg-white text-primary border border-borderPrimary"
                   }`}
                   onClick={() => setSelectedOption(option)}
                 >
@@ -212,12 +212,12 @@ const TreatmentCom = () => {
               ))}
             </div>
             <div className="hidden md:hidden lg:block lg:mr-2">
-              <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-primary relative mt-8"></div>
+              <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-borderPrimary relative mt-8"></div>
               <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-[#fff] absolute -mt-[2.5rem] -ml-1"></div>
             </div>
           </div>
 
-          <div className="lg:w-[1027px] bg-[#fff] border-2 border-primary  rounded-xl p-5 lg:p- ">
+          <div className="lg:w-[1027px] bg-white border-2 border-borderPrimary  rounded-xl p-3 lg:p- ">
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-start items-center lg:flex-row">
               <div className="lg:p-5 ">
                 <div className="mb-5 lg:mb-0 flex justify-center items-center lg:p-5 lg:hidden ">
@@ -232,18 +232,21 @@ const TreatmentCom = () => {
                 </h1>
                 <div className="grid grid-cols-1 justify-start items-center gap-2">
                   {selectedOption.accordionData.map((item) => (
-                    <div key={item.id} className="border-primary rounded-lg">
-                      <div className="collapse collapse-arrow bg-[#D9E5DE]">
+                    <div
+                      key={item.id}
+                      className="border-borderPrimary rounded-lg"
+                    >
+                      <div className="collapse collapse-arrow bg-bgSecondary">
                         <input
                           type="radio"
                           name="my-accordion-2"
                           defaultChecked={item.title === "overall"}
                         />
-                        <div className="text-black flex justify-start items-center collapse-title text-xl font-medium capitalize">
+                        <div className="text-textPrimary flex justify-start items-center collapse-title text-xl font-medium capitalize">
                           <Dot size={32} /> {item.title}
                           {selectedOption.title === "face"}
                         </div>
-                        <div className="collapse-content text-start text-black">
+                        <div className="collapse-content text-start text-textSecondary">
                           <p>{item.content}</p>
                         </div>
                       </div>

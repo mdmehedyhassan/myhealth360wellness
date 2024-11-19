@@ -72,7 +72,7 @@ const IVInfusionBar = Loadable({
   ),
 });
 
-const themes = ["base", "black", "orange", "purple"];
+const themes = ["base", "pink"];
 
 function App() {
   const [theme, setTheme] = useState(themes[0]);
