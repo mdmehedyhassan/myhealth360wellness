@@ -6,8 +6,8 @@ import Loadable from "react-loadable";
 import { Route, Routes } from "react-router-dom";
 import ThemeSelectorCom from "./component/share/ThemeSelectorCom/ThemeSelectorCom";
 
-const Header = Loadable({
-  loader: () => import("./component/share/Header/Header"),
+const Navbar = Loadable({
+  loader: () => import("./component/share/Navbar/Navbar"),
   loading: () => <div className="class-for-svg-img">Loading...</div>,
 });
 const Footer = Loadable({
@@ -80,7 +80,7 @@ function App() {
   return (
     <div className={`theme-${theme}`}>
       <ThemeSelectorCom themes={themes} setTheme={setTheme} className="z-50" />
-      <Header />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

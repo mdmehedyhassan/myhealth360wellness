@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../../img/logo.png";
-import InstagramPage from "./InstagramPage";
+import InstagramCom from "./InstagramCom/InstagramCom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -11,7 +11,7 @@ import {
 function Footer() {
   return (
     <div>
-      <InstagramPage></InstagramPage>
+      <InstagramCom></InstagramCom>
       <div className="bg-primary">
         <footer className="footer text-base-content max-w-7xl mx-auto pt-[69px] pb-[50px] px-6 md:px-0">
           <nav className="text-textPrimary ">
