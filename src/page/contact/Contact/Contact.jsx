@@ -1,5 +1,5 @@
 import React from "react";
-import ContactBanner from "./ContactBanner/ContactBanner";
+import ContactBanner from "../ContactBanner/ContactBanner";
 import {
   FaPhone,
   FaRegMessage,

@@ -1,6 +1,6 @@
 import React from "react";
-import PackagesBanner from "./PackagesBanner";
-import backgroundImg from "../../../img/packagesbg.png";
+import PackagesBanner from "../PackagesBanner/PackagesBanner";
+import backgroundImg from "../../../img/Packages/packages-bg.png";
 
 const Package = () => {
   return (

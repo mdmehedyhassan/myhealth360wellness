@@ -1,7 +1,7 @@
 import React from "react";
-import banner from "../../../../img/Contact/contact-baanner-img.png";
+import banner from "../../../img/Contact/contact-banner-img.png";
 
-const HomeBanner = () => {
+const ContactBanner = () => {
   return (
     <div className="w-full min-h-[600px] relative inline-block bg-primary">
       <div
@@ -24,4 +24,4 @@ const HomeBanner = () => {
   );
 };
 
-export default HomeBanner;
+export default ContactBanner;
