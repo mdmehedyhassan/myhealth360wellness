@@ -1,16 +1,16 @@
 import React from "react";
+import HomeBanner from "../HomeBanner/HomeBanner";
+import BannerBottom from "../BannerBottom/BannerBottom";
 import FeaturedServicesCom from "../FeaturedCom/FeaturedServicesCom";
 import TreatmentCom from "../TreatmentCom/TreatmentCom";
-import Banner from "../../../component/share/Header/Banner";
-import TestimonialsCom from "../../../component/share/TestimonialsCom/TestimonialsCom";
-import MembershipCom from "../../../component/share/MembershipCom/MembershipCom";
 import AboutDoctorCom from "../../../component/share/AboutDoctorCom/AboutDoctorCom";
-import BannerBottom from "../BannerBottom/BannerBottom";
+import MembershipCom from "../../../component/share/MembershipCom/MembershipCom";
+import TestimonialsCom from "../../../component/share/TestimonialsCom/TestimonialsCom";
 
 function Home() {
   return (
     <div className="bg-bgPrimary">
-      <Banner />
+      <HomeBanner />
       <BannerBottom />
       <FeaturedServicesCom />
       <TreatmentCom />

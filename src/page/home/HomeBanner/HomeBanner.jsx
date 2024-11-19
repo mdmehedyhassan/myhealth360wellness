@@ -2,7 +2,7 @@ import React from "react";
 import banner from "../../../img/Home/home-banner-img.png";
 import { FaCalendarAlt } from "react-icons/fa";
 
-const Banner = () => {
+const HomeBanner = () => {
   return (
     <div className="w-full min-h-screen relative inline-block bg-primary">
       <div
@@ -33,4 +33,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default HomeBanner;
