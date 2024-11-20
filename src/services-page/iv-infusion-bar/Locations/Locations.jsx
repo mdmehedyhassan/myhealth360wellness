@@ -95,7 +95,7 @@ export default function Locations() {
                         className="w-full  object-cover"
                       />
                       <div
-                        className="absolute bg-primary p-4 top-5 right-6 text-white rounded-lg tooltip tooltip-left "
+                        className="absolute bg-primary p-2 lg:p-4 top-5 right-6 text-white rounded-lg tooltip tooltip-left "
                         data-tip="View On Map"
                       >
                         <img src={LocationIcon} alt="location-icon" />
