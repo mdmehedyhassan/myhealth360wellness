@@ -10,7 +10,7 @@ import Locations from "../Locations/Locations";
 
 function IVInfusionBar() {
   return (
-    <div>
+    <div className="bg-bgPrimary">
       <IvInfusionBarBannerCom />
       <TherapyCom />
       <WhyShouldCom />
