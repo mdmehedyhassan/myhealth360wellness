@@ -1,24 +1,30 @@
 import React from "react";
-import HealthImg from "../../../img/About/health360.png";
+import HealthImg from "../../../img/Shared/health-360-img.png";
+import SupportImg from "../../../img/Shared/support-img.png";
 
 const Health360Com = () => {
   return (
-    <div className="py-10 pb-16 lg:pb-32 mx-5 flex justify-center items-center ">
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] gap-10">
+    <div className="py-10 lg:py-16 pb-10 lg:pb-36 mx-5 flex justify-center items-center ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] gap-16">
         {/* Text Section */}
-        <div className="w-full">
-          <h2 className="text-[28px] md:text-5xl font-bold text-[#062223] mb-4">
+        <div className="lg:ml-5 w-full">
+          <h2 className="text-[28px] md:text-5xl font-bold text-textPrimary mb-4">
             Why Choose My Health 360?
           </h2>
           {/* Image Section */}
-          <div className="w-full lg:hidden">
-            <img
-              src={HealthImg}
-              alt="HealthImg"
-              className="rounded-lg object-cover w-full h-full"
-            />
+          <div className="relative flex justify-center items-center mb-10 lg:hidden">
+            <img className="rounded-xl" src={HealthImg} alt="about-img" />
+            <div className="absolute top-0 left-0 bg-primary text-white rounded-md w-[10rem] h-[3.5rem] ">
+              <div className="w-full h-full flex justify-center items-center gap-2 mx-2">
+                {/* <div className="w-[4rem] h-[3.5rem] flex justify-center items-center bg-bgSecondary rounded-md"> */}
+                <img src={SupportImg} alt="" />
+                {/* </div> */}
+                <h1 className="text-3xl font-bold">24</h1>
+                <p className="text-[10px] text-wrap">Hours Customer Support</p>
+              </div>
+            </div>
           </div>
-          <p className="text-[#333] mb-6 leading-relaxed">
+          <p className="text-textSecondary mb-6 leading-relaxed">
             My Health 360 — Concierge Care offers annual membership-based
             enhanced access to holistic and integrative wellness care customized
             to your personal goals. We take a holistic approach to taking care
@@ -37,12 +43,17 @@ const Health360Com = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full hidden lg:block  p-16">
-          <img
-            src={HealthImg}
-            alt="HealthImg"
-            className="rounded-lg object-cover w-full h-full"
-          />
+        <div className=" hidden lg:block ml-5 relative ">
+          <img className="rounded-xl" src={HealthImg} alt="about-img" />
+          <div className="absolute top-0 left-0 bg-primary text-white rounded-md w-56 h-20 ">
+            <div className="w-full h-full flex justify-center items-center gap-2 mx-3">
+              <div className="w-[4rem] h-[3.5rem] flex justify-center items-center bg-bgSecondary rounded-md">
+                <img src={SupportImg} alt="" />
+              </div>
+              <h1 className="text-4xl font-bold">24</h1>
+              <p className="text-xs text-wrap">Hours Customer Support</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import Health360Com from "../../../component/share/Health360Com/Health360Com";
 
 function Services() {
   return (
-    <div>
+    <div className="bg-bgPrimary">
       <ServicesBannerCom />
       <OurServicesCom />
       <MembershipCom />
