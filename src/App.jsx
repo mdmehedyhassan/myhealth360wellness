@@ -72,14 +72,12 @@ const IVInfusionBar = Loadable({
   ),
 });
 
-const themes = ["base", "pink"];
-
 function App() {
-  const [theme, setTheme] = useState(themes[0]);
+  const [theme, setTheme] = useState();
 
   return (
     <div className={`theme-${theme}`}>
-      <ThemeSelectorCom themes={themes} setTheme={setTheme} className="z-50" />
+      <ThemeSelectorCom setTheme={setTheme} className="z-50" />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
