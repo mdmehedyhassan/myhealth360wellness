@@ -15,7 +15,7 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row gap-[89px]">
           {/* Contact Information */}
           <div className="flex flex-col gap-[30px]">
-            <div className="flex items-center gap-[26px] w-[325px] md:w-[453px] p-[17px] py-5 border-borderPrimary border-[1px] rounded-[10px]">
+            <div className="flex items-center gap-[26px] w-[385px] md:w-[453px] p-[17px] py-5 border-borderPrimary border-[1px] rounded-[10px]">
               <div className="w-20 h-20 bg-primary hover:bg-primaryAccent flex justify-center items-center rounded-full text-white text-2xl">
                 <FaPhone />
               </div>

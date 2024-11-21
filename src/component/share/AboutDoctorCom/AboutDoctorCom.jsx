@@ -15,7 +15,7 @@ const AboutDoctorCom = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex my-5 ">
+          <div className="lg:flex my-5">
             <h1 className="text-3xl font-bold lg:text-5xl text-textPrimary">
               About Doctor Andry 
             </h1>
