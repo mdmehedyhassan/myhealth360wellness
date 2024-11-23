@@ -117,12 +117,29 @@ function ThemeSelectorCom({ setTheme }) {
         // Reset to default values when custom is false
         const defaultPrimary = "#0b5e62";
         const defaultSecondary = "#e5c466";
+        const defaultPrimaryAccent = "#010505";
+        const defaultBgPrimary = "#E9F0EC";
+        const defaultBgSecondary = "#D9E5DE";
+        const defaultTextPrimary = "#062223";
+        const defaultTextSecondary = "#485657";
+        const defaultBorderPrimary = "#e5c466";
         setPrimaryColor(defaultPrimary);
         setSecondaryColor(defaultSecondary);
+        setPrimaryAccent(defaultPrimaryAccent);
+        setBgPrimary(defaultBgPrimary);
+        setBgSecondary(defaultBgSecondary);
+        setTextPrimary(defaultTextPrimary);
+        setTextSecondary(defaultTextSecondary);
+        setBorderPrimary(defaultBorderPrimary);
         updateColorVariable("--color-primary", defaultPrimary);
         updateColorVariable("--color-secondary", defaultSecondary);
+        updateColorVariable("--color-primary-accent", defaultPrimaryAccent);
+        updateColorVariable("--color-bg-primary", defaultBgPrimary);
+        updateColorVariable("--color-bg-secondary", defaultBgSecondary);
+        updateColorVariable("--color-text-primary", defaultTextPrimary);
+        updateColorVariable("--color-text-secondary", defaultTextSecondary);
+        updateColorVariable("--color-border-primary", defaultBorderPrimary);
       }
-
       return newCustomState;
     });
   };
