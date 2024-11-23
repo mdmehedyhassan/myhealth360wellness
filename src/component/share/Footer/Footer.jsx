@@ -13,8 +13,8 @@ function Footer() {
     <div>
       <InstagramCom></InstagramCom>
       <div className="bg-primary">
-        <footer className="footer text-base-content max-w-7xl mx-auto pt-[69px] pb-[50px] px-6 md:px-0">
-          <nav className="text-textPrimary ">
+        <footer className="footer text-base-content max-w-7xl mx-auto pt-[69px] pb-[50px] px-6 md:px-0 ">
+          <nav className="text-white ">
             <h3 className="text-xl font-bold mb-3">Weekly Newsletter</h3>
             <p className="max-w-sm text-[15px] font-normal mb-12">
               Subscribe to our newsletter to receive the latest updates,
@@ -36,7 +36,7 @@ function Footer() {
               </div>
             </div>
           </nav>
-          <nav className="text-textPrimary">
+          <nav className="text-white">
             <h6 className="font-bold text-xl mb-10">Quick links</h6>
             <a href="/" className="link link-hover text-base font-normal mb-4">
               About
@@ -60,7 +60,7 @@ function Footer() {
               Contact
             </a>
           </nav>
-          <nav className="text-textPrimary">
+          <nav className="text-white">
             <h6 className="font-bold text-xl mb-10">Additional Services</h6>
             <a href="/" className="link link-hover text-base font-normal mb-4">
               Urinary Incontinence
@@ -84,7 +84,7 @@ function Footer() {
               Cellulite
             </a>
           </nav>
-          <nav className="text-textPrimary">
+          <nav className="text-white">
             <h6 className="font-bold text-xl mb-10">Contact</h6>
             <a href="/" className="link link-hover text-base font-normal mb-5">
               012 3456 7890
@@ -105,7 +105,7 @@ function Footer() {
         </footer>
         <div className="border-borderPrimary border-t pt-7 pb-8 px-6 md:px-0">
           <footer className="footer text-base-content max-w-7xl mx-auto">
-            <aside className="grid-flow-col items-center text-textPrimary">
+            <aside className="grid-flow-col items-center text-white">
               <p className="text-[12px] font-normal">
                 Copyright © 2024
                 <span className="text-white font-semibold">
@@ -115,7 +115,7 @@ function Footer() {
               </p>
             </aside>
             <nav className="md:place-self-center md:justify-self-end">
-              <div className="flex gap-14 text-textPrimary">
+              <div className="flex gap-14 text-white">
                 <a href="/" className="text-sm font-normal link link-hover">
                   Privacy
                 </a>
