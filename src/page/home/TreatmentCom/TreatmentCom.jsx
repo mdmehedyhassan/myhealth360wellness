@@ -213,7 +213,7 @@ const TreatmentCom = () => {
             </div>
             <div className="hidden md:hidden lg:block lg:mr-2">
               <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-borderPrimary relative mt-8"></div>
-              <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-[#fff] absolute -mt-[2.5rem] -ml-1"></div>
+              <div className="h-0 w-0 border-t-[20px] border-l-[30px] border-b-[20px] border-solid border-t-transparent border-b-transparent border-l-white absolute -mt-[2.5rem] -ml-1"></div>
             </div>
           </div>
 
