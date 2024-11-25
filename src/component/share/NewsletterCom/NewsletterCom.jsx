@@ -15,7 +15,7 @@ const NewsletterCom = () => {
           <div className="flex flex-col lg:flex-row justify-center items-center gap-4 my-3">
             <input
               type="text"
-              placeholder="Type here"
+              placeholder="Enter email address"
               className="input w-full lg:max-w-xs h-14 bg-white rounded-md"
             />
             <button className="py-4 px-2 w-full lg:w-[25%] bg-white text-primary text-md font-semibold rounded-md">
