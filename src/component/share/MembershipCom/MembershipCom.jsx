@@ -4,7 +4,7 @@ import medicalgymImg from "../../../img/Home/medical-gym.svg";
 
 const MembershipCom = () => {
   return (
-    <div className="px-5 lg:px-20 bg-bgSecondary rounded-xl mx-5 mt-32 mb-32">
+    <div className="px-5 lg:px-20 bg-bgSecondary rounded-xl mx-2 md:mx-5 lg:mx-5 mt-32 mb-32">
       <div className="grid gap-10 lg:gap-20 max-w-7xl mx-auto">
         {/* Card 1 */}
         <div className="bg-white rounded-[21px] border-[2px] border-borderPrimary p-6 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
