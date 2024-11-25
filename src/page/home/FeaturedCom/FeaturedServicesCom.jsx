@@ -47,7 +47,7 @@ export default function FeaturedServicesCom() {
   };
 
   return (
-    <div className="py-30 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div className="py-28 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <p className="text-base font-semibold text-primary">

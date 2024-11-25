@@ -11,7 +11,7 @@ const options = [
         id: 1,
         title: "overall",
         content:
-          "Acne / Acne Scars, pigmentation, wrinkles, photoaging : Micro botox, MORPHEUS8, PRP, Microneedling, IPL / Photo-facial",
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, vel!",
       },
       {
         id: 2,
@@ -41,7 +41,7 @@ const options = [
         id: 1,
         title: "overall",
         content:
-          "Acne / Acne Scars, pigmentation, wrinkles, photoaging : Micro botox, MORPHEUS8, PRP, Microneedling, IPL / Photo-facial",
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, vel!",
       },
       {
         id: 2,
@@ -71,7 +71,7 @@ const options = [
         id: 1,
         title: "overall",
         content:
-          "Acne / Acne Scars, pigmentation, wrinkles, photoaging : Micro botox, MORPHEUS8, PRP, Microneedling, IPL / Photo-facial",
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, vel!",
       },
       {
         id: 2,
@@ -101,7 +101,7 @@ const options = [
         id: 1,
         title: "overall",
         content:
-          "Acne / Acne Scars, pigmentation, wrinkles, photoaging : Micro botox, MORPHEUS8, PRP, Microneedling, IPL / Photo-facial",
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, vel!",
       },
       {
         id: 2,
@@ -131,7 +131,7 @@ const options = [
         id: 1,
         title: "overall",
         content:
-          "Acne / Acne Scars, pigmentation, wrinkles, photoaging : Micro botox, MORPHEUS8, PRP, Microneedling, IPL / Photo-facial",
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, vel!",
       },
       {
         id: 2,
@@ -161,7 +161,7 @@ const options = [
         id: 1,
         title: "overall",
         content:
-          "Acne / Acne Scars, pigmentation, wrinkles, photoaging : Micro botox, MORPHEUS8, PRP, Microneedling, IPL / Photo-facial",
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, vel!",
       },
       {
         id: 2,
@@ -246,7 +246,7 @@ const TreatmentCom = () => {
                           <Dot size={32} /> {item.title}
                           {selectedOption.title === "face"}
                         </div>
-                        <div className="collapse-content text-start text-textSecondary">
+                        <div className="collapse-content text-start text-textSecondary text-wrap">
                           <p>{item.content}</p>
                         </div>
                       </div>
