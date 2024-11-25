@@ -80,7 +80,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder=""
-                  className="input input-bordered bg-white border-borderPrimary border-[1px] rounded"
+                  className="input bg-white border-borderPrimary border-[1px] rounded"
                   required
                 />
               </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                   <input
                     type="number"
                     placeholder=""
-                    className="input input-bordered bg-white w-full border-borderPrimary border-[1px] rounded"
+                    className="input bg-white w-full border-borderPrimary border-[1px] rounded"
                     required
                   />
                 </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                   <input
                     type="email"
                     placeholder=""
-                    className="input input-bordered bg-white w-full border-borderPrimary border-[1px] rounded"
+                    className="input bg-white w-full border-borderPrimary border-[1px] rounded"
                     required
                   />
                 </div>
@@ -120,7 +120,7 @@ const Contact = () => {
                     Select a service
                   </span>
                 </label>
-                <select className="select select-bordered w-full bg-white border-borderPrimary border-[1px] rounded">
+                <select className="select w-full bg-white border-borderPrimary border-[1px] rounded">
                   <option disabled selected>
                     Choose Service
                   </option>
@@ -136,7 +136,7 @@ const Contact = () => {
                   </span>
                 </label>
                 <textarea
-                  className="textarea textarea-bordered bg-white border-borderPrimary border-[1px] rounded"
+                  className="textarea border-borderPrimary bg-white border-[1px] rounded"
                   placeholder=""
                 ></textarea>
               </div>
