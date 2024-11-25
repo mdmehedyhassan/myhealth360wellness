@@ -4,7 +4,7 @@ import aboutImg from "../../../img/Shared/about-doctor-img.png";
 const AboutDoctorCom = () => {
   return (
     <div className="py-10 pb-16 lg:pb-32 px-5 flex justify-center items-center ">
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px] px-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
         <div className="hidden lg:block relative">
           <img className="rounded-xl" src={aboutImg} alt="about-img" />
           <div className="absolute -bottom-5 right-32 text-white bg-white p-3 rounded-lg w-44 h-40">
