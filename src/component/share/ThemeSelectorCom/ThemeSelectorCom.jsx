@@ -86,7 +86,7 @@ function ThemeSelectorCom({ setTheme }) {
   };
 
   return (
-    <div className="bg-primary w-fit p-5 fixed top-[25%] left-0 -translate-x-44 hover:translate-x-0 transition-all duration-500 ease-in-out rounded-r-xl z-50">
+    <div className="bg-primary w-[206px] p-5 fixed top-[25%] left-0 -translate-x-48  hover:translate-x-0 transition-all duration-500 ease-in-out rounded-r-xl z-50">
       <div>
         {/* Predefined themes */}
         <div

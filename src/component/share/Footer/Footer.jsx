@@ -7,13 +7,15 @@ import {
   FaLinkedinIn,
   FaSkype,
 } from "react-icons/fa6";
+import NewsletterCom from "../NewsletterCom/NewsletterCom";
 
 function Footer() {
   return (
     <div>
       <InstagramCom></InstagramCom>
-      <div className="bg-primary">
-        <footer className="footer text-base-content max-w-7xl mx-auto pt-[69px] pb-[50px] px-6 md:px-0 ">
+      <NewsletterCom />
+      <div className="bg-primary border-white border-t-2">
+        <footer className="footer text-base-content max-w-7xl mx-auto pt-[69px] pb-[50px] px-6 md:px-0">
           <nav className="text-white ">
             <h3 className="text-xl font-bold mb-3">Weekly Newsletter</h3>
             <p className="max-w-sm text-[15px] font-normal mb-12">
@@ -103,7 +105,7 @@ function Footer() {
             </a>
           </nav>
         </footer>
-        <div className="border-borderPrimary border-t pt-7 pb-8 px-6 md:px-0">
+        <div className="border-white pt-7 pb-8 px-6 md:px-0 border-t-2">
           <footer className="footer text-base-content max-w-7xl mx-auto">
             <aside className="grid-flow-col items-center text-white">
               <p className="text-[12px] font-normal">
