@@ -37,15 +37,27 @@ const AboutDoctorCom = () => {
               MD,FACP, CPHIMS
             </h2>
           </div>
-          <div className="relative flex justify-center items-center lg:hidden mb-10">
-            <img className="rounded-xl" src={aboutImg} alt="about-img" />
-            <div className="absolute -bottom-4 right-0 text-white bg-white p-2 rounded-md w-36 h-32">
-              <div className="w-full h-full bg-primary rounded-lg  flex flex-col justify-center items-start p-3 ">
-                <h1 className="text-3xl text-bold mb-2">25+</h1>
-                <p className="text-xs text-nowrap">Years Of Experience</p>
+
+          <div className="w-[366px] h-[366px] relative flex justify-center items-center lg:hidden mb-10">
+            {/* Dot Grid */}
+            <div className="w-[84px] h-[50px] grid grid-cols-7 gap-0 absolute -top-[26px] -right-6 justify-items-center items-center z-0">
+              {Array.from({ length: 28 }).map((_, index) => (
+                <DotCom key={index} />
+              ))}
+            </div>
+            {/* Main Image and Border */}
+            <div className="w-fit p-5 bg-bgPrimary rounded-lg border border-borderPrimary z-10 relative">
+              <img className="rounded-xl" src={aboutImg} alt="about-img" />
+            </div>
+            {/* Floating Info Box */}
+            <div className="absolute -bottom-5 -right-5 text-white bg-white p-2 rounded-lg w-40 h-36 z-20">
+              <div className="w-full h-full bg-primary rounded-lg flex flex-col justify-center items-start p-3">
+                <h1 className="text-4xl font-bold mb-2">25+</h1>
+                <p className="text-sm whitespace-nowrap">Years Of Experience</p>
               </div>
             </div>
           </div>
+
           <p className="text-textSecondary text-sm mb-5 leading-[160%]">
             Meet and consult with our American Board of Internal Certified
             Internal Medicine specialist, Dr. Umbrine Fatima with more than 20
