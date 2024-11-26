@@ -15,15 +15,38 @@ const Health360Com = () => {
             Why Choose My Health 360?
           </h2>
           {/* Image Section */}
-          <div className="relative flex justify-center items-center mb-10 lg:hidden">
-            <img className="rounded-xl" src={HealthImg} alt="about-img" />
-            <div className="absolute top-0 left-0 bg-primary text-white rounded-md w-[10rem] h-[3.5rem] ">
-              <div className="w-full h-full flex justify-center items-center gap-2 mx-2">
-                {/* <div className="w-[4rem] h-[3.5rem] flex justify-center items-center bg-bgSecondary rounded-md"> */}
-                <img src={SupportImg} alt="" />
-                {/* </div> */}
-                <h1 className="text-3xl font-bold">24</h1>
-                <p className="text-[10px] text-wrap">Hours Customer Support</p>
+          <div className="relative flex justify-center items-center mb-10 lg:hidden mt-16 pl-10">
+            <div className="w-[211px] h-[202px] bg-bgPrimary border border-borderPrimary rounded-lg relative right-0">
+              <img
+                src={HealthImg1}
+                alt=""
+                className="absolute -top-[3.5rem] -right-12"
+              />
+              <div className="w-[140px] h-[175px] relative top-[1.5rem] -left-[37%] p-3 bg- bg-bgPrimary rounded-lg">
+                <img
+                  src={HealthImg2}
+                  alt=""
+                  className="w-full h-[172.2] absolute top-3 -left-3"
+                />
+              </div>
+              <div className="absolute -top-[28%] -left-[43%] bg-primary text-white rounded-md w-32 h-20 ">
+                <div className="w-full h-full flex justify-center items-center gap-2 mx-3">
+                  <div className="w-[2rem] h-[1.5rem] flex justify-center items-center rounded-md">
+                    <img src={SupportImg} alt="" />
+                  </div>
+                  <h1 className="text-2xl font-bold">24</h1>
+                  <p className="text-[10px] text-wrap">
+                    Hours Customer Support
+                  </p>
+                </div>
+              </div>
+              {/* Dot Grid */}
+              <div className="w-[75px] h-[36px] bg-bgSecondary z-0 absolute -bottom-[23px] -right-12 p-1">
+                <div className="w-full h-full grid grid-cols-8 gap-0  justify-items-center items-center ">
+                  {Array.from({ length: 24 }).map((_, index) => (
+                    <DotCom key={index} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -47,13 +70,13 @@ const Health360Com = () => {
 
         {/* Image Section */}
         <div className=" hidden lg:block relative justify-items-end ml-auto mr-10">
-          <div className="w-[363px] h-[377px] bg-bgSecondary rounded-lg relative right-0">
+          <div className="w-[363px] h-[377px] bg-bgPrimary border border-borderPrimary rounded-lg relative right-0">
             <img
               src={HealthImg1}
               alt=""
               className="absolute -top-[2.5rem] -right-12"
             />
-            <div className="w-[280px] h-[306px] relative top-[2.5rem] -left-[37%] p-3 bg- bg-bgSecondary rounded-lg">
+            <div className="w-[280px] h-[306px] relative top-[2.5rem] -left-[37%] p-3 bg- bg-bgPrimary rounded-lg">
               <img
                 src={HealthImg2}
                 alt=""
