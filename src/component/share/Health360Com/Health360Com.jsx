@@ -46,7 +46,7 @@ const Health360Com = () => {
         </div>
 
         {/* Image Section */}
-        <div className=" hidden lg:block ml-5  relative top-0">
+        <div className=" hidden lg:block relative justify-items-end ml-auto mr-10">
           <div className="w-[363px] h-[377px] bg-bgSecondary rounded-lg relative right-0">
             <img
               src={HealthImg1}
