@@ -1,33 +1,19 @@
 import React from "react";
 import aboutImg from "../../../img/Shared/about-doctor-img.png";
-import DotCom from "../DotCom/DotCom";
 
 const AboutDoctorCom = () => {
   return (
-    <div className="py-28 pb-16 lg:pb-32 px-5 flex justify-center items-center ">
+    <div className="py-10 pb-16 lg:pb-32 px-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
         <div className="hidden lg:block relative">
-          {/* Dot Grid */}
-          <div className="w-[84px] h-[50px] grid grid-cols-7 gap-0 absolute -top-[26px] right-32 justify-items-center items-center z-0">
-            {Array.from({ length: 28 }).map((_, index) => (
-              <DotCom key={index} />
-            ))}
-          </div>
-
-          {/* Main Image and Border */}
-          <div className="w-fit p-5 bg-bgPrimary rounded-lg border border-borderPrimary z-10 relative">
-            <img className="rounded-xl" src={aboutImg} alt="about-img" />
-          </div>
-
-          {/* Floating Info Box */}
-          <div className="absolute -bottom-5 right-32 text-white bg-white p-2 rounded-lg w-40 h-36 z-20">
-            <div className="w-full h-full bg-primary rounded-lg flex flex-col justify-center items-start p-3">
-              <h1 className="text-4xl font-bold mb-2">25+</h1>
-              <p className="text-sm whitespace-nowrap">Years Of Experience</p>
+          <img className="rounded-xl" src={aboutImg} alt="about-img" />
+          <div className="absolute -bottom-5 right-32 text-white bg-white p-3 rounded-lg w-44 h-40">
+            <div className="w-full h-full bg-primary rounded-lg  flex flex-col justify-center items-start p-4 ">
+              <h1 className="text-4xl text-bold mb-2">25+</h1>
+              <p className="text-sm text-nowrap">Years Of Experience</p>
             </div>
           </div>
         </div>
-
         <div className="">
           <div className="lg:flex my-5">
             <h1 className="text-3xl font-bold lg:text-5xl text-textPrimary">
