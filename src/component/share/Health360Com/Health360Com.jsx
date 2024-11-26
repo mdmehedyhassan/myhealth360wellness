@@ -1,5 +1,4 @@
 import React from "react";
-import HealthImg from "../../../img/Shared/health-360-img.png";
 import HealthImg1 from "../../../img/Shared/health-360-img-1.png";
 import HealthImg2 from "../../../img/Shared/health-360-img-2.png";
 import SupportImg from "../../../img/Shared/support-img.png";
