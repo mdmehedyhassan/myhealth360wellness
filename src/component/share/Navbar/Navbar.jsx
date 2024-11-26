@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../../img/logo.png";
-import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu visibility
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,20 +17,102 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // [#062223]
+
+  const isActive = (path) => location.pathname === path;
+
+  const handleLinkClick = () => {
+    setIsMobileMenuOpen(false); // Hide mobile menu on link click
+  };
 
   return (
     <div
-      className={`navbar fixed top-0 left-0 right-0 px-2 md:px-16 border-b-2 border-b-gray-400 z-10 ${
-        isScrolled ? "bg-primary z-50" : "bg-transparent"
-      } transition-colors duration-500 ease-in-out`}
+      className={`fixed top-0 left-0 right-0 px-4 md:px-16 lg:border-b-2 border-gray-400 z-50 ${
+        isScrolled ? "bg-primary" : "bg-transparent"
+      } transition-all duration-300`}
     >
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+      <div className="flex justify-between items-center py-4">
+        {/* Logo */}
+        <Link to="/" className="flex items-center" onClick={handleLinkClick}>
+          <img src={logo} alt="Logo" className="h-10 md:h-14" />
+        </Link>
+
+        {/* Navbar for larger screens */}
+        <div className="hidden lg:flex items-center space-x-8">
+          <Link
+            to="/"
+            className={`text-base font-medium ${
+              isActive("/")
+                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
+            }`}
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className={`text-base font-medium ${
+              isActive("/about")
+                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
+            }`}
+          >
+            About
+          </Link>
+          <div className="relative group">
+            <Link
+              to="/services"
+              className={`text-base font-medium ${
+                isActive("/services")
+                  ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                  : "text-white"
+              }`}
+            >
+              Our Services
+            </Link>
+            {/* Dropdown */}
+            <ul className="absolute hidden group-hover:block mt-2 bg-gray-600 text-white rounded-md shadow-lg w-48">
+              <li className="px-4 py-2 hover:bg-gray-700">
+                <Link to="/services/iv-infusion-bar">IV Infusion Bar</Link>
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-700">
+                <Link to="/">Service 2</Link>
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-700">
+                <Link to="/">Service 3</Link>
+              </li>
+            </ul>
+          </div>
+          <Link
+            to="/packages"
+            className={`text-base font-medium ${
+              isActive("/packages")
+                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
+            }`}
+          >
+            Packages
+          </Link>
+          <Link
+            to="/contact"
+            className={`text-base font-medium ${
+              isActive("/contact")
+                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
+            }`}
+          >
+            Contact
+          </Link>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden">
+          <button
+            className="text-white focus:outline-none"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -41,97 +124,92 @@ const Navbar = () => {
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-gray-900 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li className="text-white font-normal text-base">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="text-white font-normal text-base">
-              <Link to="/about">About</Link>
-            </li>
-            <li className="text-white font-normal text-base relative">
-              <details
-                onClick={() => {
-                  navigate("/services");
-                }}
-              >
-                <summary>Our Services</summary>
-                <ul className="p-2 w-full rounded-lg">
-                  <li className="text-white font-normal text-base">
-                    <a href="/services/iv-infusion-bar">IV Infusion Bar</a>
-                  </li>
-                  <li className="text-white font-normal text-base">
-                    <a href="/">Service 2</a>
-                  </li>
-                  <li className="text-white font-normal text-base">
-                    <a href="/">Service 3</a>
-                  </li>
-                  <li className="text-white font-normal text-base">
-                    <a href="/">Service 4</a>
-                  </li>
-                  <li className="text-white font-normal text-base">
-                    <a href="/">Service 5</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li className="text-white font-normal text-base">
-              <Link to="/packages">Packages</Link>
-            </li>
-            <li className="text-white font-normal text-base">
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
+          </button>
         </div>
-        <a className="btn btn-ghost mb-3 mt-5 w-52 h-20" href="/">
-          <img className="w-48 h-auto" src={logo} alt="" />
-        </a>
       </div>
-      <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 z-[1]">
-          <li className="text-white font-normal text-base">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="text-white font-normal text-base">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="text-white font-normal text-base relative">
-            <details
-              onClick={() => {
-                navigate("/services");
-              }}
-            >
-              <summary>Our Services</summary>
-              <ul className="p-2 bg-gray-600 absolute w-full rounded-lg">
-                <li className="text-white font-normal text-base">
-                  <a href="/services/iv-infusion-bar">IV Infusion Bar</a>
+
+      {/* Mobile Dropdown Menu */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden w-full bg-primary text-white px-4 py-2 rounded-md z-50">
+          <Link
+            to="/"
+            className={`block py-2 ${
+              isActive("/")
+                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
+            }`}
+            onClick={handleLinkClick}
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className={`block py-2 ${
+              isActive("/about")
+                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
+            }`}
+            onClick={handleLinkClick}
+          >
+            About
+          </Link>
+          <div className="relative">
+            <details>
+              <summary
+                className={`block py-2 cursor-pointer ${
+                  isActive("/services")
+                    ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                    : "text-white"
+                }`}
+              >
+                Our Services
+              </summary>
+              <ul className="mt-2 bg-primary text-white rounded-md shadow-lg">
+                <li className="px-4 py-2 hover:bg-secondary">
+                  <Link to="/services" onClick={handleLinkClick}>
+                    Our Services
+                  </Link>
                 </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 2</a>
+                <li className="px-4 py-2 hover:bg-secondary">
+                  <Link
+                    to="/services/iv-infusion-bar"
+                    onClick={handleLinkClick}
+                  >
+                    IV Infusion Bar
+                  </Link>
                 </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 3</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 4</a>
-                </li>
-                <li className="text-white font-normal text-base">
-                  <a href="/">Service 5</a>
+                <li className="px-4 py-2 hover:bg-secondary">
+                  <Link to="/" onClick={handleLinkClick}>
+                    Service 2
+                  </Link>
                 </li>
               </ul>
             </details>
-          </li>
-          <li className="text-white font-normal text-base">
-            <Link to="/packages">Packages</Link>
-          </li>
-          <li className="text-white font-normal text-base">
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </div>
+          </div>
+          <Link
+            to="/packages"
+            className={`block py-2 ${
+              isActive("/packages")
+                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
+            }`}
+            onClick={handleLinkClick}
+          >
+            Packages
+          </Link>
+          <Link
+            to="/contact"
+            className={`block py-2 ${
+              isActive("/contact")
+                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
+            }`}
+            onClick={handleLinkClick}
+          >
+            Contact
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
