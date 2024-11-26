@@ -7,20 +7,25 @@ const AboutDoctorCom = () => {
     <div className="py-28 pb-16 lg:pb-32 px-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
         <div className="hidden lg:block relative">
-          {/* Dot Grid */}
-          <div className="w-[84px] h-[50px] grid grid-cols-7 gap-0 absolute -top-[26px] right-32 justify-items-center items-center z-0">
-            {Array.from({ length: 28 }).map((_, index) => (
-              <DotCom key={index} />
-            ))}
-          </div>
-
           {/* Main Image and Border */}
-          <div className="w-fit p-5 bg-bgPrimary rounded-lg border border-borderPrimary z-10 relative">
-            <img className="rounded-xl" src={aboutImg} alt="about-img" />
+          <div className="w-fit rounded-lg border border-borderPrimary relative">
+            <div className="w-fit p-5 bg-bgPrimary rounded-lg relative">
+              {/* Dot Grid */}
+              <div className="w-[110px] h-[60px] bg-bgPrimary absolute -top-[21px] -right-[2rem] p-2 z-0">
+                <div className="w-full h-full grid grid-cols-7 gap-0 justify-items-center items-center">
+                  {Array.from({ length: 28 }).map((_, index) => (
+                    <DotCom key={index} />
+                  ))}
+                </div>
+              </div>
+              {/* Main Image */}
+              <div className="relative z-10">
+                <img src={aboutImg} alt="about-img" />
+              </div>
+            </div>
           </div>
-
           {/* Floating Info Box */}
-          <div className="absolute -bottom-5 right-32 text-white bg-white p-2 rounded-lg w-40 h-36 z-20">
+          <div className="absolute -bottom-5 right-32 text-white bg-white p-2 rounded-lg w-40 h-32 z-20">
             <div className="w-full h-full bg-primary rounded-lg flex flex-col justify-center items-start p-3">
               <h1 className="text-4xl font-bold mb-2">25+</h1>
               <p className="text-sm whitespace-nowrap">Years Of Experience</p>
@@ -39,18 +44,25 @@ const AboutDoctorCom = () => {
           </div>
 
           <div className="w-[366px] h-[366px] relative flex justify-center items-center lg:hidden mb-10">
-            {/* Dot Grid */}
-            <div className="w-[84px] h-[50px] grid grid-cols-7 gap-0 absolute -top-[26px] -right-6 justify-items-center items-center z-0">
-              {Array.from({ length: 28 }).map((_, index) => (
-                <DotCom key={index} />
-              ))}
-            </div>
             {/* Main Image and Border */}
-            <div className="w-fit p-5 bg-bgPrimary rounded-lg border border-borderPrimary z-10 relative">
-              <img className="rounded-xl" src={aboutImg} alt="about-img" />
+            <div className="w-fit rounded-lg border border-borderPrimary relative">
+              <div className="w-fit p-5 bg-bgPrimary rounded-lg relative">
+                {/* Dot Grid */}
+                <div className="w-[110px] h-[60px] bg-bgPrimary absolute -top-[21px] -right-[2rem] p-2 z-0">
+                  <div className="w-full h-full grid grid-cols-7 gap-0 justify-items-center items-center">
+                    {Array.from({ length: 28 }).map((_, index) => (
+                      <DotCom key={index} />
+                    ))}
+                  </div>
+                </div>
+                {/* Main Image */}
+                <div className="relative z-10">
+                  <img src={aboutImg} alt="about-img" />
+                </div>
+              </div>
             </div>
             {/* Floating Info Box */}
-            <div className="absolute -bottom-5 -right-5 text-white bg-white p-2 rounded-lg w-40 h-36 z-20">
+            <div className="absolute -bottom-5 -right-5 text-white bg-white p-2 rounded-lg w-40 h-32 z-20">
               <div className="w-full h-full bg-primary rounded-lg flex flex-col justify-center items-start p-3">
                 <h1 className="text-4xl font-bold mb-2">25+</h1>
                 <p className="text-sm whitespace-nowrap">Years Of Experience</p>

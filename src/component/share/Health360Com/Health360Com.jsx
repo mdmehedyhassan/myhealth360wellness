@@ -3,11 +3,12 @@ import HealthImg from "../../../img/Shared/health-360-img.png";
 import HealthImg1 from "../../../img/Shared/health-360-img-1.png";
 import HealthImg2 from "../../../img/Shared/health-360-img-2.png";
 import SupportImg from "../../../img/Shared/support-img.png";
+import DotCom from "../DotCom/DotCom";
 
 const Health360Com = () => {
   return (
     <div className="py-10 lg:py-16 pb-10 lg:pb-36 mx-5 flex justify-center items-center ">
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center lg:max-w-[1324px] gap-16">
         {/* Text Section */}
         <div className="lg:ml-5 w-full">
           <h2 className="text-[28px] md:text-5xl font-bold text-textPrimary mb-4">
@@ -45,15 +46,36 @@ const Health360Com = () => {
         </div>
 
         {/* Image Section */}
-        <div className=" hidden lg:block ml-5 relative ">
-          <img className="rounded-xl" src={HealthImg} alt="about-img" />
-          <div className="absolute top-0 left-0 bg-primary text-white rounded-md w-56 h-20 ">
-            <div className="w-full h-full flex justify-center items-center gap-2 mx-3">
-              <div className="w-[4rem] h-[3.5rem] flex justify-center items-center bg-bgSecondary rounded-md">
-                <img src={SupportImg} alt="" />
+        <div className=" hidden lg:block ml-5  relative top-0">
+          <div className="w-[363px] h-[377px] bg-bgSecondary rounded-lg relative right-0">
+            <img
+              src={HealthImg1}
+              alt=""
+              className="absolute -top-[2.5rem] -right-12"
+            />
+            <div className="w-[280px] h-[306px] relative top-[2.5rem] -left-[37%] p-3 bg- bg-bgSecondary rounded-lg">
+              <img
+                src={HealthImg2}
+                alt=""
+                className="w-full h-[294.97px] absolute top-3 -left-3"
+              />
+            </div>
+            <div className="absolute -top-[11%] -left-[40%] bg-primary text-white rounded-md w-56 h-20 ">
+              <div className="w-full h-full flex justify-center items-center gap-2 mx-3">
+                <div className="w-[4rem] h-[3.5rem] flex justify-center items-center bg-bgSecondary rounded-md">
+                  <img src={SupportImg} alt="" />
+                </div>
+                <h1 className="text-4xl font-bold">24</h1>
+                <p className="text-xs text-wrap">Hours Customer Support</p>
               </div>
-              <h1 className="text-4xl font-bold">24</h1>
-              <p className="text-xs text-wrap">Hours Customer Support</p>
+            </div>
+            {/* Dot Grid */}
+            <div className="w-[140px] h-[63px] bg-bgSecondary z-0 absolute -bottom-[26px] -right-12 p-3">
+              <div className="w-full h-full grid grid-cols-12 gap-0  justify-items-center items-center ">
+                {Array.from({ length: 48 }).map((_, index) => (
+                  <DotCom key={index} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
