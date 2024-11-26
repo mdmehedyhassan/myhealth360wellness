@@ -46,7 +46,7 @@ const WhyShouldCom = () => {
         </div>
 
         {/* Image Section For Desktop*/}
-        <div className="relative mx-auto">
+        <div className="relative mx-auto mb-5 lg:mb-0">
           <div className="w-[248.37px] lg:w-[415px] h-[268.72px] lg:h-[449px] p-5 bg-bgPrimary rounded-lg border border-borderPrimary relative">
             {/* Dot Grid for desktop */}
             <div className="hidden lg:block w-[170px] h-[81px]  bg-bgPrimary absolute -bottom-[35px] -left-[2rem] p-2 z-0">
