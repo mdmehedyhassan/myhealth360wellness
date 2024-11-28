@@ -4,7 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 99vh;
+    width: 100%;
 }
 .class-for-svg-img img{
-    width: 40%;    
+    width: 200px;    
 }
