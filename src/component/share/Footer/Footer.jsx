@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../../img/logo.png";
 import InstagramCom from "./InstagramCom/InstagramCom";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -40,69 +41,69 @@ function Footer() {
           </nav>
           <nav className="text-white">
             <h6 className="font-bold text-xl mb-10">Quick links</h6>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               About
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               Concerns
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               Sexual Wellness
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               Morpheus8
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               IV Infusion Bar
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               Memberships
-            </a>
-            <a href="/" className="link link-hover text-base font-normal">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal">
               Contact
-            </a>
+            </Link>
           </nav>
           <nav className="text-white">
             <h6 className="font-bold text-xl mb-10">Additional Services</h6>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               Urinary Incontinence
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               Sexual Wellness
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               Mommy Makeover
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               IV Infusion Bar
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               Body Sculpting
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-4">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-4">
               Medical Rehab
-            </a>
-            <a href="/" className="link link-hover text-base font-normal">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal">
               Cellulite
-            </a>
+            </Link>
           </nav>
           <nav className="text-white">
             <h6 className="font-bold text-xl mb-10">Contact</h6>
-            <a href="/" className="link link-hover text-base font-normal mb-5">
+            <Link to="/" className="link link-hover text-base font-normal mb-5">
               012 3456 7890
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-5">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-5">
               youremail@mail.com
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-5">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-5">
               Banani Model Town
-            </a>
-            <a href="/" className="link link-hover text-base font-normal mb-5">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal mb-5">
               Dhaka City, Bangladesh
-            </a>
-            <a href="/" className="link link-hover text-base font-normal">
+            </Link>
+            <Link to="/" className="link link-hover text-base font-normal">
               Open hour:10-8.00 Mon-fri
-            </a>
+            </Link>
           </nav>
         </footer>
         <div className="border-white pt-7 pb-8 px-6 md:px-0 border-t-2">
@@ -118,12 +119,12 @@ function Footer() {
             </aside>
             <nav className="md:place-self-center md:justify-self-end">
               <div className="flex gap-14 text-white">
-                <a href="/" className="text-sm font-normal link link-hover">
+                <Link to="/" className="text-sm font-normal link link-hover">
                   Privacy
-                </a>
-                <a href="/" className="text-sm font-normal link link-hover">
+                </Link>
+                <Link to="/" className="text-sm font-normal link link-hover">
                   Terms
-                </a>
+                </Link>
               </div>
             </nav>
           </footer>

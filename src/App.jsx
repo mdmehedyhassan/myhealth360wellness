@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import "./css/global.css";
 import loadingImg from "./img/loading.gif";
 import Loadable from "react-loadable";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import ThemeSelectorCom from "./component/share/ThemeSelectorCom/ThemeSelectorCom";
 
 const Navbar = Loadable({
@@ -74,7 +74,11 @@ const IVInfusionBar = Loadable({
 
 function App() {
   const [theme, setTheme] = useState();
-
+  const location = useLocation();
+    const path = location.pathname;
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [path])
   return (
     <div className={`theme-${theme}`}>
       <ThemeSelectorCom setTheme={setTheme} className="z-50" />
