@@ -79,7 +79,7 @@ const Package = () => {
             ({ id, title, description, price, discountPercentage }) => (
               <div
                 key={id}
-                className="card bg-white transition ease-in-out duration-300 hover:bg-primary group border-borderPrimary rounded-[20px]"
+                className="card bg-white transition-all ease-in-out duration-500 hover:bg-primary group border-borderPrimary rounded-[20px]"
                 style={{
                   backgroundImage: `url(${backgroundImg})`,
                   backgroundPosition: "bottom right",
@@ -88,20 +88,20 @@ const Package = () => {
                 }}
               >
                 <div className="card-body pt-[42px] pb-10 px-10">
-                  <h3 className="font-bold text-[22px] leading-[140%] text-black group-hover:text-white">
+                  <h3 className="font-bold text-[22px] leading-[140%] text-black group-hover:text-white transition-all ease-in-out duration-500">
                     {title}
                   </h3>
-                  <p className="text-[15px] font-normal leading-[160%] text-textSecondary mt-[6px] mb-6 group-hover:text-white">
+                  <p className="text-[15px] font-normal leading-[160%] text-textSecondary mt-[6px] mb-6 group-hover:text-white transition-all ease-in-out duration-500">
                     {description}
                   </p>
-                  <h2 className="card-title text-[40px] leading-[140%] font-extrabold text-primary group-hover:text-white">
+                  <h2 className="card-title text-[40px] leading-[140%] font-extrabold text-primary group-hover:text-white transition-all ease-in-out duration-500">
                     ${price}
-                    <div className="badge text-[11px] font-semibold leading-[160%] bg-secondary text-white rounded-full border-none">
+                    <div className="badge text-[11px] font-semibold leading-[160%] bg-secondary text-white rounded-full border-none transition-all ease-in-out duration-500">
                       {discountPercentage}% off
                     </div>
                   </h2>
                   <div className="card-actions justify-end mt-9">
-                    <button className="btn text-black text-lg font-bold leading-[150%] hover:bg-white bg-white border-borderPrimary rounded-full w-full hover:border-none">
+                    <button className="btn text-black text-lg font-bold leading-[150%] hover:bg-white bg-white border-borderPrimary rounded-full w-full hover:border-none transition-all ease-in-out duration-duration-500">
                       Schedule a Consult
                     </button>
                   </div>
