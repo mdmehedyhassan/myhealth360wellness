@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../img/logo.png";
 
@@ -6,6 +6,29 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu visibility
   const location = useLocation();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prevState) => !prevState);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        closeDropdown();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,29 +81,33 @@ const Navbar = () => {
           >
             About
           </Link>
-          <div className="relative group">
-            <Link
-              to="/services"
+          <div className="relative" ref={dropdownRef}>
+            {/* Trigger Button */}
+            <button
+              onClick={toggleDropdown}
               className={`text-base font-medium ${
                 isActive("/services")
-                  ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                  ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
                   : "text-white"
               }`}
             >
-              Our Services
-            </Link>
+              <Link to="/services"> Our Services</Link>
+            </button>
+
             {/* Dropdown */}
-            <ul className="absolute hidden group-hover:block mt-2 bg-gray-600 text-white rounded-md shadow-lg w-48">
-              <li className="px-4 py-2 hover:bg-gray-700">
-                <Link to="/services/iv-infusion-bar">IV Infusion Bar</Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-700">
-                <Link to="/">Service 2</Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-700">
-                <Link to="/">Service 3</Link>
-              </li>
-            </ul>
+            {isDropdownOpen && (
+              <ul className="absolute mt-2 bg-gray-600 text-white rounded-md shadow-lg w-48">
+                <li className="px-4 py-2 hover:bg-gray-700">
+                  <Link to="/services/iv-infusion-bar">IV Infusion Bar</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-700">
+                  <Link to="/">Service 2</Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-700">
+                  <Link to="/">Service 3</Link>
+                </li>
+              </ul>
+            )}
           </div>
           <Link
             to="/packages"
@@ -153,6 +180,7 @@ const Navbar = () => {
           >
             About
           </Link>
+
           <div className="relative">
             <details>
               <summary
@@ -186,6 +214,7 @@ const Navbar = () => {
               </ul>
             </details>
           </div>
+
           <Link
             to="/packages"
             className={`block py-2 ${
