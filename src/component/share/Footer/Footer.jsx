@@ -89,12 +89,8 @@ function Footer() {
           </nav>
           <nav className="text-white">
             <h6 className="font-bold text-xl mb-10">Contact</h6>
-            <Link to="/" className="link link-hover text-base font-normal mb-5">
-              012 3456 7890
-            </Link>
-            <Link to="/" className="link link-hover text-base font-normal mb-5">
-              youremail@mail.com
-            </Link>
+            <a href="tel:+012 3456 7890"  className="link link-hover text-base font-normal mb-5">012 3456 7890</a>
+            <a href="mailto:youremail@mail.com" className="link link-hover text-base font-normal mb-5">youremail@mail.com</a>
             <Link to="/" className="link link-hover text-base font-normal mb-5">
               Banani Model Town
             </Link>
