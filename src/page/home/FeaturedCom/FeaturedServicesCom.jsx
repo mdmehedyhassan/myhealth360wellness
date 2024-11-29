@@ -4,6 +4,7 @@ import BodyImg from "../../../img/Shared/Body.png";
 import HairImg from "../../../img/Shared/Hair.png";
 import FaceImg from "../../../img/Shared/Face.png";
 import InjectableImg from "../../../img/Shared/Injectables.png";
+import { Link } from "react-router-dom";
 
 const services = [
   { name: "Body", image: BodyImg },
@@ -91,8 +92,10 @@ export default function FeaturedServicesCom() {
                           <h3 className="text-xl font-semibold text-white z-10 ">
                             {service.name}
                           </h3>
-                          <div className="w-7 h-7 bg-secondary rounded-full flex justify-center items-center z-10">
-                            <ArrowRight className="text-xs text-black" />
+                          <div className="w-7 h-7 bg-secondary rounded-full flex justify-center items-center z-10 cursor-pointer">
+                            <Link to="/services">
+                              <ArrowRight className="text-xs text-black" />
+                            </Link>
                           </div>
                         </div>
                       </div>
