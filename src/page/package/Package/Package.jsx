@@ -79,7 +79,7 @@ const Package = () => {
             ({ id, title, description, price, discountPercentage }) => (
               <div
                 key={id}
-                className="card bg-white transition-all ease-in-out duration-500 hover:bg-primary group border-borderPrimary rounded-[20px]"
+                className="card bg-white transition-all ease-in-out duration-1000 hover:bg-primary group border-borderPrimary rounded-[20px]"
                 style={{
                   backgroundImage: `url(${backgroundImg})`,
                   backgroundPosition: "bottom right",

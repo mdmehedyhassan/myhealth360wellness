@@ -78,28 +78,30 @@ export default function FeaturedServicesCom() {
                 {services.map((service, index) => (
                   <div
                     key={index}
-                    className="flex-none w-full sm:w-1/2 lg:w-1/4 px-2"
+                    className="flex-none w-full sm:w-1/2 lg:w-1/4 px-2 cursor-pointer"
                   >
-                    <div className="relative rounded-lg overflow-hidden">
-                      <img
-                        src={service.image}
-                        alt={service.name}
-                        className="w-full h-64 object-cover"
-                      />
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <div className="absolute inset-0 bg-primary opacity-60 mix-blend-multiply"></div>
-                        <div className="flex justify-between items-center w-full">
-                          <h3 className="text-xl font-semibold text-white z-10 ">
-                            {service.name}
-                          </h3>
-                          <div className="w-7 h-7 bg-secondary rounded-full flex justify-center items-center z-10 cursor-pointer">
-                            <Link to="/services">
-                              <ArrowRight className="text-xs text-black" />
-                            </Link>
+                    <Link to="/services">
+                      <div className="relative rounded-lg overflow-hidden">
+                        <img
+                          src={service.image}
+                          alt={service.name}
+                          className="w-full h-64 object-cover hover:scale-110 transition-all ease-in-out duration-500"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4">
+                          <div className="absolute inset-0 bg-primary opacity-60 mix-blend-multiply"></div>
+                          <div className="flex justify-between items-center w-full">
+                            <h3 className="text-xl font-semibold text-white z-10 ">
+                              {service.name}
+                            </h3>
+                            <div className="w-7 h-7 bg-secondary rounded-full flex justify-center items-center z-10 cursor-pointer">
+                              <Link to="/services">
+                                <ArrowRight className="text-xs text-black" />
+                              </Link>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 ))}
               </div>

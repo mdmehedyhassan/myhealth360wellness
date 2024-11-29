@@ -21,7 +21,7 @@ const TherapyBookCom = () => {
               <p className="text-sm my-5 mx-8 text-center">
                 Call now to Schedule a Consult with our qualified physician.
               </p>
-              <button className="text-black text-sm lg:text-lg font-bold py-4 px-16 bg-white border rounded-full my-3">
+              <button className="text-black text-sm lg:text-lg font-bold py-4 px-16 bg-white border rounded-full my-3 hover:bg-primary hover:text-white hover:border-primary transition-all duration-500 ease-in-out ">
                 Book an Infusion Suite!
               </button>
             </div>

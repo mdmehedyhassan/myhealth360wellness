@@ -200,7 +200,7 @@ const TreatmentCom = () => {
               {options.map((option) => (
                 <button
                   key={option.title}
-                  className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full transition-colors duration-300 capitalize ${
+                  className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full hover:bg-primary hover:text-white transition-colors duration-500 ease-in-out capitalize ${
                     selectedOption.title === option.title
                       ? "bg-primary text-white"
                       : "bg-white text-primary border border-borderPrimary"

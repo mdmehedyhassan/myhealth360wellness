@@ -2,6 +2,8 @@ import React from "react";
 import TherapyImg1 from "../../../img/IV-Infusion-Bar/therapy-img-1.png";
 import TherapyImg2 from "../../../img/IV-Infusion-Bar/therapy-img-2.png";
 import DotCom from "../../../component/share/DotCom/DotCom";
+import { Link } from "react-router-dom";
+import { FaCalendarDays } from "react-icons/fa6";
 
 const TherapyCom = () => {
   return (
@@ -66,20 +68,15 @@ const TherapyCom = () => {
             to help improve the appearance of the skin, boost energy levels, and
             support the immune system.
           </p>
-          <button className="flex items-center bg-primary text-white font-semibold px-4 py-2 rounded-full space-x-2 transition duration-300 hover:bg-white hover:text-textPrimary">
-            <div className="bg-primaryAccent p-2 rounded-full -ml-1 ">
-              {/* Calendar Icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="w-5 h-5 text-yellow-500"
-                viewBox="0 0 24 24"
-              >
-                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V9h14v10zm-7-9h5v5h-5z" />
-              </svg>
-            </div>
-            <span>Schedule a Consult</span>
-          </button>
+          <Link to="/services">
+            <button className="flex items-center bg-primary text-white font-semibold px-4 py-3 rounded-full space-x-2 transition-all duration-500 ease-in-out hover:bg-white hover:text-textPrimary">
+              <div className="bg-primaryAccent text-secondary p-2 rounded-full -ml-1 ">
+                {/* Calendar Icon */}
+                <FaCalendarDays />
+              </div>
+              <span>Schedule a Consult</span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

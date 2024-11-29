@@ -1,6 +1,7 @@
 import React from "react";
 import aboutImg from "../../../img/Shared/about-doctor-img.png";
 import DotCom from "../DotCom/DotCom";
+import { Link } from "react-router-dom";
 
 const AboutDoctorCom = () => {
   return (
@@ -93,9 +94,11 @@ const AboutDoctorCom = () => {
             recently been appointed to the post of President of the Buffalo
             District of the New York American College of Physicians.
           </p>
-          <button className="text-primary text-sm lg:text-lg font-bold py-4 px-16 bg-transparent border border-primary rounded-full hover:bg-primary hover:text-white">
-            Learn More
-          </button>
+          <Link to="/about">
+            <button className="text-primary text-sm lg:text-lg font-bold py-4 px-16 bg-transparent border border-primary rounded-full hover:bg-primary hover:text-white transition-all ease-in-out duration-500">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

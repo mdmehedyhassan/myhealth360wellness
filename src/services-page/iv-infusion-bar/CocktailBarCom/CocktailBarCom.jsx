@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Img from "../../../img/IV-Infusion-Bar/cocktailbar.png";
+import { Link } from "react-router-dom";
 
 const options = [
   {
@@ -68,7 +69,7 @@ const CocktailBarCom = () => {
               {options.map((option) => (
                 <button
                   key={option.title}
-                  className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full transition-colors duration-300 capitalize ${
+                  className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full hover:bg-primary hover:text-white transition-colors duration-500 ease-in-out capitalize ${
                     selectedOption.title === option.title
                       ? "bg-primary text-white"
                       : "bg-white text-primary border border-borderPrimary"
@@ -98,11 +99,11 @@ const CocktailBarCom = () => {
                 {selectedOption.title}
               </h1>
               <p>{selectedOption.content}</p>
-              <a href={selectedOption.url}>
-                <button className="text-primary text-sm lg:text-lg font-bold py-4 px-16 bg-transparent border border-borderPrimary rounded-full hover:bg-primary hover:text-white my-3">
+              <Link href={selectedOption.url}>
+                <button className="text-primary text-sm lg:text-lg font-bold py-4 px-16 bg-transparent border border-borderPrimary rounded-full hover:bg-primary hover:text-white my-3 transition-colors duration-500 ease-in-out">
                   Learn More
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="hidden lg:flex justify-center items-center ">
               <img

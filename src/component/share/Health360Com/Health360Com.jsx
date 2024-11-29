@@ -3,6 +3,8 @@ import HealthImg1 from "../../../img/Shared/health-360-img-1.png";
 import HealthImg2 from "../../../img/Shared/health-360-img-2.png";
 import SupportImg from "../../../img/Shared/support-img.png";
 import DotCom from "../DotCom/DotCom";
+import { Link } from "react-router-dom";
+import { FaCommentMedical } from "react-icons/fa6";
 
 const Health360Com = () => {
   return (
@@ -62,9 +64,11 @@ const Health360Com = () => {
             integrative medicine as a part of the larger vision for your health
             and happiness to enable your Eú Zen.
           </p>
-          <button className="text-[#0B5E62] text-sm lg:text-lg font-bold py-4 px-16 bg-transparent border border-[#0B5E62] rounded-full hover:bg-[#0B5E62] hover:text-white">
-            Learn More
-          </button>
+          <Link to="/services">
+            <button className="text-primary text-sm lg:text-lg font-bold py-4 px-16 bg-transparent border border-primary rounded-full hover:bg-primary hover:text-white transition-all ease-in-out duration-500">
+              Learn More
+            </button>
+          </Link>
         </div>
 
         {/* Image Section */}
@@ -84,8 +88,8 @@ const Health360Com = () => {
             </div>
             <div className="absolute -top-[11%] -left-[40%] bg-primary text-white rounded-md w-56 h-20 ">
               <div className="w-full h-full flex justify-center items-center gap-2 mx-3">
-                <div className="w-[4rem] h-[3.5rem] flex justify-center items-center bg-bgSecondary rounded-md">
-                  <img src={SupportImg} alt="" />
+                <div className="w-[4rem] h-[3.5rem] text-2xl text-secondary flex justify-center items-center bg-white rounded-md">
+                  <FaCommentMedical />
                 </div>
                 <h1 className="text-4xl font-bold">24</h1>
                 <p className="text-xs text-wrap">Hours Customer Support</p>

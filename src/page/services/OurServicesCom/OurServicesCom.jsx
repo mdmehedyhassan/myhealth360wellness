@@ -39,7 +39,7 @@ export default function OurServicesCom() {
                 <img
                   src={service.image}
                   alt={service.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-cover hover:scale-110 transition-all ease-in-out duration-500"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <div className="absolute inset-0 bg-primary opacity-60 mix-blend-multiply"></div>

@@ -1,6 +1,7 @@
 import React from "react";
 import medicalspaImg from "../../../img/Home/medical-spa.svg";
 import medicalgymImg from "../../../img/Home/medical-gym.svg";
+import { Link } from "react-router-dom";
 
 const MembershipCom = () => {
   return (
@@ -23,9 +24,11 @@ const MembershipCom = () => {
               build muscle, lose fat, or recover from an injury or disability;
               our gym has everything you need to succeed.
             </p>
-            <button className="bg-primary text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full hover:bg-primary hover:opacity-80 transition-colors">
-              Get It Now
-            </button>
+            <Link to="/packages">
+              <button className="bg-primary text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full border hover:bg-transparent hover:border border-primary hover:text-primary transition-all ease-in-out duration-500">
+                Get It Now
+              </button>
+            </Link>
           </div>
           <div className="lg:w-1/2 mt-0 lg:mt-0 max-w-[456px]">
             <img
@@ -58,9 +61,11 @@ const MembershipCom = () => {
               advanced muscle toning and machine-assisted rehab devices
               available.
             </p>
-            <button className="bg-primary text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full hover:bg-primary hover:opacity-80  transition-colors">
-              Get It Now
-            </button>
+            <Link to="/packages">
+              <button className="bg-primary text-white font-semibold py-3 px-10 lg:py-5 lg:px-16 rounded-full border hover:bg-transparent hover:border border-primary hover:text-primary transition-all ease-in-out duration-500">
+                Get It Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -2,8 +2,8 @@ import React from "react";
 import WhoWeAreImg1 from "../../../img/About/whoweare-img-1.png";
 import WhoWeAreImg2 from "../../../img/About/whoweare-img-2.png";
 import PeoplesLogo from "../../../img/About/peoples-logo.png";
-import GroupLogo from "../../../img/About/group-logo.png";
 import DotCom from "../../../component/share/DotCom/DotCom";
+import { FaPeopleGroup } from "react-icons/fa6";
 
 const WhoWeAreCom = () => {
   return (
@@ -35,11 +35,9 @@ const WhoWeAreCom = () => {
                 <div className="text-white rounded-md w-[155.89px] lg:w-[260px] h-[46.77px] lg:h-[78px] mt-4">
                   <div className="w-full h-full bg-primary rounded-lg grid grid-cols-5 items-center p-2 gap-2 ">
                     <div className="lg:ml-2 rounded-lg col-span-1">
-                      <img
-                        className="rounded-xl"
-                        src={GroupLogo}
-                        alt="about-img"
-                      />
+                      <div className="text-secondary text-3xl">
+                        <FaPeopleGroup />
+                      </div>
                     </div>
                     <div className="col-span-4">
                       <h1 className="text-[13px] lg:text-md font-bold">

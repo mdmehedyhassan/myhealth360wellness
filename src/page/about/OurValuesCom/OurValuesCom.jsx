@@ -1,18 +1,11 @@
 import React from "react";
 import TopMaskImg from "../../../img/About/top-mask.svg";
 import BottomMaskImg from "../../../img/About/bottom-mask.svg";
-import CompassionLogo from "../../../img/About/compassion-logo.png";
-import RespectLogo from "../../../img/About/handshake-logo.png";
-import QualityLogo from "../../../img/About/quality-logo.png";
-
-function IconCard({ image, title }) {
-  return (
-    <div className="w-[238px] lg:w-[306px] h-[218px] lg:h-[280px] flex flex-col justify-center items-center bg-primaryAccent border-2 border-borderPrimary rounded-lg m-5">
-      <img src={image} alt="" className="" />
-      <h1 className="text-[20px] lg:text-[24px] text-white">{title}</h1>
-    </div>
-  );
-}
+import {
+  FaHandshakeSimple,
+  FaThumbsUp,
+  FaHandHoldingHeart,
+} from "react-icons/fa6";
 
 const OurValuesCom = () => {
   return (
@@ -25,15 +18,24 @@ const OurValuesCom = () => {
           <h1 className="text-white text-center font-bold text-3xl lg:text-5xl px-5 my-10">
             Our Values
           </h1>
-          <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center">
-            <div className="w-full">
-              <IconCard image={CompassionLogo} title="Compassion" />
+          <div className="flex flex-col md:flex-col gap-5 lg:flex-row justify-center items-center">
+            <div className="w-56 bg-primaryAccent text-secondary p-16 rounded-xl hover:bg-transparent hover:text-white border border-primaryAccent transition-colors duration-500 ease-in-out flex flex-col justify-center items-center">
+              <div className=" text-6xl">
+                <FaHandHoldingHeart />
+              </div>
+              <h1 className="text-3xl text-white">Compassion</h1>
             </div>
-            <div className="w-full">
-              <IconCard image={RespectLogo} title="Respect" />
+            <div className="w-56 bg-primaryAccent text-secondary p-16 rounded-xl hover:bg-transparent hover:text-white border border-primaryAccent transition-colors duration-500 ease-in-out flex flex-col justify-center items-center">
+              <div className=" text-6xl">
+                <FaHandshakeSimple />
+              </div>
+              <h1 className="text-3xl text-white">Respect</h1>
             </div>
-            <div className="w-full z-10 lg:z-0">
-              <IconCard image={QualityLogo} title="Quality" />
+            <div className="w-56 bg-primaryAccent text-secondary p-16 rounded-xl hover:bg-transparent hover:text-white border border-primaryAccent transition-colors duration-500 ease-in-out flex flex-col justify-center items-center">
+              <div className="text-6xl">
+                <FaThumbsUp />
+              </div>
+              <h1 className="text-3xl text-white">Quality</h1>
             </div>
           </div>
         </div>
