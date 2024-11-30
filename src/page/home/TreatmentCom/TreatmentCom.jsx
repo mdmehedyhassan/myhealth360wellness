@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import faceImg from "../../../img/Home/face.svg";
+import faceImg from "../../../img/Home/face.png";
+import neckImg from "../../../img/Home/neck.png";
+import bodyImg from "../../../img/Home/body.png";
+import hairLossImg from "../../../img/Home/hair-loss.png";
+import sexualWellnessImg from "../../../img/Home/sexual-wellness.png";
+import chronicPainImg from "../../../img/Home/chronic-pain.png";
 import { Dot } from "lucide-react";
 
 const options = [
@@ -35,7 +40,7 @@ const options = [
   },
   {
     title: "neck",
-    img: faceImg,
+    img: neckImg,
     accordionData: [
       {
         id: 1,
@@ -65,7 +70,7 @@ const options = [
   },
   {
     title: "body",
-    img: faceImg,
+    img: bodyImg,
     accordionData: [
       {
         id: 1,
@@ -95,7 +100,7 @@ const options = [
   },
   {
     title: "hair loss",
-    img: faceImg,
+    img: hairLossImg,
     accordionData: [
       {
         id: 1,
@@ -125,7 +130,7 @@ const options = [
   },
   {
     title: "sexual wellness",
-    img: faceImg,
+    img: sexualWellnessImg,
     accordionData: [
       {
         id: 1,
@@ -155,7 +160,7 @@ const options = [
   },
   {
     title: "chronic pain",
-    img: faceImg,
+    img: chronicPainImg,
     accordionData: [
       {
         id: 1,
@@ -222,31 +227,31 @@ const TreatmentCom = () => {
               <div className="lg:p-5 ">
                 <div className="mb-5 lg:mb-0 flex justify-center items-center lg:p-5 lg:hidden ">
                   <img
-                    className="rounded-xl w-auto"
+                    className="rounded-xl w-auto transition-all duration-500 ease-in-out"
                     src={selectedOption.img}
                     alt={selectedOption.title}
                   />
                 </div>
-                <h1 className="text-primary font-bold text-2xl lg:text-3xl mb-5 capitalize">
+                <h1 className="text-primary font-bold text-2xl lg:text-3xl mb-5 capitalize transition-all duration-500 ease-in-out">
                   {selectedOption.title}
                 </h1>
-                <div className="grid grid-cols-1 justify-start items-center gap-2">
+                <div className="grid grid-cols-1 justify-start items-center gap-2 transition-all duration-500 ease-in-out">
                   {selectedOption.accordionData.map((item) => (
                     <div
                       key={item.id}
                       className="border-borderPrimary rounded-lg"
                     >
-                      <div className="collapse collapse-arrow bg-bgSecondary">
+                      <div className="collapse collapse-arrow bg-bgSecondary transition-all duration-500 ease-in-out">
                         <input
                           type="radio"
                           name="my-accordion-2"
                           defaultChecked={item.title === "overall"}
                         />
-                        <div className="text-textPrimary flex justify-start items-center collapse-title text-xl font-medium capitalize">
+                        <div className="text-textPrimary flex justify-start items-center collapse-title text-xl font-medium capitalize transition-all duration-500 ease-in-out">
                           <Dot size={32} /> {item.title}
                           {selectedOption.title === "face"}
                         </div>
-                        <div className="collapse-content text-start text-textSecondary text-wrap">
+                        <div className="collapse-content text-start text-textSecondary text-wrap transition-all duration-500 ease-in-out">
                           <p>{item.content}</p>
                         </div>
                       </div>
@@ -254,7 +259,7 @@ const TreatmentCom = () => {
                   ))}
                 </div>
               </div>
-              <div className="mb-5 lg:mb-0 lg:flex md:flex justify-center items-center lg:p-5 hidden ">
+              <div className="mb-5 lg:mb-0 lg:flex md:flex justify-center items-center lg:p-5 hidden transition-all duration-500 ease-in-out">
                 <img
                   className="rounded-xl w-auto"
                   src={selectedOption.img}

@@ -13,7 +13,7 @@ const BannerBottom = () => {
       <div className="flex gap-6 md:gap-10 mr-0 md:mr-10 ml-0 md:ml-28 mb-5 md:mb-0">
         {/* phone */}
         <a href="tel:7164073250">
-          <div className="flex gap-3 border-[1px] border-borderSecondary rounded-[10px] pt-2 md:pt-[10px] pb-2 md:pb-3 pl-2 md:pl-[11px] pr-2 md:pr-5">
+          <div className="flex gap-3 border-2 border-borderSecondary rounded-[10px] pt-2 md:pt-[10px] pb-2 md:pb-3 pl-2 md:pl-[11px] pr-2 md:pr-5">
             <div>
               <div className="w-[48px] h-[48px] bg-secondary text-white flex justify-center items-center rounded-full ">
                 <PhoneCall />
@@ -32,7 +32,7 @@ const BannerBottom = () => {
         {/* message */}
         <a
           href="sms:7162006146"
-          className="flex gap-3 border-[1px] border-borderSecondary rounded-[10px] pt-2 md:pt-[10px] pb-2 md:pb-3 pl-2 md:pl-[11px] pr-2 md:pr-5"
+          className="flex gap-3 border-2 border-borderSecondary rounded-[10px] pt-2 md:pt-[10px] pb-2 md:pb-3 pl-2 md:pl-[11px] pr-2 md:pr-5"
         >
           <div className="w-[48px] h-[48px] bg-secondary text-white flex justify-center items-center rounded-full ">
             <MessageCircleMore />

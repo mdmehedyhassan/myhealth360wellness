@@ -1,52 +1,58 @@
 import React, { useState } from "react";
-import Img from "../../../img/IV-Infusion-Bar/cocktailbar.png";
+import athleticPerformanceImg from "../../../img/IV-Infusion-Bar/athletic-performance.png";
+import wellnessBoosterImg from "../../../img/IV-Infusion-Bar/wellness-booster.png";
+import skinnyShotImg from "../../../img/IV-Infusion-Bar/skinny-shot.png";
+import glowShotImg from "../../../img/IV-Infusion-Bar/glow-shot.png";
+import myersCocktailImg from "../../../img/IV-Infusion-Bar/myers-cocktail.png";
+import heavyMetalChelationImg from "../../../img/IV-Infusion-Bar/heavy-metal-chelation.png";
+import byoivImg from "../../../img/IV-Infusion-Bar/B.Y.O.I.V.png";
 import { Link } from "react-router-dom";
 
 const options = [
   {
-    img: Img,
+    img: athleticPerformanceImg,
     title: "Athletic Performance",
     content:
       "Enhance your athletic performance by optimizing your nutritional status with IV blend of amino acids, B complex, and antioxidants. Increase aerobic muscular endurance with amino acids to enhance physical performance, expedite recovery, and improve activity tolerance while antioxidants help reduce recovery time from exercise.",
     url: "",
   },
   {
-    img: Img,
+    img: wellnessBoosterImg,
     title: "Wellness Booster",
     content:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti commodo finibus ante; laoreet lacus habitant libero. Quisque facilisi rhoncus aliquam molestie volutpat. Finibus condimentum arcu volutpat tortor ipsum vitae nisi erat ultrices. Tempus parturient donec quisque; dapibus libero enim. Tempor adipiscing auctor litora habitant blandit amet ante fusce. ",
     url: "",
   },
   {
-    img: Img,
+    img: skinnyShotImg,
     title: "Skinny Shot",
     content:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Venenatis diam taciti mauris varius sociosqu aptent ullamcorper. Elementum nulla potenti parturient cubilia arcu hendrerit commodo interdum in. Natoque dictum luctus quis fames ligula. Ridiculus pharetra dictum orci vehicula augue inceptos nunc molestie? Blandit torquent nec malesuada facilisi metus blandit nisl.",
     url: "",
   },
   {
-    img: Img,
+    img: glowShotImg,
     title: "Glow Shot",
     content:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Feugiat aptent facilisi vitae orci egestas aliquam. Per dictumst senectus sit tempor est pharetra. Consequat accumsan gravida mi mollis litora. Ligula vulputate ligula netus mattis vehicula, mi magna id. Mattis pulvinar scelerisque adipiscing; eros morbi vehicula.",
     url: "",
   },
   {
-    img: Img,
+    img: myersCocktailImg,
     title: "Myers Cocktail",
     content:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Mollis cras vehicula dapibus interdum lacinia finibus metus molestie. Orci netus fames erat maximus; erat himenaeos duis. Molestie nam tempus molestie efficitur urna egestas integer. Posuere ut maecenas class dolor mi, dis euismod lacinia. Ipsum rutrum accumsan curabitur pulvinar commodo fames quisque sapien.",
     url: "",
   },
   {
-    img: Img,
+    img: heavyMetalChelationImg,
     title: "Heavy Metal Chelation",
     content:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus finibus mus aptent etiam egestas sem. Enim facilisi eu congue conubia massa cubilia id dui. Nulla eu quisque et mauris curae urna. Vivamus donec egestas maecenas commodo himenaeos congue. Vitae dis proin quisque ante faucibus ridiculus. Metus turpis lacinia cursus himenaeos hendrerit lobortis.",
     url: "",
   },
   {
-    img: Img,
+    img: byoivImg,
     title: "B.Y.O.I.V.",
     content:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Gravida eros aenean inceptos vehicula conubia donec venenatis. Enim fermentum natoque vitae netus sollicitudin consectetur ridiculus? Enim nibh hac cubilia porttitor mauris primis fusce fames mi. Etiam eleifend blandit pulvinar nibh tempor tellus fames. Lorem egestas curabitur ridiculus; mauris hac nostra.",
@@ -71,7 +77,7 @@ const CocktailBarCom = () => {
                   key={option.title}
                   className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full hover:bg-primary hover:text-white transition-colors duration-500 ease-in-out capitalize ${
                     selectedOption.title === option.title
-                      ? "bg-primary text-white"
+                      ? "bg-primary text-white border border-borderPrimary"
                       : "bg-white text-primary border border-borderPrimary"
                   }`}
                   onClick={() => setSelectedOption(option)}
