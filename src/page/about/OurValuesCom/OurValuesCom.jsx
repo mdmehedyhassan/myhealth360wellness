@@ -31,7 +31,7 @@ const OurValuesCom = () => {
               </div>
               <h1 className="text-3xl text-white">Respect</h1>
             </div>
-            <div className="w-56 bg-primaryAccent text-secondary p-16 rounded-xl hover:bg-transparent hover:text-white border border-primaryAccent transition-colors duration-500 ease-in-out flex flex-col justify-center items-center">
+            <div className="w-56 bg-primaryAccent text-secondary p-16 rounded-xl hover:bg-transparent hover:text-white border border-primaryAccent transition-colors duration-500 ease-in-out flex flex-col justify-center items-center z-10">
               <div className="text-6xl">
                 <FaThumbsUp />
               </div>
@@ -39,7 +39,7 @@ const OurValuesCom = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-full rounded-xl -mt-[30.5rem] lg:mt-56 -z-10 lg:z-0 lg:mr-0 flex justify-end items-end">
+        <div className="lg:w-full rounded-xl -mt-[30.5rem] lg:mt-0 -z-10 lg:z-0 lg:mr-0 flex justify-end items-end">
           <img src={BottomMaskImg} alt="BottomMaskImg" />
         </div>
       </div>
