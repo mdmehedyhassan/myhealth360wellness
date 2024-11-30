@@ -8,13 +8,13 @@ import {
   FaLinkedinIn,
   FaSkype,
 } from "react-icons/fa6";
-import NewsletterCom from "../NewsletterCom/NewsletterCom";
+// import NewsletterCom from "../NewsletterCom/NewsletterCom";
 
 function Footer() {
   return (
     <div>
       <InstagramCom></InstagramCom>
-      <NewsletterCom />
+      {/* <NewsletterCom /> */}
       <div className="bg-primary border-white border-t-2">
         <footer className="footer text-base-content max-w-7xl mx-auto pt-[69px] pb-[50px] px-6 md:px-0">
           <nav className="text-white ">
@@ -49,7 +49,7 @@ function Footer() {
           </nav>
           <nav className="text-white">
             <h6 className="font-bold text-xl mb-10">Quick links</h6>
-            <Link to="/" className="link link-hover text-base font-normal mb-4">
+            <Link to="/about" className="link link-hover text-base font-normal mb-4">
               About
             </Link>
             <Link to="/" className="link link-hover text-base font-normal mb-4">
@@ -61,13 +61,13 @@ function Footer() {
             <Link to="/" className="link link-hover text-base font-normal mb-4">
               Morpheus8
             </Link>
-            <Link to="/" className="link link-hover text-base font-normal mb-4">
+            <Link to="/services/iv-infusion-bar" className="link link-hover text-base font-normal mb-4">
               IV Infusion Bar
             </Link>
             <Link to="/" className="link link-hover text-base font-normal mb-4">
               Memberships
             </Link>
-            <Link to="/" className="link link-hover text-base font-normal">
+            <Link to="/contact" className="link link-hover text-base font-normal">
               Contact
             </Link>
           </nav>
@@ -82,7 +82,7 @@ function Footer() {
             <Link to="/" className="link link-hover text-base font-normal mb-4">
               Mommy Makeover
             </Link>
-            <Link to="/" className="link link-hover text-base font-normal mb-4">
+            <Link to="/services/iv-infusion-bar" className="link link-hover text-base font-normal mb-4">
               IV Infusion Bar
             </Link>
             <Link to="/" className="link link-hover text-base font-normal mb-4">
