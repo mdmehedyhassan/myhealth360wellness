@@ -194,14 +194,14 @@ const TreatmentCom = () => {
   const [selectedOption, setSelectedOption] = useState(options[0]);
 
   return (
-    <div className="w-full px-5">
+    <div className="w-full px-2 lg:px-5">
       <div className="py-5 lg:py-10 pb-16 lg:pb-32 bg-bgSecondary rounded-xl w-full ">
         <h1 className="text-textPrimary text-center font-bold text-3xl lg:text-5xl px-5 my-10">
           What Concerns Would You Like To Address?
         </h1>
         <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center text-start px-4 ">
-          <div className="flex ">
-            <div className="lg:w-[220px] lg:bg-white p-7 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-borderPrimary rounded-xl gap-x-2 gap-y-6 ">
+          <div className="flex w-full lg:w-auto ">
+            <div className="lg:w-[220px] w-full lg:bg-white py-7 lg:p-7 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1 lg:border-2 border-borderPrimary rounded-xl gap-x-2 gap-y-6 ">
               {options.map((option) => (
                 <button
                   key={option.title}
