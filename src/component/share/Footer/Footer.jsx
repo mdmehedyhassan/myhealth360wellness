@@ -25,18 +25,26 @@ function Footer() {
             </p>
             <img className="w-48 h-auto" src={logo} alt="" />
             <div className="flex gap-4 mt-10">
-              <div className="h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
-                <FaFacebookF />
-              </div>
-              <div className="h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
-                <FaInstagram />
-              </div>
-              <div className="h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
-                <FaLinkedinIn />
-              </div>
-              <div className="h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
-                <FaSkype />
-              </div>
+              <Link to="https://www.facebook.com/">
+                <div className="hover:cursor-pointer h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
+                  <FaFacebookF />
+                </div>
+              </Link>
+              <Link to="https://www.instagram.com/">
+                <div className="hover:cursor-pointer h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
+                  <FaInstagram />
+                </div>
+              </Link>
+              <Link to="https://www.linkedin.com/">
+                <div className="hover:cursor-pointer h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
+                  <FaLinkedinIn />
+                </div>
+              </Link>
+              <Link to="https://www.skype.com/">
+                <div className="hover:cursor-pointer h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
+                  <FaSkype />
+                </div>
+              </Link>
             </div>
           </nav>
           <nav className="text-white">
@@ -89,7 +97,7 @@ function Footer() {
           </nav>
           <nav className="text-white">
             <h6 className="font-bold text-xl mb-10">Contact</h6>
-            <a href="tel:+012 3456 7890"  className="link link-hover text-base font-normal mb-5">012 3456 7890</a>
+            <a href="tel:+012 3456 7890" className="link link-hover text-base font-normal mb-5">012 3456 7890</a>
             <a href="mailto:youremail@mail.com" className="link link-hover text-base font-normal mb-5">youremail@mail.com</a>
             <Link to="/" className="link link-hover text-base font-normal mb-5">
               Banani Model Town
