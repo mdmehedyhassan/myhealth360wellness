@@ -37,7 +37,7 @@ const AboutDoctorCom = () => {
         <div className="">
           <div className="lg:flex my-5">
             <h1 className="text-3xl font-bold lg:text-5xl text-textPrimary">
-              About Doctor Andry 
+              About Doctor Andry
             </h1>
             <h2 className=" text-sm lg:text-md mt-4 text-textSecondary">
               MD,FACP, CPHIMS

@@ -20,14 +20,12 @@ const InstagramCom = () => {
         <img className="mr-1" src={instaImg4} alt="" />
         <img className="mr-1" src={instaImg5} alt="" />
         <img className="mr-1" src={instaImg6} alt="" />
-        <img className="mr-1" src={instaImg7} alt="" />
         <img className="mr-1" src={instaImg1} alt="" />
         <img className="mr-1" src={instaImg2} alt="" />
         <img className="mr-1" src={instaImg3} alt="" />
         <img className="mr-1" src={instaImg4} alt="" />
         <img className="mr-1" src={instaImg5} alt="" />
         <img className="mr-1" src={instaImg6} alt="" />
-        <img className="mr-1" src={instaImg7} alt="" />
       </Marquee>
     </div>
   );
