@@ -4,14 +4,14 @@ import { FaCalendarAlt } from "react-icons/fa";
 
 const HomeBanner = () => {
   return (
-    <div className="w-full min-h-screen relative inline-block bg-primary">
+    <div className="w-full h-[634px] lg:min-h-screen relative inline-block bg-primary">
       <div
-        className="hero min-h-screen "
+        className="hero h-[634px] lg:min-h-screen"
         style={{
           backgroundImage: `url(${banner})`,
         }}
       >
-        <div className="absolute inset-0 bg-primary opacity-30 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-primary opacity-30 mix-blend-multiply "></div>
         <div className="hero-overlay bg-opacity-20"></div>
         <div className="hero-content text-neutral-content text-center pt-32 md:pt-40">
           <div className="max-w-[1002px] flex flex-col justify-center items-center">

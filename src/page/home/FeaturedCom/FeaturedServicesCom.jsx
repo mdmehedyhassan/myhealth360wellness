@@ -11,6 +11,7 @@ const services = [
   { name: "Hair", image: HairImg },
   { name: "Face", image: FaceImg },
   { name: "Injectables", image: InjectableImg },
+  { name: "Body", image: BodyImg },
 ];
 
 export default function FeaturedServicesCom() {
@@ -48,7 +49,7 @@ export default function FeaturedServicesCom() {
   };
 
   return (
-    <div className="py-28 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div className="py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <p className="text-base font-semibold text-primary">

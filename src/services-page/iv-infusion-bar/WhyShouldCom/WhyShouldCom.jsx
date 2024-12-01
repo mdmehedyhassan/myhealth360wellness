@@ -7,7 +7,7 @@ import { FaCalendarDays } from "react-icons/fa6";
 
 const WhyShouldCom = () => {
   return (
-    <div className="py-10 pb-16 lg:pb-20 mx-5 flex justify-center items-center ">
+    <div className="pb-20 lg:pb-20 mx-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
         <div className="order-last lg:order-first ">
           <div className="my-5 flex-col">
@@ -31,7 +31,6 @@ const WhyShouldCom = () => {
             quick boost of nutrients for a specific purpose, such as athletic
             performance or recovery from illness.
           </p>
-          "
           <Link to="/services">
             <button className="flex items-center bg-primary text-white font-semibold px-4 py-3 rounded-full space-x-2 transition-all duration-500 ease-in-out hover:bg-white hover:text-textPrimary">
               <div className="bg-primaryAccent text-secondary p-2 rounded-full -ml-1 ">

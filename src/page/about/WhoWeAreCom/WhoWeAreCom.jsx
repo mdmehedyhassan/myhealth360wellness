@@ -7,7 +7,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 
 const WhoWeAreCom = () => {
   return (
-    <div className="py-10 pb-16 lg:pb-32 mx-5 flex justify-center items-center ">
+    <div className="py-20 lg:pb-32 mx-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] gap-10">
         <h2 className=" md:hidden text-3xl font-bold text-primary mb-4 ">
           Who we are

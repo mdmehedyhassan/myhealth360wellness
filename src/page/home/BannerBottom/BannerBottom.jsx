@@ -3,14 +3,14 @@ import { MessageCircleMore, PhoneCall } from "lucide-react";
 
 const BannerBottom = () => {
   return (
-    <div className="flex bg-primary flex-col md:flex-row justify-center items-center py-6 px-5 md:px-0 mt-[-6px]">
+    <div className="flex bg-primary flex-col md:flex-row justify-center items-center py-6 px-5 md:px-0 mt-[-6px] rounded-b-lg">
       <div>
-        <p className="ml-10 md:max-w-[596px] text-white text-base font-medium leading-[160%]  md:border-r-2 md:border-borderSecondary pr-0 md:pr-20 mb-8 md:mb-0">
+        <p className="lg:ml-10 md:max-w-[596px] text-white text-[10px] lg:text-base font-medium leading-[160%] md:border-r-2 md:border-borderSecondary pr-0 md:pr-20 mb-3 lg:mb-8 md:mb-0">
           Lorem ipsum dolor sit amet consectetur. Nam nulla mattis viverra in
           purus ac aenean vitae duis. Volutpat mi nunc nunc facilisis.
         </p>
       </div>
-      <div className="flex gap-6 md:gap-10 mr-0 md:mr-10 ml-0 md:ml-28 mb-5 md:mb-0">
+      <div className="flex gap-2 lg:gap-6 md:gap-10 mr-0 md:mr-10 ml-0 md:ml-28 mb-2 lg:mb-5 md:mb-0">
         {/* phone */}
         <a href="tel:7164073250">
           <div className="flex gap-3 border-2 border-borderSecondary rounded-[10px] pt-2 md:pt-[10px] pb-2 md:pb-3 pl-2 md:pl-[11px] pr-2 md:pr-5">

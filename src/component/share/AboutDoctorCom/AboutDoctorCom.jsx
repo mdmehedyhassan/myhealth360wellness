@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const AboutDoctorCom = () => {
   return (
-    <div className="py-28 pb-16 lg:pb-32 px-5 flex justify-center items-center ">
+    <div className="py-20 pb-16 lg:pb-32 px-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
         <div className="hidden lg:block relative">
           {/* Main Image and Border */}

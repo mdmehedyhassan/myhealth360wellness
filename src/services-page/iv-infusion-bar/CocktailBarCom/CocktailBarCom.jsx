@@ -65,7 +65,7 @@ const CocktailBarCom = () => {
 
   return (
     <div className="w-full px-2 lg:px-5">
-      <div className="py-5 lg:py-10 pb-16 lg:pb-[74px] bg-bgSecondary rounded-t-xl w-full ">
+      <div className="py-5 lg:py-10 pb-8 lg:pb-[74px] bg-bgSecondary rounded-t-xl w-full ">
         <h1 className="text-textPrimary text-center font-bold text-3xl lg:text-5xl px-5 my-10">
           What Concerns Would You Like To Address?
         </h1>
@@ -75,11 +75,10 @@ const CocktailBarCom = () => {
               {options.map((option) => (
                 <button
                   key={option.title}
-                  className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full hover:bg-primary hover:text-white transition-colors duration-500 ease-in-out capitalize ${
-                    selectedOption.title === option.title
-                      ? "bg-primary text-white border border-borderPrimary"
-                      : "bg-white text-primary border border-borderPrimary"
-                  }`}
+                  className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full hover:bg-primary hover:text-white transition-colors duration-500 ease-in-out capitalize ${selectedOption.title === option.title
+                    ? "bg-primary text-white border border-borderPrimary"
+                    : "bg-white text-primary border border-borderPrimary"
+                    }`}
                   onClick={() => setSelectedOption(option)}
                 >
                   {option.title}

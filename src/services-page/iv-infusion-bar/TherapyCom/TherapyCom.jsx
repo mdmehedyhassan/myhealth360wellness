@@ -7,7 +7,7 @@ import { FaCalendarDays } from "react-icons/fa6";
 
 const TherapyCom = () => {
   return (
-    <div className="py-16 lg:py-32 pb-16 lg:pb-20 mx-5 flex justify-center items-center ">
+    <div className="py-20 lg:py-32 lg:pb-20 mx-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
         {/* Image Section For Desktop*/}
         <div className="relative mx-auto mb-5 lg:mb-0">

@@ -195,7 +195,7 @@ const TreatmentCom = () => {
 
   return (
     <div className="w-full px-2 lg:px-5">
-      <div className="py-5 lg:py-10 pb-16 lg:pb-32 bg-bgSecondary rounded-xl w-full ">
+      <div className="py-5 lg:py-10  lg:pb-32 bg-bgSecondary rounded-xl w-full ">
         <h1 className="text-textPrimary text-center font-bold text-3xl lg:text-5xl px-5 my-10">
           What Concerns Would You Like To Address?
         </h1>

@@ -34,7 +34,7 @@ const testimonials = [
 
 const TestimonialsCom = () => {
   return (
-    <div className="bg-bgPrimary py-16 sm:py-24 lg:py-32 px-5">
+    <div className="bg-bgPrimary py-20 sm:py-24 lg:py-32 px-5">
       <div className="mx-auto max-w-7xl">
         <h3 className="text-primary text-lg font-bold mb-2 text-center leading-[150%]">
           Testimonials

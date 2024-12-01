@@ -21,7 +21,7 @@ const services = [
 
 export default function OurServicesCom() {
   return (
-    <div className="py-16 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div className="py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <p className="text-base font-semibold text-primary">

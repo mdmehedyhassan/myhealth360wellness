@@ -1,5 +1,5 @@
 import React from "react";
-import ContactBanner from "../ContactBanner/ContactBanner";
+import ContactBanner from "../ContactBanner/ContactBanner"
 import {
   FaPhone,
   FaRegMessage,
@@ -15,32 +15,39 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row gap-[89px]">
           {/* Contact Information */}
           <div className="flex flex-col gap-[30px]">
-            <div className="flex items-center gap-[26px] w-[385px] md:w-[453px] p-[17px] py-5 border-borderPrimary border-[1px] rounded-[10px]">
-              <div className="w-20 h-20 bg-primary hover:bg-primaryAccent flex justify-center items-center rounded-full text-white text-2xl">
-                <FaPhone />
+            <h1 className="lg:hidden text-3xl text-primary font-bold py-5 text-center">
+              Contact Information's
+            </h1>
+            <a href="tel:+012 3456 7890">
+              <div className="flex items-center gap-[26px] w-[385px] md:w-[453px] p-[17px] py-5 border-borderPrimary border-[1px] rounded-[10px]">
+                <div className="w-20 h-20 bg-primary hover:bg-primaryAccent flex justify-center items-center rounded-full text-white text-2xl">
+                  <FaPhone />
+                </div>
+                <div>
+                  <h3 className="text-[20px] md:text-2xl font-semibold leading-[120%] text-textPrimary mb-[7px]">
+                    Phone Number
+                  </h3>
+                  <p className="text-[15px] font-normal leading-[150%] text-textSecondary">
+                    +012 3456 7890
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-[20px] md:text-2xl font-semibold leading-[120%] text-textPrimary mb-[7px]">
-                  Phone Number
-                </h3>
-                <p className="text-[15px] font-normal leading-[150%] text-textSecondary">
-                  +012 3456 7890
-                </p>
+            </a>
+            <a href="mailto:emailaddress@email.com">
+              <div className="flex items-center gap-[26px] w-[385px] md:w-[453px] p-[17px] py-5 border-borderPrimary border-[1px] rounded-[10px]">
+                <div className="w-20 h-20 bg-primary hover:bg-primaryAccent flex justify-center items-center rounded-full text-white text-2xl">
+                  <FaRegMessage />
+                </div>
+                <div>
+                  <h3 className="text-[20px] md:text-2xl font-semibold leading-[120%] text-textPrimary mb-[7px]">
+                    Email Address
+                  </h3>
+                  <p className="text-[15px] font-normal leading-[150%] text-textSecondary">
+                    emailaddress@email.com
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center gap-[26px] w-[385px] md:w-[453px] p-[17px] py-5 border-borderPrimary border-[1px] rounded-[10px]">
-              <div className="w-20 h-20 bg-primary hover:bg-primaryAccent flex justify-center items-center rounded-full text-white text-2xl">
-                <FaRegMessage />
-              </div>
-              <div>
-                <h3 className="text-[20px] md:text-2xl font-semibold leading-[120%] text-textPrimary mb-[7px]">
-                  Email Address
-                </h3>
-                <p className="text-[15px] font-normal leading-[150%] text-textSecondary">
-                  emailaddress@email.com
-                </p>
-              </div>
-            </div>
+            </a>
             <div className="flex items-center gap-[26px] w-[385px] md:w-[453px] p-[17px] py-5 border-borderPrimary border-[1px] rounded-[10px]">
               <div className="w-20 h-20 bg-primary hover:bg-primaryAccent flex justify-center items-center rounded-full text-white text-2xl">
                 <FaRegClock />
@@ -54,99 +61,109 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-[26px] w-[385px] md:w-[453px] p-[17px] py-5 border-borderPrimary border-[1px] rounded-[10px]">
-              <div className="w-20 h-20 bg-primary hover:bg-primaryAccent flex justify-center items-center rounded-full text-white text-2xl">
-                <FaLocationDot />
+            <a
+              href="https://maps.app.goo.gl/1Z1o4TDL2La4Pzcq8"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="flex items-center gap-[26px] w-[385px] md:w-[453px] p-[17px] py-5 border-borderPrimary border-[1px] rounded-[10px]">
+                <div className="w-20 h-20 bg-primary hover:bg-primaryAccent flex justify-center items-center rounded-full text-white text-2xl">
+                  <FaLocationDot />
+                </div>
+                <div>
+                  <h3 className="text-[20px] md:text-2xl font-semibold leading-[120%] text-textPrimary mb-[7px]">
+                    Location
+                  </h3>
+                  <p className="text-[15px] font-normal leading-[150%] text-textPrimary">
+                    2464 Royal Ln. Mesa, New Jersey 45463
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-[20px] md:text-2xl font-semibold leading-[120%] text-textPrimary mb-[7px]">
-                  Location
-                </h3>
-                <p className="text-[15px] font-normal leading-[150%] text-textPrimary">
-                  2464 Royal Ln. Mesa, New Jersey 45463
-                </p>
-              </div>
-            </div>
+            </a>
           </div>
           {/* Form */}
-          <div className="bg-white border-[1px] border-borderPrimary rounded-[20px] min-h-[586px]">
-            <form className="pt-[38px] md:pt-[35px] pb-[38px] md:pb-[40px] pl-5 md:pl-[42px] pr-5 md:pr-[41px]">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-textPrimary text-[15px] md:text-lg font-semibold leading-[160%]">
-                    Full Name
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  placeholder=""
-                  className="input bg-white border-borderPrimary border-[1px] rounded"
-                  required
-                />
-              </div>
-
-              <div className="flex flex-col md:flex-row justify-between gap-5">
+          <div className="w-full h-full">
+            <h1 className="text-3xl lg:hidden text-primary font-bold py-5 text-center">
+              Contact From
+            </h1>
+            <div className="bg-white border-[1px] border-borderPrimary rounded-[20px] min-h-[586px]">
+              <form className="pt-[38px] md:pt-[35px] pb-[38px] md:pb-[40px] pl-5 md:pl-[42px] pr-5 md:pr-[41px]">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text text-textPrimary text-[15px] md:text-lg font-semibold leading-[160%]">
-                      Phone
+                      Full Name
                     </span>
                   </label>
                   <input
-                    type="number"
+                    type="text"
                     placeholder=""
-                    className="input bg-white w-full border-borderPrimary border-[1px] rounded"
+                    className="input bg-white border-borderPrimary border-[1px] rounded"
                     required
                   />
                 </div>
+                <div className="flex flex-col md:flex-row justify-between gap-5">
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text text-textPrimary text-[15px] md:text-lg font-semibold leading-[160%]">
+                        Phone
+                      </span>
+                    </label>
+                    <input
+                      type="number"
+                      placeholder=""
+                      className="input bg-white w-full border-borderPrimary border-[1px] rounded"
+                      required
+                    />
+                  </div>
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text text-textPrimary text-[15px] md:text-lg font-semibold leading-[160%]">
+                        Email
+                      </span>
+                    </label>
+                    <input
+                      type="email"
+                      placeholder=""
+                      className="input bg-white w-full border-borderPrimary border-[1px] rounded"
+                      required
+                    />
+                  </div>
+                </div>
+
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text text-textPrimary text-[15px] md:text-lg font-semibold leading-[160%]">
-                      Email
+                      Select a service
                     </span>
                   </label>
-                  <input
-                    type="email"
-                    placeholder=""
-                    className="input bg-white w-full border-borderPrimary border-[1px] rounded"
-                    required
-                  />
+                  <select className="select w-full bg-white border-borderPrimary border-[1px] rounded">
+                    <option disabled selected>
+                      Choose Service
+                    </option>
+                    <option>Service 1</option>
+                    <option>Service 2</option>
+                  </select>
                 </div>
-              </div>
 
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-textPrimary text-[15px] md:text-lg font-semibold leading-[160%]">
-                    Select a service
-                  </span>
-                </label>
-                <select className="select w-full bg-white border-borderPrimary border-[1px] rounded">
-                  <option disabled selected>
-                    Choose Service
-                  </option>
-                  <option>Service 1</option>
-                  <option>Service 2</option>
-                </select>
-              </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-textPrimary text-[15px] md:text-lg font-semibold leading-[160%]">
+                      Message
+                    </span>
+                  </label>
+                  <textarea
+                    className="textarea border-borderPrimary bg-white border-[1px] rounded"
+                    placeholder=""
+                  ></textarea>
+                </div>
 
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-textPrimary text-[15px] md:text-lg font-semibold leading-[160%]">
-                    Message
-                  </span>
-                </label>
-                <textarea
-                  className="textarea border-borderPrimary bg-white border-[1px] rounded"
-                  placeholder=""
-                ></textarea>
-              </div>
-
-              <div className="form-control mt-6">
-                <button className="btn bg-primary border-none rounded-[110px] text-white text-[15px] font-bold leading-[120%] hover:bg-primaryAccent">
-                  SUBMIT
-                </button>
-              </div>
-            </form>
+                <div className="form-control mt-6">
+                  <button className="btn bg-primary border-none rounded-[110px] text-white text-[15px] font-bold leading-[120%] hover:bg-primaryAccent">
+                    SUBMIT
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
