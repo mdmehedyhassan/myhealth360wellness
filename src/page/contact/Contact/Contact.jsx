@@ -11,8 +11,8 @@ const Contact = () => {
   return (
     <div>
       <ContactBanner></ContactBanner>
-      <div className="flex justify-center bg-bgPrimary pt-[82px] md:pt-[135px] pb-[120px] -mt-2">
-        <div className="flex flex-col lg:flex-row gap-[89px]">
+      <div className="flex justify-center bg-bgPrimary pt-[82px] md:pt-[135px] pb-20 lg:pb-[120px] -mt-2">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[89px]">
           {/* Contact Information */}
           <div className="flex flex-col gap-[30px]">
             <h1 className="lg:hidden text-3xl text-primary font-bold py-5 text-center">
