@@ -1,34 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../img/logo.png";
+import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu visibility
   const location = useLocation();
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen((prevState) => !prevState);
-  };
-
-  const closeDropdown = () => {
-    setIsDropdownOpen(false);
-  };
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        closeDropdown();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,9 +27,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 px-4 md:px-16 lg:border-b-2 border-gray-400 z-50 ${
-        isScrolled ? "bg-primary" : "bg-transparent"
-      } transition-all duration-300`}
+      className={`fixed top-0 left-0 right-0 px-4 md:px-16 lg:border-b-2 border-gray-400 z-50 ${isScrolled ? "bg-primary" : "bg-transparent"
+        } transition-all duration-300`}
     >
       <div className="flex justify-between items-center py-4">
         {/* Logo */}
@@ -63,69 +40,65 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-8">
           <Link
             to="/"
-            className={`text-base font-medium ${
-              isActive("/")
-                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
-            }`}
+            className={`text-base font-medium ${isActive("/")
+              ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
+              }`}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className={`text-base font-medium ${
-              isActive("/about")
-                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
-            }`}
+            className={`text-base font-medium ${isActive("/about")
+              ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
+              }`}
           >
             About
           </Link>
-          <div className="relative" ref={dropdownRef}>
-            {/* Trigger Button */}
-            <button
-              onClick={toggleDropdown}
-              className={`text-base font-medium ${
-                isActive("/services")
-                  ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                  : "text-white"
-              }`}
-            >
-              <Link to="/services"> Our Services</Link>
-            </button>
 
-            {/* Dropdown */}
-            {isDropdownOpen && (
-              <ul className="absolute mt-2 bg-gray-600 text-white rounded-md shadow-lg w-48">
-                <li className="px-4 py-2 hover:bg-gray-700">
-                  <Link to="/services/iv-infusion-bar">IV Infusion Bar</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-700">
-                  <Link to="/">Service 2</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-700">
-                  <Link to="/">Service 3</Link>
-                </li>
+          <div className="flex justify-center items-center gap-2">
+            <Link
+              to="/services"
+              className={`text-base font-medium ${isActive("/services")
+                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
+                }`}
+            >
+              Our Services
+            </Link>
+            <div className="dropdown dropdown-end text-white mt-2">
+              <label className="swap">
+                <input type="checkbox" />
+                <div className="swap-off text-lg"><FaAngleDown /></div>
+                <div className="swap-on text-lg"><FaAngleUp /></div>
+              </label>
+              <ul tabIndex={0} className="dropdown-content menu bg-primary text-white rounded-box z-[1] w-36 mt-2 p-2 shadow ">
+                <li ><Link
+                  to="/services/iv-infusion-bar"
+                  onClick={handleLinkClick}
+                >
+                  IV Infusion Bar
+                </Link></li>
+                <li><a>Service 2</a></li>
               </ul>
-            )}
+            </div>
           </div>
           <Link
             to="/packages"
-            className={`text-base font-medium ${
-              isActive("/packages")
-                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
-            }`}
+            className={`text-base font-medium ${isActive("/packages")
+              ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
+              }`}
           >
             Packages
           </Link>
           <Link
             to="/contact"
-            className={`text-base font-medium ${
-              isActive("/contact")
-                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
-            }`}
+            className={`text-base font-medium ${isActive("/contact")
+              ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
+              }`}
           >
             Contact
           </Link>
@@ -160,79 +133,71 @@ const Navbar = () => {
         <div className="lg:hidden w-full bg-primary text-white px-4 py-2 rounded-md z-50">
           <Link
             to="/"
-            className={`block py-2 ${
-              isActive("/")
-                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
-            }`}
+            className={`block py-2 ${isActive("/")
+              ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
+              }`}
             onClick={handleLinkClick}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className={`block py-2 ${
-              isActive("/about")
-                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
-            }`}
+            className={`block py-2 ${isActive("/about")
+              ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
+              }`}
             onClick={handleLinkClick}
           >
             About
           </Link>
 
-          <div className="relative">
-            <details>
-              <summary
-                className={`block py-2 cursor-pointer ${
-                  isActive("/services")
-                    ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                    : "text-white"
+          <div className="flex justify-start items-center gap-2">
+            <Link
+              to="/services"
+              className={`text-base font-medium ${isActive("/services")
+                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
                 }`}
-              >
-                Our Services
-              </summary>
-              <ul className="mt-2 bg-primary text-white rounded-md shadow-lg">
-                <li className="px-4 py-2 hover:bg-secondary">
-                  <Link to="/services" onClick={handleLinkClick}>
-                    Our Services
-                  </Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-secondary">
-                  <Link
-                    to="/services/iv-infusion-bar"
-                    onClick={handleLinkClick}
-                  >
-                    IV Infusion Bar
-                  </Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-secondary">
-                  <Link to="/" onClick={handleLinkClick}>
-                    Service 2
-                  </Link>
-                </li>
+            >
+              Our Services
+            </Link>
+            <div className="dropdown text-white mt-2">
+              <label className="swap">
+                <input type="checkbox" />
+                <div className="swap-off text-lg"><FaAngleDown /></div>
+                <div className="swap-on text-lg"><FaAngleUp /></div>
+              </label>
+              <ul tabIndex={0} className="dropdown-content menu bg-primary text-white rounded-box z-[1] w-52 mt-2 p-2 shadow ">
+                <li ><Link
+                  to="/services/iv-infusion-bar"
+                  onClick={handleLinkClick}
+                >
+                  IV Infusion Bar
+                </Link></li>
+                <li><a>Service 2</a></li>
               </ul>
-            </details>
+            </div>
           </div>
+
+
 
           <Link
             to="/packages"
-            className={`block py-2 ${
-              isActive("/packages")
-                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
-            }`}
+            className={`block py-2 ${isActive("/packages")
+              ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
+              }`}
             onClick={handleLinkClick}
           >
             Packages
           </Link>
           <Link
             to="/contact"
-            className={`block py-2 ${
-              isActive("/contact")
-                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
-            }`}
+            className={`block py-2 ${isActive("/contact")
+              ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
+              }`}
             onClick={handleLinkClick}
           >
             Contact
