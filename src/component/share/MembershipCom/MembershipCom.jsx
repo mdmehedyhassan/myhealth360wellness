@@ -8,7 +8,7 @@ const MembershipCom = () => {
     <div className="px-5 lg:px-20 bg-bgSecondary rounded-xl mx-2 md:mx-5 lg:mx-5 mt-32 mb-32">
       <div className="grid gap-10 lg:gap-20 max-w-7xl mx-auto">
         {/* Card 1 */}
-        <div className="bg-white rounded-[21px] border-[2px] border-borderPrimary p-6 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
+        <div className="bg-white rounded-[21px] border-[2px] border-borderPrimary p-3 lg:p-6 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
           <div className="pl-5 lg:w-1/2 lg:pr-10">
             <h3 className="text-[12px] lf:text-lg leading-[150%] font-semibold text-primary m-2">
               Memberships
@@ -39,7 +39,7 @@ const MembershipCom = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="bg-white rounded-[21px] border-[2px] border-borderPrimary p-6 flex justify-between flex-col lg:flex-row-reverse items-center -mb-32 ml-0 ">
+        <div className="bg-white rounded-[21px] border-[2px] border-borderPrimary p-3 lg:p-6 flex justify-between flex-col lg:flex-row-reverse items-center -mb-32 ml-0 ">
           <div className="lg:w-1/2 order-1 lg:order-2 max-w-[456px]">
             <img
               src={medicalgymImg}

@@ -91,7 +91,7 @@ const CocktailBarCom = () => {
             </div>
           </div>
 
-          <div className="lg:w-[1027px] bg-white border-2 border-borderPrimary rounded-xl flex itmes-center p-5 lg:p-10">
+          <div className="lg:w-[1027px] bg-white border-2 border-borderPrimary rounded-xl flex itmes-center p-3 lg:p-10">
             <div className="flex flex-col justify-center items-start lg:w-[60%] ">
               <div className="flex justify-center items-center mb-3 lg:hidden">
                 <img

@@ -87,7 +87,7 @@ const Package = () => {
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <div className="card-body pt-[42px] pb-10 px-10">
+                <div className="card-body pt-[42px] pb-10 px-5 lg:px-10">
                   <h3 className="font-bold text-[22px] leading-[140%] text-black group-hover:text-white transition-all ease-in-out duration-500">
                     {title}
                   </h3>

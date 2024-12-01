@@ -6,7 +6,7 @@ const Accordion = () => {
       <h3 className="text-[28px] md:text-[48px] font-bold text-textPrimary text-center mb-[55px] px-4 md:px-0">
         Frequently Asked Questions
       </h3>
-      <div className="collapse collapse-plus bg-white border-borderPrimary border-[2px] rounded-[10px] p-7 mb-5">
+      <div className="collapse collapse-plus bg-white border-borderPrimary border-[2px] rounded-[10px] p-2 lg:p-7 mb-5">
         <input type="radio" name="my-accordion-3" defaultChecked />
         <div className="collapse-title text-[19px] font-bold leading-[130%] text-primary">
           1. Is IV Infusion Therapy safe?
@@ -32,7 +32,7 @@ const Accordion = () => {
           </p>
         </div>
       </div>
-      <div className="collapse collapse-plus bg-white border-borderPrimary border-[2px] rounded-[10px] p-7">
+      <div className="collapse collapse-plus bg-white border-borderPrimary border-[2px] rounded-[10px] p-2 lg:p-7">
         <input type="radio" name="my-accordion-3" defaultChecked />
         <div className="collapse-title text-[19px] font-bold leading-[130%] text-primary">
           2. Is IV therapy covered by health insurance?
