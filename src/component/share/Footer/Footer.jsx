@@ -62,9 +62,6 @@ function Footer() {
               <Link to="/" className="link link-hover text-base font-normal mb-4">
                 Morpheus8
               </Link>
-              <Link to="/services/iv-infusion-bar" className="link link-hover text-base font-normal mb-4">
-                IV Infusion Bar
-              </Link>
               <Link to="/" className="link link-hover text-base font-normal mb-4">
                 Memberships
               </Link>
