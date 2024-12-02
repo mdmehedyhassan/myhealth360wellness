@@ -2,7 +2,7 @@ import React from "react";
 
 const Accordion = () => {
   return (
-    <div className="max-w-6xl mx-auto pt-20 md:pt-[130px] px-5 md:px-0">
+    <div className="max-w-6xl mx-auto pt-20 md:pt-[124px] md:pb-[130px] px-5 md:px-0">
       <h3 className="text-[28px] md:text-[48px] font-bold text-textPrimary text-center mb-[55px] px-4 md:px-0">
         Frequently Asked Questions
       </h3>

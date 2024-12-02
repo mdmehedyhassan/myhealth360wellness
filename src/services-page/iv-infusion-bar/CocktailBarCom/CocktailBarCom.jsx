@@ -65,9 +65,9 @@ const CocktailBarCom = () => {
 
   return (
     <div className="w-full px-2 lg:px-5">
-      <div className="py-5 lg:py-10 pb-8 lg:pb-[74px] bg-bgSecondary rounded-t-xl w-full ">
-        <h1 className="text-textPrimary text-center font-bold text-3xl lg:text-5xl px-5 my-10">
-          What Concerns Would You Like To Address?
+      <div className="py-5 lg:pt-10 pb-8 lg:pb-[80px] bg-bgSecondary rounded-t-xl w-full ">
+        <h1 className="text-textPrimary text-center font-bold text-3xl lg:text-5xl px-5 lg:mt-[90px] lg:mb-[53px] my-10">
+          IV Cocktail Bar
         </h1>
         <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center text-start px-4 ">
           <div className="flex w-full lg:w-auto ">

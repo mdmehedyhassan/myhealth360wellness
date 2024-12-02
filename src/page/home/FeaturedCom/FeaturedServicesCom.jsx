@@ -49,7 +49,7 @@ export default function FeaturedServicesCom() {
   };
 
   return (
-    <div className="py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div className="py-20 lg:py-[124px] px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <p className="text-base font-semibold text-primary">
@@ -71,9 +71,8 @@ export default function FeaturedServicesCom() {
               <div
                 className="flex transition-transform duration-300 ease-in-out"
                 style={{
-                  transform: `translateX(-${
-                    currentIndex * (100 / itemsPerSlide)
-                  }%)`,
+                  transform: `translateX(-${currentIndex * (100 / itemsPerSlide)
+                    }%)`,
                 }}
               >
                 {services.map((service, index) => (

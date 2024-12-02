@@ -7,7 +7,7 @@ import { FaCalendarDays } from "react-icons/fa6";
 
 const WhyShouldCom = () => {
   return (
-    <div className="pb-20 lg:pb-20 mx-5 flex justify-center items-center ">
+    <div className="pb-20 lg:pt-[150px] lg:pb-[169px] mx-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:max-w-[1324px] lg:max-h-[528px]">
         <div className="order-last lg:order-first ">
           <div className="my-5 flex-col">

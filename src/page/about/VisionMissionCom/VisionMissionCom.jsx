@@ -35,7 +35,7 @@ function Card({ title, description, image, url }) {
 
 export default function VisionMissionCom() {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 items-center justify-center lg:p-10 mb-5">
+    <div className="flex flex-col lg:flex-row gap-8 items-center justify-center mx-5">
       <Card
         title="Our Vision"
         description="To enable individualized eudaimonia best suited to your needs."

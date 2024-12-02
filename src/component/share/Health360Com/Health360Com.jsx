@@ -8,7 +8,7 @@ import { FaCommentMedical } from "react-icons/fa6";
 
 const Health360Com = () => {
   return (
-    <div className="py-20 lg:py-16 lg:pb-36 mx-5 flex justify-center items-center ">
+    <div className="py-20 lg:pt-[96px] lg:pb-[120px] mx-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center lg:max-w-[1324px] gap-16">
         {/* Text Section */}
         <div className="lg:ml-5 w-full">

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const MembershipCom = () => {
   return (
     <div className="px-5 lg:px-20 bg-bgSecondary rounded-xl mx-2 md:mx-5 lg:mx-5 mt-32 mb-32">
-      <div className="grid gap-10 lg:gap-20 max-w-7xl mx-auto">
+      <div className="grid gap-10 lg:gap-[41px] max-w-7xl mx-auto">
         {/* Card 1 */}
         <div className="bg-white rounded-[21px] border-[2px] border-borderPrimary p-3 lg:p-6 flex flex-col-reverse lg:flex-row justify-between items-center -mt-32 ">
           <div className="pl-5 lg:w-1/2 lg:pr-10">

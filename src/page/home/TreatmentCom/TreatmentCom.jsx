@@ -195,8 +195,8 @@ const TreatmentCom = () => {
 
   return (
     <div className="w-full px-2 lg:px-5">
-      <div className="py-5 lg:py-10  lg:pb-32 bg-bgSecondary rounded-xl w-full ">
-        <h1 className="text-textPrimary text-center font-bold text-3xl lg:text-5xl px-5 my-10">
+      <div className="py-5 lg:py-10  lg:pb-[94px] bg-bgSecondary rounded-xl w-full ">
+        <h1 className="text-textPrimary text-center font-bold text-3xl lg:text-5xl px-5 my-10 lg:my-[50px]">
           What Concerns Would You Like To Address?
         </h1>
         <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center text-start px-4 ">
@@ -205,11 +205,10 @@ const TreatmentCom = () => {
               {options.map((option) => (
                 <button
                   key={option.title}
-                  className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full hover:bg-primary hover:text-white transition-colors duration-500 ease-in-out capitalize ${
-                    selectedOption.title === option.title
-                      ? "bg-primary text-white"
-                      : "bg-white text-primary border border-borderPrimary"
-                  }`}
+                  className={`w-auto p-3 text-sm lg:text-lg text-nowrap rounded-full hover:bg-primary hover:text-white transition-colors duration-500 ease-in-out capitalize ${selectedOption.title === option.title
+                    ? "bg-primary text-white"
+                    : "bg-white text-primary border border-borderPrimary"
+                    }`}
                   onClick={() => setSelectedOption(option)}
                 >
                   {option.title}

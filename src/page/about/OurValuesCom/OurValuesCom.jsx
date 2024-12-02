@@ -9,7 +9,7 @@ import {
 
 const OurValuesCom = () => {
   return (
-    <div className="bg-primary text-white m-5 rounded-xl">
+    <div className="bg-primary text-white mx-5 rounded-xl">
       <div className="lg:flex ">
         <div className="lg:w-full rounded-xl">
           <img src={TopMaskImg} alt="TopMaskImg" />
