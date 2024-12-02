@@ -26,26 +26,26 @@ function Footer() {
               </p>
               <img className="w-48 h-auto" src={logo} alt="" />
               <div className="flex gap-4 mt-10">
-                <Link to="https://www.facebook.com/">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                   <div className="hover:cursor-pointer h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
                     <FaFacebookF />
                   </div>
-                </Link>
-                <Link to="https://www.instagram.com/">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                   <div className="hover:cursor-pointer h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
                     <FaInstagram />
                   </div>
-                </Link>
-                <Link to="https://www.linkedin.com/">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                   <div className="hover:cursor-pointer h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
                     <FaLinkedinIn />
                   </div>
-                </Link>
-                <Link to="https://www.skype.com/">
+                </a>
+                <a href="https://www.skype.com/" target="_blank" rel="noopener noreferrer">
                   <div className="hover:cursor-pointer h-[35px] w-[35px] bg-primaryAccent border-2 border-borderPrimary rounded-full text-white flex justify-center items-center text-xl hover:bg-secondary transition-all ease-in-out duration-500">
                     <FaSkype />
                   </div>
-                </Link>
+                </a>
               </div>
             </nav>
             <nav className="text-white">
