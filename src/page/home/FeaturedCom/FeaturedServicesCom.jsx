@@ -80,7 +80,7 @@ export default function FeaturedServicesCom() {
                     key={index}
                     className="flex-none w-full sm:w-1/2 lg:w-1/4 px-2 cursor-pointer"
                   >
-                    <Link to="/services">
+                    <Link to={"/services"}>
                       <div className="relative rounded-lg overflow-hidden">
                         <img
                           src={service.image}

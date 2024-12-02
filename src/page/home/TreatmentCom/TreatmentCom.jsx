@@ -6,6 +6,7 @@ import hairLossImg from "../../../img/Home/hair-loss.png";
 import sexualWellnessImg from "../../../img/Home/sexual-wellness.png";
 import chronicPainImg from "../../../img/Home/chronic-pain.png";
 import { Dot } from "lucide-react";
+import loadingImg from '../../../img/loading.gif';
 
 const options = [
   {
@@ -192,6 +193,12 @@ const options = [
 
 const TreatmentCom = () => {
   const [selectedOption, setSelectedOption] = useState(options[0]);
+  const [loader, setLoader] = useState(true);
+  const setLoaderChange = () => {
+    setLoader(false)
+    setTimeout(() => setLoader(true), 200);
+  }
+
 
   return (
     <div className="w-full px-2 lg:px-5">
@@ -209,7 +216,7 @@ const TreatmentCom = () => {
                     ? "bg-primary text-white"
                     : "bg-white text-primary border border-borderPrimary"
                     }`}
-                  onClick={() => setSelectedOption(option)}
+                  onClick={() => [setSelectedOption(option), setLoaderChange()]}
                 >
                   {option.title}
                 </button>
@@ -222,50 +229,57 @@ const TreatmentCom = () => {
           </div>
 
           <div className="lg:w-[1027px] bg-white border-2 border-borderPrimary  rounded-xl p-3 lg:p- ">
-            <div className="grid grid-cols-1 lg:grid-cols-2 justify-start items-center lg:flex-row">
-              <div className="lg:p-5 ">
-                <div className="mb-5 lg:mb-0 flex justify-center items-center lg:p-5 lg:hidden ">
-                  <img
-                    className="rounded-xl w-auto transition-all duration-500 ease-in-out"
-                    src={selectedOption.img}
-                    alt={selectedOption.title}
-                  />
+            {
+              !loader ?
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
+                  <img style={{width: 200, padding: '100px 0'}} src={loadingImg} alt="" />
                 </div>
-                <h1 className="text-primary font-bold text-2xl lg:text-3xl mb-5 capitalize transition-all duration-500 ease-in-out">
-                  {selectedOption.title}
-                </h1>
-                <div className="grid grid-cols-1 justify-start items-center gap-2 transition-all duration-500 ease-in-out">
-                  {selectedOption.accordionData.map((item) => (
-                    <div
-                      key={item.id}
-                      className="border-borderPrimary rounded-lg"
-                    >
-                      <div className="collapse collapse-arrow bg-bgSecondary transition-all duration-500 ease-in-out">
-                        <input
-                          type="radio"
-                          name="my-accordion-2"
-                          defaultChecked={item.title === "overall"}
-                        />
-                        <div className="text-textPrimary flex justify-start items-center collapse-title text-xl font-medium capitalize transition-all duration-500 ease-in-out">
-                          <Dot size={32} /> {item.title}
-                          {selectedOption.title === "face"}
-                        </div>
-                        <div className="collapse-content text-start text-textSecondary text-wrap transition-all duration-500 ease-in-out">
-                          <p>{item.content}</p>
-                        </div>
-                      </div>
+                :
+                <div className="grid grid-cols-1 lg:grid-cols-2 justify-start items-center lg:flex-row">
+                  <div className="lg:p-5 ">
+                    <div className="mb-5 lg:mb-0 flex justify-center items-center lg:p-5 lg:hidden ">
+                      <img
+                        className="rounded-xl w-auto transition-all duration-500 ease-in-out"
+                        src={selectedOption.img}
+                        alt={selectedOption.title}
+                      />
                     </div>
-                  ))}
+                    <h1 className="text-primary font-bold text-2xl lg:text-3xl mb-5 capitalize transition-all duration-500 ease-in-out">
+                      {selectedOption.title}
+                    </h1>
+                    <div className="grid grid-cols-1 justify-start items-center gap-2 transition-all duration-500 ease-in-out">
+                      {selectedOption.accordionData.map((item) => (
+                        <div
+                          key={item.id}
+                          className="border-borderPrimary rounded-lg"
+                        >
+                          <div className="collapse collapse-arrow bg-bgSecondary transition-all duration-500 ease-in-out">
+                            <input
+                              type="radio"
+                              name="my-accordion-2"
+                              defaultChecked={item.title === "overall"}
+                            />
+                            <div className="text-textPrimary flex justify-start items-center collapse-title text-xl font-medium capitalize transition-all duration-500 ease-in-out">
+                              <Dot size={32} /> {item.title}
+                              {selectedOption.title === "face"}
+                            </div>
+                            <div className="collapse-content text-start text-textSecondary text-wrap transition-all duration-500 ease-in-out">
+                              <p>{item.content}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="mb-5 lg:mb-0 lg:flex justify-center items-center lg:p-5 hidden transition-all duration-500 ease-in-out">
+                    <img
+                      className="rounded-xl w-auto"
+                      src={selectedOption.img}
+                      alt={selectedOption.title}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="mb-5 lg:mb-0 lg:flex md:flex justify-center items-center lg:p-5 hidden transition-all duration-500 ease-in-out">
-                <img
-                  className="rounded-xl w-auto"
-                  src={selectedOption.img}
-                  alt={selectedOption.title}
-                />
-              </div>
-            </div>
+            }
           </div>
         </div>
       </div>

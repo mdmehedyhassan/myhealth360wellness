@@ -1,5 +1,7 @@
 import React from "react";
 import userImg from "../../../img/Home/user.svg";
+import userImg2 from "../../../img/Home/user-2.jpg";
+import userImg3 from "../../../img/Home/user-3.jpeg";
 
 // Sample testimonial data
 const testimonials = [
@@ -14,22 +16,23 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Eddie Romero",
-    position: "Director of Business Development at Fibratex",
+    name: "Sophia Martinez",
+    position: "Healthcare Consultant at Mediline",
     review:
-      "Dr. Fatima is an excellent doctor, she goes above and beyond in caring for her patients. She's a very caring, knowledgeable doctor. I feel very confident and secure in her practice and advice.",
+      "Dr. Fatima provides exceptional care, always ensuring her patients feel understood. Her expertise and compassion are truly unmatched, and I trust her completely for advice and treatment.",
     rating: 5,
-    image: userImg,
+    image: userImg2,
   },
   {
     id: 3,
-    name: "Eddie Romero",
-    position: "Director of Business Development at Fibratex",
+    name: "John Patterson",
+    position: "CEO at Wellness Inc.",
     review:
-      "Dr. Fatima is an excellent doctor, she goes above and beyond in caring for her patients. She's a very caring, knowledgeable doctor. I feel very confident and secure in her practice and advice.",
+      "Dr. Fatima is incredibly attentive, offering personalized solutions to every concern. Her dedication and knowledge make her an outstanding professional in her field, inspiring great trust.",
     rating: 5,
-    image: userImg,
+    image: userImg3,
   },
+  
 ];
 
 const TestimonialsCom = () => {
