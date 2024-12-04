@@ -1,8 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { FaCalendarDays } from "react-icons/fa6";
-
-
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import BodyImg from "../../../img/Shared/Body.png";
 import HairImg from "../../../img/Shared/Hair.png";
 import FaceImg from "../../../img/Shared/Face.png";
@@ -11,7 +8,8 @@ import CoachingImg from "../../../img/Shared/Coaching.png";
 import IVHydrationImg from "../../../img/Shared/IVHydration.png";
 import MedicalRehabImg from "../../../img/Shared/MedicalRehab.png";
 import BodySculptingImg from "../../../img/Shared/BodySculpting.png";
-import ExploreMoreCom from '../ExploreMoreCom/ExploreMoreCom';
+import { Link } from "react-router-dom";
+
 const services = [
   {
     name: "Body",
@@ -63,57 +61,107 @@ const services = [
   },
 ];
 
-function ServicesInfo() {
-  const location = useParams();
-  const path = location.serviceName;
-  //select data that matched with path
-  const newData = services.find(el => el.name === path);
-  //select all data expect the data matched with path
-  const remainingServices = services.filter(el => el.name !== path);
-  //get 3 random data function
-  function getRandomServices(servicesArray, count) {
-    // Create a copy of the array to avoid mutating the original
-    const shuffled = [...servicesArray].sort(() => 0.5 - Math.random());
-    // Return the first `count` elements from the shuffled array
-    return shuffled.slice(0, count);
-  }
+export default function FeaturedServicesCom() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerSlide, setItemsPerSlide] = useState(4);
 
-  //get 3 random data from remainingServices
-  const moreServices = getRandomServices(remainingServices, 3);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setItemsPerSlide(1);
+      } else if (window.innerWidth < 1024) {
+        setItemsPerSlide(2);
+      } else {
+        setItemsPerSlide(4);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex + itemsPerSlide >= services.length ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0
+        ? Math.max(0, services.length - itemsPerSlide)
+        : prevIndex - 1
+    );
+  };
 
   return (
-    <>
-      <div className='h-[5.5rem] bg-primary'></div>
-      <div className="w-full h-full py-10 lg:py-[100px] px-5 bg-bgPrimary flex justify-center items-center">
-        <div className="lg:max-w-[1324px]">
-          <h1 className='text-textPrimary text-5xl font-bold py-5 lg:pb-16 text-center'>Service Details</h1>
-          <div div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-start'>
-            <div className='w-full h-full'>
-              <img src={newData.image} alt="" className='w-[600px] shadow-lg rounded-lg' />
-            </div>
-            <div className='mt-5 lg:mt-0'>
-              <h1 className='text-textPrimary text-5xl font-bold py-2 text-center lg:text-start'>{newData.name}</h1>
-              <h2 className='text-primary text-3xl font-bold text-center lg:text-start'>${newData.price}</h2>
-              <p className='text-textSecondary text-xl py-5 text-center lg:text-start'>{newData.description}</p>
-              <div className='flex justify-center lg:justify-start items-center '>
-                <button className="flex items-center bg-primary text-white font-semibold px-4 py-3 rounded-full space-x-2 transition-all duration-500 ease-in-out hover:bg-white hover:text-textPrimary">
-                  <div className="bg-primaryAccent text-secondary p-2 rounded-full -ml-1 ">
-                    {/* Calendar Icon */}
-                    <FaCalendarDays />
+    <div className="py-20 lg:py-[124px] px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-10">
+          <p className="text-base font-semibold text-primary">
+            Schedule a Consult
+          </p>
+          <h2 className="mt-2 text-3xl lg:text-5xl font-bold text-textPrimary">
+            Our Featured Services
+          </h2>
+        </div>
+        <div className="relative">
+          <div className="flex justify-between items-center">
+            <button
+              onClick={prevSlide}
+              className="z-10 p-2 rounded-full bg-primary shadow-md text-white"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <div className="overflow-hidden mx-4">
+              <div
+                className="flex transition-transform duration-300 ease-in-out"
+                style={{
+                  transform: `translateX(-${currentIndex * (100 / itemsPerSlide)
+                    }%)`,
+                }}
+              >
+                {services.map((service, index) => (
+                  <div
+                    key={index}
+                    className="flex-none w-full sm:w-1/2 lg:w-1/4 px-2 cursor-pointer"
+                  >
+                    <Link to={"/services/info/" + service.name}>
+                      <div className="relative rounded-lg overflow-hidden">
+                        <img
+                          src={service.image}
+                          alt={service.name}
+                          className="w-full h-64 object-cover hover:scale-110 transition-all ease-in-out duration-500"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4">
+                          <div className="absolute inset-0 bg-primary opacity-60 mix-blend-multiply"></div>
+                          <div className="flex justify-between items-center w-full">
+                            <h3 className="text-xl font-semibold text-white z-10 ">
+                              {service.name}
+                            </h3>
+                            <div className="w-7 h-7 bg-secondary rounded-full flex justify-center items-center z-10 cursor-pointer">
+                              <Link to="/services">
+                                <ArrowRight className="text-xs text-black" />
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
                   </div>
-                  <span>Schedule a Consult</span>
-                </button>
+                ))}
               </div>
             </div>
+            <button
+              onClick={nextSlide}
+              className="z-10 p-2 rounded-full bg-primary shadow-md text-white"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
           </div>
         </div>
       </div>
-      <ExploreMoreCom services={moreServices} />
-    </>
-  )
+    </div>
+  );
 }
-
-export default ServicesInfo
-
-
-
