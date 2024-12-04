@@ -6,6 +6,7 @@ import Loadable from "react-loadable";
 import { Route, Routes, useLocation } from "react-router-dom";
 import ThemeSelectorCom from "./component/share/ThemeSelectorCom/ThemeSelectorCom";
 
+
 const Navbar = Loadable({
   loader: () => import("./component/share/Navbar/Navbar"),
   loading: () => <div className="class-for-svg-img">Loading...</div>,
@@ -32,6 +33,14 @@ const About = Loadable({
 });
 const Services = Loadable({
   loader: () => import("./page/services/Services/Services"),
+  loading: () => (
+    <div className="class-for-svg-img">
+      <img src={loadingImg} alt="" />
+    </div>
+  ),
+});
+const ServicesInfo = Loadable({
+  loader: () => import("./page/services/ServicesInfo/ServicesInfo"),
   loading: () => (
     <div className="class-for-svg-img">
       <img src={loadingImg} alt="" />
@@ -90,6 +99,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/iv-infusion-bar" element={<IVInfusionBar />} />
+        <Route path="/services/info/:serviceName" element={<ServicesInfo />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

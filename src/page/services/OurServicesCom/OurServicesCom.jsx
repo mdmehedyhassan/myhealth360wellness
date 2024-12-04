@@ -36,7 +36,7 @@ export default function OurServicesCom() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {services.map((service, index) => (
             <div key={index} className="flex-none w-full px-2">
-              <Link to={'/services'} >
+              <Link to={'/services/info/'+ service.name} >
                 <div
                   style={{ cursor: 'pointer' }} className="relative rounded-lg overflow-hidden">
                   <img
