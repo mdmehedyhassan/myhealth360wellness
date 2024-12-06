@@ -41,8 +41,8 @@ const Navbar = () => {
           <Link
             to="/"
             className={`text-base font-medium ${isActive("/")
-                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
+              ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
               }`}
           >
             Home
@@ -50,8 +50,8 @@ const Navbar = () => {
           <Link
             to="/about"
             className={`text-base font-medium ${isActive("/about")
-                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
+              ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
               }`}
           >
             About
@@ -61,8 +61,8 @@ const Navbar = () => {
             <Link
               to="/services"
               className={`text-base font-medium ${isActive("/services")
-                  ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                  : "text-white"
+                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
                 }`}
             >
               Our Services
@@ -87,7 +87,9 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a>Service 2</a>
+                  <Link to="/services" onClick={handleLinkClick}>
+                    Services
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -95,8 +97,8 @@ const Navbar = () => {
           <Link
             to="/packages"
             className={`text-base font-medium ${isActive("/packages")
-                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
+              ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
               }`}
           >
             Packages
@@ -104,8 +106,8 @@ const Navbar = () => {
           <Link
             to="/contact"
             className={`text-base font-medium ${isActive("/contact")
-                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
+              ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
               }`}
           >
             Contact
@@ -142,8 +144,8 @@ const Navbar = () => {
           <Link
             to="/"
             className={`block py-2 ${isActive("/")
-                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
+              ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
               }`}
             onClick={handleLinkClick}
           >
@@ -152,8 +154,8 @@ const Navbar = () => {
           <Link
             to="/about"
             className={`block py-2 ${isActive("/about")
-                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
+              ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
               }`}
             onClick={handleLinkClick}
           >
@@ -164,8 +166,8 @@ const Navbar = () => {
             <Link
               to="/services"
               className={`text-base font-medium ${isActive("/services")
-                  ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                  : "text-white"
+                ? " bg-white py-2 px-4 rounded-lg text-primary font-bold"
+                : "text-white"
                 }`}
               onClick={handleLinkClick}
             >
@@ -194,7 +196,9 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a>Service 2</a>
+                  <Link to="/services" onClick={handleLinkClick}>
+                    Services
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -203,8 +207,8 @@ const Navbar = () => {
           <Link
             to="/packages"
             className={`block py-2 ${isActive("/packages")
-                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
+              ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
               }`}
             onClick={handleLinkClick}
           >
@@ -213,8 +217,8 @@ const Navbar = () => {
           <Link
             to="/contact"
             className={`block py-2 ${isActive("/contact")
-                ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
-                : "text-white"
+              ? "bg-white py-2 px-4 rounded-lg text-primary font-bold"
+              : "text-white"
               }`}
             onClick={handleLinkClick}
           >

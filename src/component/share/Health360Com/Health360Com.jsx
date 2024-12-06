@@ -1,7 +1,6 @@
 import React from "react";
 import HealthImg1 from "../../../img/Shared/health-360-img-1.png";
 import HealthImg2 from "../../../img/Shared/health-360-img-2.png";
-import SupportImg from "../../../img/Shared/support-img.png";
 import DotCom from "../DotCom/DotCom";
 import { Link } from "react-router-dom";
 import { FaCommentMedical } from "react-icons/fa6";
