@@ -22,27 +22,27 @@ code {
     --color-white: #ffffff;
     --color-black: #000000;
     --color-primary: #0b5e62;
-    --color-primary-accent: #010505;
+    --color-primary-accent: #0E6B70;
     --color-secondary: #e5c466;
     --color-bg-primary: #E9F0EC;
     --color-bg-secondary: #D9E5DE;
     --color-text-primary: #062223;
     --color-text-secondary: #485657;
-    --color-border-primary: #0B5E62;
-    --color-border-secondary: ;
+    --color-border-primary: #0B5E6266;
+    --color-border-secondary:#B6CCE2;
   }
 }
 
 .theme-base {
   --color-primary: #0b5e62;
-  --color-primary-accent: #010505;
+  --color-primary-accent: #0E6B70;
   --color-secondary: #e5c466;
   --color-bg-primary: #E9F0EC;
   --color-bg-secondary: #D9E5DE;
   --color-text-primary: #062223;
   --color-text-secondary: #485657;
-  --color-border-primary: #0B5E62;
-  --color-border-secondary: ;
+  --color-border-primary: #0B5E6266;
+  --color-border-secondary:#B6CCE2;
 }
 .theme-pink {
   --color-primary: #875dbb;
@@ -53,5 +53,5 @@ code {
   --color-text-primary: #130227;
   --color-text-secondary: #625c69;
   --color-border-primary: #b5adbe;
-  --color-border-secondary: ;
+  --color-border-secondary:#B6CCE2 ;
 }

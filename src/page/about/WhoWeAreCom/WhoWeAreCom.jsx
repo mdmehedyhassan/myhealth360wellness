@@ -33,17 +33,17 @@ const WhoWeAreCom = () => {
                 </div>
                 {/* Left Box */}
                 <div className="text-white rounded-md w-[155.89px] lg:w-[260px] h-[46.77px] lg:h-[78px] mt-4">
-                  <div className="w-full h-full bg-primary rounded-lg grid grid-cols-5 items-center p-2 gap-2 ">
-                    <div className="lg:ml-2 rounded-lg col-span-1">
-                      <div className="text-secondary text-3xl">
+                  <div className="w-full h-full bg-primary rounded-lg p-1 lg:p-2 gap-2 flex justify-start items-center">
+                    <div className="lg:rounded-lg rounded-md col-span-1 bg-primaryAccent my-2 h-full w-[25%] flex justify-center items-center">
+                      <div className="text-secondary text-2xl lg:text-4xl mx-auto">
                         <FaPeopleGroup />
                       </div>
                     </div>
-                    <div className="col-span-4">
-                      <h1 className="text-[13px] lg:text-md font-bold">
+                    <div className="w-[75%]">
+                      <h1 className="text-[13px] lg:text-[18px] lg:leading-[21px] font-bold leading-[15px]">
                         30,000+
                       </h1>
-                      <p className="text-[4px] lg:text-[10px] font-bold ">
+                      <p className="text-[4px] lg:text-[8px] font-bold leading-[6px] lg:leading-[12px] ">
                         By refining your ideal client profile and using precise
                         filters
                       </p>

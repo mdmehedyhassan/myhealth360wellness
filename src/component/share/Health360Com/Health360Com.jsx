@@ -11,46 +11,10 @@ const Health360Com = () => {
     <div className="py-20 lg:pt-[96px] lg:pb-[120px] mx-5 flex justify-center items-center ">
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center lg:max-w-[1324px] gap-16">
         {/* Text Section */}
-        <div className="lg:ml-5 w-full">
-          <h2 className="text-[28px] md:text-5xl font-bold text-textPrimary mb-4">
+        <div className="lg:ml-5 w-full order-2 lg:order-1">
+          <h2 className="hidden lg:block text-[28px] md:text-5xl font-bold text-textPrimary mb-4">
             Why Choose My Health 360?
           </h2>
-          {/* Image Section */}
-          <div className="relative flex justify-center items-center mb-10 lg:hidden mt-16 pl-10">
-            <div className="w-[211px] h-[202px] bg-bgPrimary border border-borderPrimary rounded-lg relative right-0">
-              <img
-                src={HealthImg1}
-                alt=""
-                className="absolute -top-[3.5rem] -right-12"
-              />
-              <div className="w-[140px] h-[175px] relative top-[1.5rem] -left-[37%] p-3 bg- bg-bgPrimary rounded-lg">
-                <img
-                  src={HealthImg2}
-                  alt=""
-                  className="w-full h-[172.2] absolute top-3 -left-3"
-                />
-              </div>
-              <div className="absolute -top-[28%] -left-[43%] bg-primary text-white rounded-md w-32 h-20 ">
-                <div className="w-full h-full flex justify-center items-center gap-2 mx-3">
-                  <div className="w-[2rem] h-[1.5rem] flex justify-center items-center rounded-md">
-                    <img src={SupportImg} alt="" />
-                  </div>
-                  <h1 className="text-2xl font-bold">24</h1>
-                  <p className="text-[10px] text-wrap">
-                    Hours Customer Support
-                  </p>
-                </div>
-              </div>
-              {/* Dot Grid */}
-              <div className="w-[75px] h-[36px] bg-bgSecondary z-0 absolute -bottom-[23px] -right-12 p-1">
-                <div className="w-full h-full grid grid-cols-8 gap-0  justify-items-center items-center ">
-                  {Array.from({ length: 24 }).map((_, index) => (
-                    <DotCom key={index} />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
           <p className="text-textSecondary mb-6 leading-relaxed">
             My Health 360 — Concierge Care offers annual membership-based
             enhanced access to holistic and integrative wellness care customized
@@ -72,33 +36,40 @@ const Health360Com = () => {
         </div>
 
         {/* Image Section */}
-        <div className=" hidden lg:block relative justify-items-end ml-auto mr-10">
-          <div className="w-[363px] h-[377px] bg-bgPrimary border border-borderPrimary rounded-lg relative right-0">
+        <div className=" relative justify-items-center lg:justify-items-end ml-auto mr-10">
+          <h2 className="lg:hidden text-[28px] md:text-5xl font-bold text-textPrimary mb-10">
+            Why Choose My Health 360?
+          </h2>
+          <div className="w-[211.91px] lg:w-[363px] h-[220.09px] lg:h-[377px] bg-bgPrimary border border-borderPrimary rounded-lg relative ">
             <img
               src={HealthImg1}
               alt=""
-              className="absolute -top-[2.5rem] -right-12"
+              className="absolute -top-[1.5rem] lg:-top-[2.5rem] -right-10 lg:-right-12 w-[186.23] lg:w-[319px] h-[209.23px] lg:h-[358.41px]"
             />
-            <div className="w-[280px] h-[306px] relative top-[2.5rem] -left-[37%] p-3 bg- bg-bgPrimary rounded-lg">
+            <div className="w-[160.11px] h-[175.72px] lg:w-[280px] lg:h-[306px] relative top-[1.5rem] lg:top-[2.5rem] -left-[30%] lg:-left-[37%] p-3 bg- bg-bgPrimary rounded-lg">
               <img
                 src={HealthImg2}
                 alt=""
-                className="w-full h-[294.97px] absolute top-3 -left-3"
+                className="w-full h-[172.2px] lg:h-[294.97px] absolute top-2 -left-2 lg:top-3 lg:-left-3"
               />
             </div>
-            <div className="absolute -top-[11%] -left-[40%] bg-primary text-white rounded-md w-56 h-20 ">
-              <div className="w-full h-full flex justify-center items-center gap-2 mx-3">
-                <div className="w-[4rem] h-[3.5rem] text-2xl text-secondary flex justify-center items-center bg-white rounded-md">
-                  <FaCommentMedical />
+            <div className="absolute -top-[10.3%] -left-[33%] lg:-left-[40%] text-white rounded-md w-[127.26px] lg:w-[218px] h-[43.78px] lg:h-[79px]">
+              <div className="w-full h-full bg-primary rounded-lg p-1 lg:p-2 gap-2 flex justify-start items-center">
+                <div className="lg:rounded-lg rounded-md col-span-1 bg-primaryAccent my-2 h-full w-[30%] flex justify-center items-center">
+                  <div className="text-secondary text-2xl lg:text-4xl mx-auto">
+                    <FaCommentMedical />
+                  </div>
                 </div>
-                <h1 className="text-4xl font-bold">24</h1>
-                <p className="text-xs text-wrap">Hours Customer Support</p>
+                <div className="w-[70%] flex justify-start items-center gap-2">
+                  <h1 className="text-[18px] lg:text-[29px] font-bold">24</h1>
+                  <p className="text-[6px] lg:text-[11px] text-wrap">Hours Customer Support</p>
+                </div>
               </div>
             </div>
             {/* Dot Grid */}
-            <div className="w-[140px] h-[63px] bg-bgSecondary z-0 absolute -bottom-[26px] -right-12 p-3">
-              <div className="w-full h-full grid grid-cols-12 gap-0  justify-items-center items-center ">
-                {Array.from({ length: 48 }).map((_, index) => (
+            <div className="w-[75.31px] lg:w-[140px] h-[36.78px] lg:h-[63px] bg-bgPrimary z-0 absolute -bottom-[12px] lg:-bottom-[26px] -right-12 p-1 lg:p-3">
+              <div className="w-full h-full grid grid-cols-10 gap-0  justify-items-center items-center ">
+                {Array.from({ length: 40 }).map((_, index) => (
                   <DotCom key={index} />
                 ))}
               </div>

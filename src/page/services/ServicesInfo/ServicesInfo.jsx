@@ -97,7 +97,7 @@ function ServicesInfo() {
               <p className='text-textSecondary text-xl py-5 text-center lg:text-start'>{newData.description}</p>
               <div className='flex justify-center lg:justify-start items-center '>
                 <button className="flex items-center bg-primary text-white font-semibold px-4 py-3 rounded-full space-x-2 transition-all duration-500 ease-in-out hover:bg-white hover:text-textPrimary">
-                  <div className="bg-primaryAccent text-secondary p-2 rounded-full -ml-1 ">
+                  <div className="bg-primaryAccent text-secondary p-2 rounded-full -ml-1">
                     {/* Calendar Icon */}
                     <FaCalendarDays />
                   </div>
