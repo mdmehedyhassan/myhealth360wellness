@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+} /* Firefox */
+body {
+  -ms-overflow-style: none;
+} /* IE and Edge */
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-button {
+  display: none;
+} /* Chrome */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -22,27 +35,27 @@ code {
     --color-white: #ffffff;
     --color-black: #000000;
     --color-primary: #0b5e62;
-    --color-primary-accent: #0E6B70;
+    --color-primary-accent: #0e6b70;
     --color-secondary: #e5c466;
-    --color-bg-primary: #E9F0EC;
-    --color-bg-secondary: #D9E5DE;
+    --color-bg-primary: #e9f0ec;
+    --color-bg-secondary: #d9e5de;
     --color-text-primary: #062223;
     --color-text-secondary: #485657;
-    --color-border-primary: #0B5E6266;
-    --color-border-secondary:#B6CCE2;
+    --color-border-primary: #0b5e6266;
+    --color-border-secondary: #b6cce2;
   }
 }
 
 .theme-base {
   --color-primary: #0b5e62;
-  --color-primary-accent: #0E6B70;
+  --color-primary-accent: #0e6b70;
   --color-secondary: #e5c466;
-  --color-bg-primary: #E9F0EC;
-  --color-bg-secondary: #D9E5DE;
+  --color-bg-primary: #e9f0ec;
+  --color-bg-secondary: #d9e5de;
   --color-text-primary: #062223;
   --color-text-secondary: #485657;
-  --color-border-primary: #0B5E6266;
-  --color-border-secondary:#B6CCE2;
+  --color-border-primary: #0b5e6266;
+  --color-border-secondary: #b6cce2;
 }
 .theme-pink {
   --color-primary: #875dbb;
@@ -53,5 +66,5 @@ code {
   --color-text-primary: #130227;
   --color-text-secondary: #625c69;
   --color-border-primary: #b5adbe;
-  --color-border-secondary:#B6CCE2 ;
+  --color-border-secondary: #b6cce2;
 }
